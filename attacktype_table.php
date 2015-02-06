@@ -6,22 +6,22 @@ if(!isset($_GET['encid']))
 	$encid = "00000000";
 else
 	$encid = $_GET['encid'];
-  
+
 if(!isset($_GET['attacker']))
 	$attacker = "";
 else
-	$attacker = str_replace("'", "''", $_GET['attacker']);
-  
+    $attacker = str_replace("'", "''", $_GET['attacker']);
+
 if(!isset($_GET['victim']))
 	$victim = "";
 else
 	$victim = str_replace("'", "''", $_GET['victim']);
-  
+
 if(!isset($_GET['swingtype']))
 	$swingtype = "";
 else
 	$swingtype = $_GET['swingtype'];
-  
+
 if(!isset($_GET['swingtype2']))
 	$swingtype2 = "";
 else
