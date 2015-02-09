@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=utf-8');
 include 'actdb.php';
 
-$query  = "SELECT * FROM encounter_table";
+$query  = "SELECT * FROM encounter_table order by starttime";
 $result = mysql_query($query);
 
 echo "$query";
@@ -12,6 +12,7 @@ while($row = mysql_fetch_row($result))
 {
     $escapedurl = htmlentities("combatant_table.php?encid=$row[0]", ENT_QUOTES);
     $escapedurl2 = htmlentities("delete_encounters.php?encid=$row[0]", ENT_QUOTES);
+    $roundnum = round($row[6]);
 
     echo "<tr>" .
     "<td><a href='$escapedurl'>$row[1]</a></td>" .
@@ -19,7 +20,7 @@ while($row = mysql_fetch_row($result))
     "<td>$row[3]</td>" .
     "<td>$row[4]</td>" .
     "<td>$row[5]</td>" .
-    "<td>$row[6]</td>" .
+    "<td>$roundnum</td>" .
     "<td>$row[7]</td>" .
     "<td><a href='$escapedurl2'>Delete</a></td>" .
     "</tr>";
