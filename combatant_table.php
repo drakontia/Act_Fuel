@@ -22,6 +22,9 @@ $query = "SELECT " .
 	" FROM combatant_table WHERE encid = '$encid'";
 if($sortby != "")
 	$query = $query . " ORDER BY $sortby $sortdir";
+else
+	$query = $query . " ORDER BY job $sortdir";
+
 $result = mysql_query($query);
 
 echo "$query";
@@ -57,6 +60,16 @@ while($row = mysql_fetch_row($result))
 			$escapedurl = str_replace("'","%27", $escapedurl);
 			echo "<td><a href='$escapedurl'>$row[$i]</a></td>";
 		}
+		elseif($ctablecols[$i] == "encdps")
+        {
+            $row2 = round($row[$i]);
+			echo "<td>$row2</td>";
+        }
+		elseif($ctablecols[$i] == "enchps")
+        {
+            $row2 = round($row[$i]);
+			echo "<td>$row2</td>";
+        }
 		else
 			echo "<td>$row[$i]</td>";
 	}
