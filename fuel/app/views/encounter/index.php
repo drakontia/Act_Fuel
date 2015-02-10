@@ -1,6 +1,6 @@
-<h2>Listing <span class='muted'>Encounter_tables</span></h2>
+<h2>Listing <span class='muted'>Encounter</span></h2>
 <br>
-<?php if ($encounter_tables): ?>
+<?php if ($encounter): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
@@ -18,7 +18,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($encounter_tables as $item): ?>
+<?php foreach ($encounter as $item): ?>
         <tr>
 			<td><?php echo $item->encid; ?></td>
 			<td><?php echo $item->title; ?></td>
@@ -33,7 +33,7 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-                        <?php echo Html::anchor('encounter/table/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('encounter/table/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('encounter/table/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>
+                        <?php echo Html::anchor('encounter/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('encounter/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('encounter/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>
                     </div>
 				</div>
 
@@ -46,6 +46,6 @@
 <p>No Encounter_tables.</p>
 
 <?php endif; ?><p>
-	<?php echo Html::anchor('encounter/table/create', 'Add new Encounter table', array('class' => 'btn btn-success')); ?>
+	<?php echo Html::anchor('encounter/create', 'Add new Encounter', array('class' => 'btn btn-success')); ?>
 
 </p>
