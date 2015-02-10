@@ -1,6 +1,6 @@
 <?php
 return array(
-	'_root_'  => 'index',  // The default route
+	'_root_'  => 'encounter/index',  // The default route
 	'_404_'   => '404',    // The main 404 route
 	
 	'hello(/:name)?' => array('welcome/hello', 'name' => 'hello'),

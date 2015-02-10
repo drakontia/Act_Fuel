@@ -1,27 +1,27 @@
 <?php
-class Controller_Attacktype_Table extends Controller_Template
+class Controller_Attacktype extends Controller_Template
 {
 
 	public function action_index()
 	{
-		$data['attacktype_tables'] = Model_Attacktype_Table::find('all');
-		$this->template->title = "Attacktype_tables";
-		$this->template->content = View::forge('attacktype/table/index', $data);
+		$data['attacktype'] = Model_Attacktype::find('all');
+		$this->template->title = "Attacktype";
+		$this->template->content = View::forge('attacktype/index', $data);
 
 	}
 
 	public function action_view($id = null)
 	{
-		is_null($id) and Response::redirect('attacktype/table');
+		is_null($id) and Response::redirect('attacktype');
 
-		if ( ! $data['attacktype_table'] = Model_Attacktype_Table::find($id))
+		if ( ! $data['attacktype'] = Model_Attacktype::find($id))
 		{
-			Session::set_flash('error', 'Could not find attacktype_table #'.$id);
-			Response::redirect('attacktype/table');
+			Session::set_flash('error', 'Could not find attacktype #'.$id);
+			Response::redirect('attacktype');
 		}
 
-		$this->template->title = "Attacktype_table";
-		$this->template->content = View::forge('attacktype/table/view', $data);
+		$this->template->title = "Attacktype";
+		$this->template->content = View::forge('attacktype/view', $data);
 
 	}
 
@@ -29,11 +29,11 @@ class Controller_Attacktype_Table extends Controller_Template
 	{
 		if (Input::method() == 'POST')
 		{
-			$val = Model_Attacktype_Table::validate('create');
+			$val = Model_Attacktype::validate('create');
 
 			if ($val->run())
 			{
-				$attacktype_table = Model_Attacktype_Table::forge(array(
+				$attacktype = Model_Attacktype::forge(array(
 					'encid' => Input::post('encid'),
 					'attacker' => Input::post('attacker'),
 					'victim' => Input::post('victim'),
@@ -67,16 +67,16 @@ class Controller_Attacktype_Table extends Controller_Template
 					'overheal' => Input::post('overheal'),
 				));
 
-				if ($attacktype_table and $attacktype_table->save())
+				if ($attacktype and $attacktype->save())
 				{
-					Session::set_flash('success', 'Added attacktype_table #'.$attacktype_table->id.'.');
+					Session::set_flash('success', 'Added attacktype #'.$attacktype->id.'.');
 
-					Response::redirect('attacktype/table');
+					Response::redirect('attacktype');
 				}
 
 				else
 				{
-					Session::set_flash('error', 'Could not save attacktype_table.');
+					Session::set_flash('error', 'Could not save attacktype.');
 				}
 			}
 			else
@@ -85,67 +85,67 @@ class Controller_Attacktype_Table extends Controller_Template
 			}
 		}
 
-		$this->template->title = "Attacktype_Tables";
-		$this->template->content = View::forge('attacktype/table/create');
+		$this->template->title = "Attacktype";
+		$this->template->content = View::forge('attacktype/create');
 
 	}
 
 	public function action_edit($id = null)
 	{
-		is_null($id) and Response::redirect('attacktype/table');
+		is_null($id) and Response::redirect('attacktype');
 
-		if ( ! $attacktype_table = Model_Attacktype_Table::find($id))
+		if ( ! $attacktype = Model_Attacktype::find($id))
 		{
-			Session::set_flash('error', 'Could not find attacktype_table #'.$id);
-			Response::redirect('attacktype/table');
+			Session::set_flash('error', 'Could not find attacktype #'.$id);
+			Response::redirect('attacktype');
 		}
 
-		$val = Model_Attacktype_Table::validate('edit');
+		$val = Model_Attacktype::validate('edit');
 
 		if ($val->run())
 		{
-			$attacktype_table->encid = Input::post('encid');
-			$attacktype_table->attacker = Input::post('attacker');
-			$attacktype_table->victim = Input::post('victim');
-			$attacktype_table->swingtype = Input::post('swingtype');
-			$attacktype_table->type = Input::post('type');
-			$attacktype_table->starttime = Input::post('starttime');
-			$attacktype_table->endtime = Input::post('endtime');
-			$attacktype_table->duration = Input::post('duration');
-			$attacktype_table->damage = Input::post('damage');
-			$attacktype_table->encdps = Input::post('encdps');
-			$attacktype_table->chardps = Input::post('chardps');
-			$attacktype_table->dps = Input::post('dps');
-			$attacktype_table->average = Input::post('average');
-			$attacktype_table->median = Input::post('median');
-			$attacktype_table->minhit = Input::post('minhit');
-			$attacktype_table->maxhit = Input::post('maxhit');
-			$attacktype_table->resist = Input::post('resist');
-			$attacktype_table->hits = Input::post('hits');
-			$attacktype_table->crithits = Input::post('crithits');
-			$attacktype_table->blocked = Input::post('blocked');
-			$attacktype_table->misses = Input::post('misses');
-			$attacktype_table->swings = Input::post('swings');
-			$attacktype_table->tohit = Input::post('tohit');
-			$attacktype_table->averagedelay = Input::post('averagedelay');
-			$attacktype_table->critperc = Input::post('critperc');
-			$attacktype_table->parry = Input::post('parry');
-			$attacktype_table->parrypct = Input::post('parrypct');
-			$attacktype_table->block = Input::post('block');
-			$attacktype_table->blockpct = Input::post('blockpct');
-			$attacktype_table->dmgreduced = Input::post('dmgreduced');
-			$attacktype_table->overheal = Input::post('overheal');
+			$attacktype->encid = Input::post('encid');
+			$attacktype->attacker = Input::post('attacker');
+			$attacktype->victim = Input::post('victim');
+			$attacktype->swingtype = Input::post('swingtype');
+			$attacktype->type = Input::post('type');
+			$attacktype->starttime = Input::post('starttime');
+			$attacktype->endtime = Input::post('endtime');
+			$attacktype->duration = Input::post('duration');
+			$attacktype->damage = Input::post('damage');
+			$attacktype->encdps = Input::post('encdps');
+			$attacktype->chardps = Input::post('chardps');
+			$attacktype->dps = Input::post('dps');
+			$attacktype->average = Input::post('average');
+			$attacktype->median = Input::post('median');
+			$attacktype->minhit = Input::post('minhit');
+			$attacktype->maxhit = Input::post('maxhit');
+			$attacktype->resist = Input::post('resist');
+			$attacktype->hits = Input::post('hits');
+			$attacktype->crithits = Input::post('crithits');
+			$attacktype->blocked = Input::post('blocked');
+			$attacktype->misses = Input::post('misses');
+			$attacktype->swings = Input::post('swings');
+			$attacktype->tohit = Input::post('tohit');
+			$attacktype->averagedelay = Input::post('averagedelay');
+			$attacktype->critperc = Input::post('critperc');
+			$attacktype->parry = Input::post('parry');
+			$attacktype->parrypct = Input::post('parrypct');
+			$attacktype->block = Input::post('block');
+			$attacktype->blockpct = Input::post('blockpct');
+			$attacktype->dmgreduced = Input::post('dmgreduced');
+			$attacktype->overheal = Input::post('overheal');
 
-			if ($attacktype_table->save())
+			if ($attacktype->save())
 			{
-				Session::set_flash('success', 'Updated attacktype_table #' . $id);
+				Session::set_flash('success', 'Updated attacktype #' . $id);
 
-				Response::redirect('attacktype/table');
+				Response::redirect('attacktype');
 			}
 
 			else
 			{
-				Session::set_flash('error', 'Could not update attacktype_table #' . $id);
+				Session::set_flash('error', 'Could not update attacktype #' . $id);
 			}
 		}
 
@@ -153,66 +153,66 @@ class Controller_Attacktype_Table extends Controller_Template
 		{
 			if (Input::method() == 'POST')
 			{
-				$attacktype_table->encid = $val->validated('encid');
-				$attacktype_table->attacker = $val->validated('attacker');
-				$attacktype_table->victim = $val->validated('victim');
-				$attacktype_table->swingtype = $val->validated('swingtype');
-				$attacktype_table->type = $val->validated('type');
-				$attacktype_table->starttime = $val->validated('starttime');
-				$attacktype_table->endtime = $val->validated('endtime');
-				$attacktype_table->duration = $val->validated('duration');
-				$attacktype_table->damage = $val->validated('damage');
-				$attacktype_table->encdps = $val->validated('encdps');
-				$attacktype_table->chardps = $val->validated('chardps');
-				$attacktype_table->dps = $val->validated('dps');
-				$attacktype_table->average = $val->validated('average');
-				$attacktype_table->median = $val->validated('median');
-				$attacktype_table->minhit = $val->validated('minhit');
-				$attacktype_table->maxhit = $val->validated('maxhit');
-				$attacktype_table->resist = $val->validated('resist');
-				$attacktype_table->hits = $val->validated('hits');
-				$attacktype_table->crithits = $val->validated('crithits');
-				$attacktype_table->blocked = $val->validated('blocked');
-				$attacktype_table->misses = $val->validated('misses');
-				$attacktype_table->swings = $val->validated('swings');
-				$attacktype_table->tohit = $val->validated('tohit');
-				$attacktype_table->averagedelay = $val->validated('averagedelay');
-				$attacktype_table->critperc = $val->validated('critperc');
-				$attacktype_table->parry = $val->validated('parry');
-				$attacktype_table->parrypct = $val->validated('parrypct');
-				$attacktype_table->block = $val->validated('block');
-				$attacktype_table->blockpct = $val->validated('blockpct');
-				$attacktype_table->dmgreduced = $val->validated('dmgreduced');
-				$attacktype_table->overheal = $val->validated('overheal');
+				$attacktype->encid = $val->validated('encid');
+				$attacktype->attacker = $val->validated('attacker');
+				$attacktype->victim = $val->validated('victim');
+				$attacktype->swingtype = $val->validated('swingtype');
+				$attacktype->type = $val->validated('type');
+				$attacktype->starttime = $val->validated('starttime');
+				$attacktype->endtime = $val->validated('endtime');
+				$attacktype->duration = $val->validated('duration');
+				$attacktype->damage = $val->validated('damage');
+				$attacktype->encdps = $val->validated('encdps');
+				$attacktype->chardps = $val->validated('chardps');
+				$attacktype->dps = $val->validated('dps');
+				$attacktype->average = $val->validated('average');
+				$attacktype->median = $val->validated('median');
+				$attacktype->minhit = $val->validated('minhit');
+				$attacktype->maxhit = $val->validated('maxhit');
+				$attacktype->resist = $val->validated('resist');
+				$attacktype->hits = $val->validated('hits');
+				$attacktype->crithits = $val->validated('crithits');
+				$attacktype->blocked = $val->validated('blocked');
+				$attacktype->misses = $val->validated('misses');
+				$attacktype->swings = $val->validated('swings');
+				$attacktype->tohit = $val->validated('tohit');
+				$attacktype->averagedelay = $val->validated('averagedelay');
+				$attacktype->critperc = $val->validated('critperc');
+				$attacktype->parry = $val->validated('parry');
+				$attacktype->parrypct = $val->validated('parrypct');
+				$attacktype->block = $val->validated('block');
+				$attacktype->blockpct = $val->validated('blockpct');
+				$attacktype->dmgreduced = $val->validated('dmgreduced');
+				$attacktype->overheal = $val->validated('overheal');
 
 				Session::set_flash('error', $val->error());
 			}
 
-			$this->template->set_global('attacktype_table', $attacktype_table, false);
+			$this->template->set_global('attacktype', $attacktype, false);
 		}
 
-		$this->template->title = "Attacktype_tables";
-		$this->template->content = View::forge('attacktype/table/edit');
+		$this->template->title = "Attacktype";
+		$this->template->content = View::forge('attacktype/edit');
 
 	}
 
 	public function action_delete($id = null)
 	{
-		is_null($id) and Response::redirect('attacktype/table');
+		is_null($id) and Response::redirect('attacktype');
 
-		if ($attacktype_table = Model_Attacktype_Table::find($id))
+		if ($attacktype = Model_Attacktype::find($id))
 		{
-			$attacktype_table->delete();
+			$attacktype->delete();
 
-			Session::set_flash('success', 'Deleted attacktype_table #'.$id);
+			Session::set_flash('success', 'Deleted attacktype #'.$id);
 		}
 
 		else
 		{
-			Session::set_flash('error', 'Could not delete attacktype_table #'.$id);
+			Session::set_flash('error', 'Could not delete attacktype #'.$id);
 		}
 
-		Response::redirect('attacktype/table');
+		Response::redirect('attacktype');
 
 	}
 
