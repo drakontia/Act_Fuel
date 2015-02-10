@@ -5,6 +5,7 @@
 
 return array(
 	'default' => array(
+        'type' => 'mysqli',
 		'connection'  => array(
 			'dsn'        => 'mysql:host=localhost;dbname=actdb_dev',
 			'username'   => 'user_act',

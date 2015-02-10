@@ -4,7 +4,8 @@
  */
 
 return array(
-	'default' => array(
+	'production' => array(
+        'type' => 'mysqli',
 		'connection'  => array(
 			'dsn'        => 'mysql:host=localhost;dbname=advanced_combat_tracker',
 			'username'   => 'user_act',
