@@ -6,7 +6,7 @@ class Create_current_tables
 {
 	public function up()
 	{
-		\DBUtil::create_table('current_tables', array(
+		\DBUtil::create_table('current_table', array(
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
 			'encid' => array('constraint' => 8, 'type' => 'char'),
 			'ally' => array('constraint' => 1, 'type' => 'char'),
@@ -51,6 +51,6 @@ class Create_current_tables
 
 	public function down()
 	{
-		\DBUtil::drop_table('current_tables');
+		\DBUtil::drop_table('current_table');
 	}
 }

@@ -2,11 +2,11 @@
 
 namespace Fuel\Migrations;
 
-class Create_attacktype_tables
+class Create_attacktype_table
 {
 	public function up()
 	{
-		\DBUtil::create_table('attacktype_tables', array(
+		\DBUtil::create_table('attacktype_table', array(
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
 			'encid' => array('constraint' => 8, 'type' => 'char'),
 			'attacker' => array('constraint' => 64, 'type' => 'varchar'),
@@ -45,6 +45,6 @@ class Create_attacktype_tables
 
 	public function down()
 	{
-		\DBUtil::drop_table('attacktype_tables');
+		\DBUtil::drop_table('attacktype_table');
 	}
 }

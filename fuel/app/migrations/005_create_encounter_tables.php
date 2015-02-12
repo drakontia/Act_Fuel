@@ -6,7 +6,7 @@ class Create_encounter_tables
 {
 	public function up()
 	{
-		\DBUtil::create_table('encounter_tables', array(
+		\DBUtil::create_table('encounter_table', array(
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
 			'encid' => array('constraint' => 8, 'type' => 'char'),
 			'title' => array('constraint' => 64, 'type' => 'varchar'),
@@ -24,6 +24,6 @@ class Create_encounter_tables
 
 	public function down()
 	{
-		\DBUtil::drop_table('encounter_tables');
+		\DBUtil::drop_table('encounter_table');
 	}
 }
