@@ -2,11 +2,11 @@
 
 namespace Fuel\Migrations;
 
-class Create_swing_tables
+class Create_swing_table
 {
 	public function up()
 	{
-		\DBUtil::create_table('swing_tables', array(
+		\DBUtil::create_table('swing_table', array(
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
 			'encid' => array('constraint' => 8, 'type' => 'char'),
 			'stime' => array('type' => 'timestamp'),
@@ -28,6 +28,6 @@ class Create_swing_tables
 
 	public function down()
 	{
-		\DBUtil::drop_table('swing_tables');
+		\DBUtil::drop_table('swing_table');
 	}
 }

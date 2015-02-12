@@ -2,7 +2,7 @@
 
 namespace Fuel\Migrations;
 
-class Create_damagetype_tables
+class Create_damagetype_table
 {
 	public function up()
 	{

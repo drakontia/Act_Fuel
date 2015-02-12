@@ -2,7 +2,7 @@
 
 namespace Fuel\Migrations;
 
-class Create_encounter_tables
+class Create_encounter_table
 {
 	public function up()
 	{

@@ -2,7 +2,7 @@
 
 namespace Fuel\Migrations;
 
-class Create_current_tables
+class Create_current_table
 {
 	public function up()
 	{
