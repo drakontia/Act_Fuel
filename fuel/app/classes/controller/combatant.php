@@ -5,8 +5,8 @@ class Controller_Combatant extends Controller_Template
 	public function action_index($encid = null)
 	{
         $data['combatant'] = Model_Combatant::find('all', array(
-            'where' => array('encid', $encid),
-            'order_by' => array('ally', 'desc'),
+            'where' => array('encid' => $encid),
+            'order_by' => array('ally' => 'desc'),
         ));
 		$this->template->title = "Combatant";
 		$this->template->content = View::forge('combatant/index', $data);

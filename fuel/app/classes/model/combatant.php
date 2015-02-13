@@ -3,6 +3,8 @@ use Orm\Model;
 
 class Model_Combatant extends Model
 {
+    protected static $_table_name = 'combatant_table';
+
 	protected static $_properties = array(
 		'id',
 		'encid',
