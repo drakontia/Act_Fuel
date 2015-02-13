@@ -46,11 +46,7 @@
 			</div>
 			<div class="col-md-4">
 				<h2>ACT DPS</h2>
-                <?php echo Html::anchor('encounter', 'Encounter'); ?>
-                <?php echo Html::anchor('combatant', 'Combatant'); ?>
-                <?php echo Html::anchor('damagetype', 'Damage Type'); ?>
-                <?php echo Html::anchor('current', 'current'); ?>
-                <?php echo Html::anchor('swing', 'Swing'); ?>
+                <p><?php echo Html::anchor('encounter', 'Encounter List'); ?></p>
 			</div>
 			<div class="col-md-4">
 				<h2>Links</h2>

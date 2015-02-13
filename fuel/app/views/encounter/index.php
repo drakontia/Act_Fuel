@@ -4,7 +4,6 @@
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Encid</th>
 			<th>Title</th>
 			<th>Starttime</th>
 			<th>Endtime</th>
@@ -20,20 +19,19 @@
 	<tbody>
 <?php foreach ($encounter as $item): ?>
         <tr>
-			<td><?php echo $item->encid; ?></td>
-			<td><?php echo $item->title; ?></td>
+			<td><?php echo Html::anchor('combatant/view/'.$item->encid, $item->title); ?></td>
 			<td><?php echo $item->starttime; ?></td>
 			<td><?php echo $item->endtime; ?></td>
 			<td><?php echo $item->duration; ?></td>
 			<td><?php echo $item->damage; ?></td>
-			<td><?php echo $item->encdps; ?></td>
+			<td><?php echo round($item->encdps); ?></td>
 			<td><?php echo $item->zone; ?></td>
 			<td><?php echo $item->kills; ?></td>
 			<td><?php echo $item->deaths; ?></td>
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-                        <?php echo Html::anchor('encounter/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('encounter/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('encounter/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>
+                        <?php echo Html::anchor('encounter/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>
                     </div>
 				</div>
 
@@ -43,9 +41,6 @@
 </table>
 
 <?php else: ?>
-<p>No Encounter_tables.</p>
+<p>No Encounter.</p>
 
-<?php endif; ?><p>
-	<?php echo Html::anchor('encounter/create', 'Add new Encounter', array('class' => 'btn btn-success')); ?>
-
-</p>
+<?php endif; ?>
