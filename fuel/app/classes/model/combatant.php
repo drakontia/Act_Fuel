@@ -1,7 +1,7 @@
 <?php
 use Orm\Model;
 
-class Model_Combatant_Table extends Model
+class Model_Combatant extends Model
 {
 	protected static $_properties = array(
 		'id',

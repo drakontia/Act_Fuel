@@ -19,7 +19,7 @@
 	<tbody>
 <?php foreach ($encounter as $item): ?>
         <tr>
-			<td><?php echo Html::anchor('combatant/view/'.$item->encid, $item->title); ?></td>
+			<td><?php echo Html::anchor('combatant/index/'.$item->encid, $item->title); ?></td>
 			<td><?php echo $item->starttime; ?></td>
 			<td><?php echo $item->endtime; ?></td>
 			<td><?php echo $item->duration; ?></td>
