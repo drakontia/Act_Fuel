@@ -1,27 +1,27 @@
 <?php
-class Controller_Swing_Table extends Controller_Template
+class Controller_Swing extends Controller_Template
 {
 
 	public function action_index()
 	{
-		$data['swing_tables'] = Model_Swing_Table::find('all');
-		$this->template->title = "Swing_tables";
-		$this->template->content = View::forge('swing/table/index', $data);
+		$data['swings'] = Model_Swing::find('all');
+		$this->template->title = "Swings";
+		$this->template->content = View::forge('swing/index', $data);
 
 	}
 
 	public function action_view($id = null)
 	{
-		is_null($id) and Response::redirect('swing/table');
+		is_null($id) and Response::redirect('swing');
 
-		if ( ! $data['swing_table'] = Model_Swing_Table::find($id))
+		if ( ! $data['swing'] = Model_Swing::find($id))
 		{
-			Session::set_flash('error', 'Could not find swing_table #'.$id);
-			Response::redirect('swing/table');
+			Session::set_flash('error', 'Could not find swing #'.$id);
+			Response::redirect('swing');
 		}
 
-		$this->template->title = "Swing_table";
-		$this->template->content = View::forge('swing/table/view', $data);
+		$this->template->title = "Swing";
+		$this->template->content = View::forge('swing/view', $data);
 
 	}
 
@@ -29,11 +29,11 @@ class Controller_Swing_Table extends Controller_Template
 	{
 		if (Input::method() == 'POST')
 		{
-			$val = Model_Swing_Table::validate('create');
+			$val = Model_Swing::validate('create');
 
 			if ($val->run())
 			{
-				$swing_table = Model_Swing_Table::forge(array(
+				$swing = Model_Swing::forge(array(
 					'encid' => Input::post('encid'),
 					'stime' => Input::post('stime'),
 					'attacker' => Input::post('attacker'),
@@ -50,16 +50,16 @@ class Controller_Swing_Table extends Controller_Template
 					'overheal' => Input::post('overheal'),
 				));
 
-				if ($swing_table and $swing_table->save())
+				if ($swing and $swing->save())
 				{
-					Session::set_flash('success', 'Added swing_table #'.$swing_table->id.'.');
+					Session::set_flash('success', 'Added swing #'.$swing->id.'.');
 
-					Response::redirect('swing/table');
+					Response::redirect('swing');
 				}
 
 				else
 				{
-					Session::set_flash('error', 'Could not save swing_table.');
+					Session::set_flash('error', 'Could not save swing.');
 				}
 			}
 			else
@@ -68,50 +68,50 @@ class Controller_Swing_Table extends Controller_Template
 			}
 		}
 
-		$this->template->title = "Swing_Tables";
-		$this->template->content = View::forge('swing/table/create');
+		$this->template->title = "Swing";
+		$this->template->content = View::forge('swing/create');
 
 	}
 
 	public function action_edit($id = null)
 	{
-		is_null($id) and Response::redirect('swing/table');
+		is_null($id) and Response::redirect('swing');
 
-		if ( ! $swing_table = Model_Swing_Table::find($id))
+		if ( ! $swing = Model_Swing::find($id))
 		{
-			Session::set_flash('error', 'Could not find swing_table #'.$id);
-			Response::redirect('swing/table');
+			Session::set_flash('error', 'Could not find swing #'.$id);
+			Response::redirect('swing');
 		}
 
-		$val = Model_Swing_Table::validate('edit');
+		$val = Model_Swing::validate('edit');
 
 		if ($val->run())
 		{
-			$swing_table->encid = Input::post('encid');
-			$swing_table->stime = Input::post('stime');
-			$swing_table->attacker = Input::post('attacker');
-			$swing_table->swingtype = Input::post('swingtype');
-			$swing_table->attacktype = Input::post('attacktype');
-			$swing_table->damagetype = Input::post('damagetype');
-			$swing_table->victim = Input::post('victim');
-			$swing_table->damage = Input::post('damage');
-			$swing_table->damagestring = Input::post('damagestring');
-			$swing_table->critical = Input::post('critical');
-			$swing_table->special = Input::post('special');
-			$swing_table->dmgadjust = Input::post('dmgadjust');
-			$swing_table->dmgreduced = Input::post('dmgreduced');
-			$swing_table->overheal = Input::post('overheal');
+			$swing->encid = Input::post('encid');
+			$swing->stime = Input::post('stime');
+			$swing->attacker = Input::post('attacker');
+			$swing->swingtype = Input::post('swingtype');
+			$swing->attacktype = Input::post('attacktype');
+			$swing->damagetype = Input::post('damagetype');
+			$swing->victim = Input::post('victim');
+			$swing->damage = Input::post('damage');
+			$swing->damagestring = Input::post('damagestring');
+			$swing->critical = Input::post('critical');
+			$swing->special = Input::post('special');
+			$swing->dmgadjust = Input::post('dmgadjust');
+			$swing->dmgreduced = Input::post('dmgreduced');
+			$swing->overheal = Input::post('overheal');
 
-			if ($swing_table->save())
+			if ($swing->save())
 			{
-				Session::set_flash('success', 'Updated swing_table #' . $id);
+				Session::set_flash('success', 'Updated swing #' . $id);
 
-				Response::redirect('swing/table');
+				Response::redirect('swing');
 			}
 
 			else
 			{
-				Session::set_flash('error', 'Could not update swing_table #' . $id);
+				Session::set_flash('error', 'Could not update swing #' . $id);
 			}
 		}
 
@@ -119,49 +119,49 @@ class Controller_Swing_Table extends Controller_Template
 		{
 			if (Input::method() == 'POST')
 			{
-				$swing_table->encid = $val->validated('encid');
-				$swing_table->stime = $val->validated('stime');
-				$swing_table->attacker = $val->validated('attacker');
-				$swing_table->swingtype = $val->validated('swingtype');
-				$swing_table->attacktype = $val->validated('attacktype');
-				$swing_table->damagetype = $val->validated('damagetype');
-				$swing_table->victim = $val->validated('victim');
-				$swing_table->damage = $val->validated('damage');
-				$swing_table->damagestring = $val->validated('damagestring');
-				$swing_table->critical = $val->validated('critical');
-				$swing_table->special = $val->validated('special');
-				$swing_table->dmgadjust = $val->validated('dmgadjust');
-				$swing_table->dmgreduced = $val->validated('dmgreduced');
-				$swing_table->overheal = $val->validated('overheal');
+				$swing->encid = $val->validated('encid');
+				$swing->stime = $val->validated('stime');
+				$swing->attacker = $val->validated('attacker');
+				$swing->swingtype = $val->validated('swingtype');
+				$swing->attacktype = $val->validated('attacktype');
+				$swing->damagetype = $val->validated('damagetype');
+				$swing->victim = $val->validated('victim');
+				$swing->damage = $val->validated('damage');
+				$swing->damagestring = $val->validated('damagestring');
+				$swing->critical = $val->validated('critical');
+				$swing->special = $val->validated('special');
+				$swing->dmgadjust = $val->validated('dmgadjust');
+				$swing->dmgreduced = $val->validated('dmgreduced');
+				$swing->overheal = $val->validated('overheal');
 
 				Session::set_flash('error', $val->error());
 			}
 
-			$this->template->set_global('swing_table', $swing_table, false);
+			$this->template->set_global('swing', $swing, false);
 		}
 
-		$this->template->title = "Swing_tables";
-		$this->template->content = View::forge('swing/table/edit');
+		$this->template->title = "Swings";
+		$this->template->content = View::forge('swing/edit');
 
 	}
 
 	public function action_delete($id = null)
 	{
-		is_null($id) and Response::redirect('swing/table');
+		is_null($id) and Response::redirect('swing');
 
-		if ($swing_table = Model_Swing_Table::find($id))
+		if ($swing = Model_Swing::find($id))
 		{
-			$swing_table->delete();
+			$swing->delete();
 
-			Session::set_flash('success', 'Deleted swing_table #'.$id);
+			Session::set_flash('success', 'Deleted swing #'.$id);
 		}
 
 		else
 		{
-			Session::set_flash('error', 'Could not delete swing_table #'.$id);
+			Session::set_flash('error', 'Could not delete swing #'.$id);
 		}
 
-		Response::redirect('swing/table');
+		Response::redirect('swing');
 
 	}
 
