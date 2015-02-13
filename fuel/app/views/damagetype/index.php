@@ -1,10 +1,9 @@
-<h2>Listing <span class='muted'>Damagetype_tables</span></h2>
+<h2>Listing <span class='muted'>Damagetypes</span></h2>
 <br>
-<?php if ($damagetype_tables): ?>
+<?php if ($damagetype): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Encid</th>
 			<th>Combatant</th>
 			<th>Grouping</th>
 			<th>Type</th>
@@ -34,9 +33,8 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($damagetype_tables as $item): ?>		<tr>
+<?php foreach ($damagetype as $item): ?>		<tr>
 
-			<td><?php echo $item->encid; ?></td>
 			<td><?php echo $item->combatant; ?></td>
 			<td><?php echo $item->grouping; ?></td>
 			<td><?php echo $item->type; ?></td>
@@ -65,7 +63,7 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('damagetype/table/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('damagetype/table/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('damagetype/table/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('damagetype/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('damagetype/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('damagetype/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
 				</div>
 
 			</td>
@@ -74,9 +72,9 @@
 </table>
 
 <?php else: ?>
-<p>No Damagetype_tables.</p>
+<p>No Damagetype.</p>
 
 <?php endif; ?><p>
-	<?php echo Html::anchor('damagetype/table/create', 'Add new Damagetype table', array('class' => 'btn btn-success')); ?>
+	<?php echo Html::anchor('damagetype/create', 'Add new Damagetype', array('class' => 'btn btn-success')); ?>
 
 </p>

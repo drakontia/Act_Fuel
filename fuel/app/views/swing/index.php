@@ -1,10 +1,9 @@
-<h2>Listing <span class='muted'>Swing_tables</span></h2>
+<h2>Listing <span class='muted'>Swings</span></h2>
 <br>
-<?php if ($swing_tables): ?>
+<?php if ($swings): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Encid</th>
 			<th>Stime</th>
 			<th>Attacker</th>
 			<th>Swingtype</th>
@@ -22,9 +21,8 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($swing_tables as $item): ?>		<tr>
+<?php foreach ($swing as $item): ?>		<tr>
 
-			<td><?php echo $item->encid; ?></td>
 			<td><?php echo $item->stime; ?></td>
 			<td><?php echo $item->attacker; ?></td>
 			<td><?php echo $item->swingtype; ?></td>
@@ -41,7 +39,7 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('swing/table/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('swing/table/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('swing/table/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('swing/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('swing/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('swing/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
 				</div>
 
 			</td>
@@ -50,9 +48,9 @@
 </table>
 
 <?php else: ?>
-<p>No Swing_tables.</p>
+<p>No Swing.</p>
 
 <?php endif; ?><p>
-	<?php echo Html::anchor('swing/table/create', 'Add new Swing table', array('class' => 'btn btn-success')); ?>
+	<?php echo Html::anchor('swing/create', 'Add new Swing', array('class' => 'btn btn-success')); ?>
 
 </p>

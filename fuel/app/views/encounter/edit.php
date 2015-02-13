@@ -1,7 +1,7 @@
-<h2>Editing <span class='muted'>Encounter_table</span></h2>
+<h2>Editing <span class='muted'>Encounter</span></h2>
 <br>
 
-<?php echo render('encounter/table/_form'); ?>
+<?php echo render('encounter/_form'); ?>
 <p>
-	<?php echo Html::anchor('encounter/table/view/'.$encounter_table->id, 'View'); ?> |
-	<?php echo Html::anchor('encounter/table', 'Back'); ?></p>
+	<?php echo Html::anchor('encounter/view/'.$encounter->id, 'View'); ?> |
+	<?php echo Html::anchor('encounter', 'Back'); ?></p>

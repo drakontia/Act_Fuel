@@ -1,6 +1,6 @@
-<h2>Listing <span class='muted'>Combatant_tables</span></h2>
+<h2>Listing <span class='muted'>Combatants</span></h2>
 <br>
-<?php if ($combatant_tables): ?>
+<?php if ($combatant): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
@@ -45,7 +45,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($combatant_tables as $item): ?>		<tr>
+<?php foreach ($combatant as $item): ?>		<tr>
 
 			<td><?php echo $item->encid; ?></td>
 			<td><?php echo $item->ally; ?></td>
@@ -87,7 +87,7 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('combatant/table/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('combatant/table/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('combatant/table/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('combatant/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('combatant/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('combatant/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
 				</div>
 
 			</td>
@@ -96,9 +96,9 @@
 </table>
 
 <?php else: ?>
-<p>No Combatant_tables.</p>
+<p>No Combatants.</p>
 
 <?php endif; ?><p>
-	<?php echo Html::anchor('combatant/table/create', 'Add new Combatant table', array('class' => 'btn btn-success')); ?>
+	<?php echo Html::anchor('combatant/create', 'Add new Combatant', array('class' => 'btn btn-success')); ?>
 
 </p>

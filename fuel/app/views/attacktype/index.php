@@ -39,7 +39,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($attacktype_tables as $item): ?>		<tr>
+<?php foreach ($attacktype as $item): ?>		<tr>
 
 			<td><?php echo $item->encid; ?></td>
 			<td><?php echo $item->attacker; ?></td>

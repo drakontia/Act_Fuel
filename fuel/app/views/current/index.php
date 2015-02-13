@@ -1,6 +1,6 @@
-<h2>Listing <span class='muted'>Current_tables</span></h2>
+<h2>Listing <span class='muted'>Currents</span></h2>
 <br>
-<?php if ($current_tables): ?>
+<?php if ($current): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
@@ -45,7 +45,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($current_tables as $item): ?>		<tr>
+<?php foreach ($current as $item): ?>		<tr>
 
 			<td><?php echo $item->encid; ?></td>
 			<td><?php echo $item->ally; ?></td>
@@ -87,7 +87,7 @@
 			<td>
 				<div class="btn-toolbar">
 					<div class="btn-group">
-						<?php echo Html::anchor('current/table/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('current/table/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('current/table/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
+						<?php echo Html::anchor('current/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('current/edit/'.$item->id, '<i class="icon-wrench"></i> Edit', array('class' => 'btn btn-small')); ?>						<?php echo Html::anchor('current/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>					</div>
 				</div>
 
 			</td>
@@ -96,9 +96,9 @@
 </table>
 
 <?php else: ?>
-<p>No Current_tables.</p>
+<p>No Current.</p>
 
 <?php endif; ?><p>
-	<?php echo Html::anchor('current/table/create', 'Add new Current table', array('class' => 'btn btn-success')); ?>
+	<?php echo Html::anchor('current/create', 'Add new Current', array('class' => 'btn btn-success')); ?>
 
 </p>

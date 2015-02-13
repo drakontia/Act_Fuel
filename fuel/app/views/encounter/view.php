@@ -1,35 +1,35 @@
-<h2>Viewing <span class='muted'>#<?php echo $encounter_table->id; ?></span></h2>
+<h2>Viewing <span class='muted'>#<?php echo $encounter->id; ?></span></h2>
 
 <p>
 	<strong>Encid:</strong>
-	<?php echo $encounter_table->encid; ?></p>
+	<?php echo $encounter->encid; ?></p>
 <p>
 	<strong>Title:</strong>
-	<?php echo $encounter_table->title; ?></p>
+	<?php echo $encounter->title; ?></p>
 <p>
 	<strong>Starttime:</strong>
-	<?php echo $encounter_table->starttime; ?></p>
+	<?php echo $encounter->starttime; ?></p>
 <p>
 	<strong>Endtime:</strong>
-	<?php echo $encounter_table->endtime; ?></p>
+	<?php echo $encounter->endtime; ?></p>
 <p>
 	<strong>Duration:</strong>
-	<?php echo $encounter_table->duration; ?></p>
+	<?php echo $encounter->duration; ?></p>
 <p>
 	<strong>Damage:</strong>
-	<?php echo $encounter_table->damage; ?></p>
+	<?php echo $encounter->damage; ?></p>
 <p>
 	<strong>Encdps:</strong>
-	<?php echo $encounter_table->encdps; ?></p>
+	<?php echo $encounter->encdps; ?></p>
 <p>
 	<strong>Zone:</strong>
-	<?php echo $encounter_table->zone; ?></p>
+	<?php echo $encounter->zone; ?></p>
 <p>
 	<strong>Kills:</strong>
-	<?php echo $encounter_table->kills; ?></p>
+	<?php echo $encounter->kills; ?></p>
 <p>
 	<strong>Deaths:</strong>
-	<?php echo $encounter_table->deaths; ?></p>
+	<?php echo $encounter->deaths; ?></p>
 
-<?php echo Html::anchor('encounter/table/edit/'.$encounter_table->id, 'Edit'); ?> |
-<?php echo Html::anchor('encounter/table', 'Back'); ?>
+<?php echo Html::anchor('encounter/edit/'.$encounter->id, 'Edit'); ?> |
+<?php echo Html::anchor('encounter/index', 'Back'); ?>
