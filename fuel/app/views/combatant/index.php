@@ -29,11 +29,12 @@
 	<tbody>
 <?php foreach ($combatant as $item): ?>
         <tr>
-			<td><?php echo Html::anchor('damagetype/view/'.$encid.'/'.$item->name, $item->name); ?></td>
+<?php $escapedurl = htmlentities("damagetype/view/'.$encid.'/'.$item->name", ENT_COMPAT); ?>
+			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
 			<td><?php echo $item->job; ?></td>
 			<td><?php echo strftime('%c', strtotime($item->starttime)); ?></td>
 			<td><?php echo strftime('%c', strtotime($item->endtime)); ?></td>
-			<td><?php echo sprintf ('%d:%d', $item->duration / 60, $item->duration % 60); ?></td>
+			<td><?php echo sprintf ("%'.02d:%'.02d", $item->duration / 60, $item->duration % 60); ?></td>
 			<td><?php echo round($item->damage); ?></td>
 			<td><?php echo $item->damageperc; ?></td>
 			<td><?php echo round($item->encdps); ?></td>
