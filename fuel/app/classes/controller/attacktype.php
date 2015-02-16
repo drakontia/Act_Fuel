@@ -14,37 +14,37 @@ class Controller_Attacktype extends Controller_Template
 	{
 		is_null($encid) and Response::redirect('attacktype');
 
-        $where = array('encid' => $encid);
+        $where[] = array('encid' => $encid);
 
         if ( ! $attacker   = Input::param('attacker'))
         {
             $data['name'] = $attacker;
-            $where .= array('attacker' => $attacker);
+            $where[] = array('attacker' => $attacker);
 
             if ( ! $swingtype  = Input::param('swingtype') and ! $swingtype2 = Input::param('swingtype2'))
             {
-                $where .= array('swingtype' => $swingtype);
-                $where .= array('swingtype2' => $swingtype2);
+                $where[] = array('swingtype' => $swingtype);
+                $where[] = array('swingtype2' => $swingtype2);
             }
             elseif ( ! $swingtype  = Input::param('swingtype'))
             {
-                $where .= array('swingtype' => $swingtype);
+                $where[] = array('swingtype' => $swingtype);
             }
         }
 
         if ( ! $victim= Input::param('victim'))
         {
             $data['name'] = $victim;
-            $where .= array('victim' => $victim);
+            $where[] = array('victim' => $victim);
 
             if ( ! $swingtype  = Input::param('swingtype') and ! $swingtype2 = Input::param('swingtype2'))
             {
-                $where .= array('swingtype' => $swingtype);
-                $where .= array('swingtype2' => $swingtype2);
+                $where[] = array('swingtype' => $swingtype);
+                $where[] = array('swingtype2' => $swingtype2);
             }
             elseif ( ! $swingtype  = Input::param('swingtype'))
             {
-                $where .= array('swingtype' => $swingtype);
+                $where[] = array('swingtype' => $swingtype);
             }
         }
 
