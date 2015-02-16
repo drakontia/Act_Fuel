@@ -4,11 +4,16 @@ class Controller_Combatant extends Controller_Template
 
 	public function action_index($encid = null)
 	{
+		is_null($encid) and Response::redirect('encounter/index');
+
+        $data['encid'] = $encid;
         $data['combatant'] = Model_Combatant::find('all', array(
             'where' => array('encid' => $encid),
-            'order_by' => array('ally' => 'desc'),
+            'order_by' => array('job' => 'desc'),
         ));
-		$this->template->title = "Combatant";
+        $this->template->title = Model_Encounter::find('title', array(
+            'where' => array('encid' => $encid)
+        ));
 		$this->template->content = View::forge('combatant/index', $data);
 
 	}
