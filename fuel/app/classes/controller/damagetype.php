@@ -14,13 +14,13 @@ class Controller_Damagetype extends Controller_Template
 	{
 		(is_null($encid) || is_null($name)) and Response::redirect('combatant/view/'.$encid);
 
-        $data['name'] = $name;
+        $data['name'] = html_entity_decode($name);
         if ( ! $data['damagetype'] = Model_Damagetype::find('all', array(
-            'where' => array(array('encid' => $encid), array('name' => $name)),
+            'where' => array(array('encid' => $encid), array('name' => html_entity_decode($name))),
             'order_by' => array('job' => 'desc'),
         )))
 		{
-			Session::set_flash('error', 'Could not find damagetype '.$name);
+			Session::set_flash('error', 'Could not find damagetype '.html_entity_decode($name));
 			Response::redirect('combatant/index/'.$encid);
 		};
 
