@@ -29,7 +29,7 @@
 	<tbody>
 <?php foreach ($combatant as $item): ?>
         <tr>
-<?php $escapedurl = htmlentities("damagetype/view/'.$encid.'/'.$item->name", ENT_COMPAT); ?>
+<?php $escapedurl = htmlentities('damagetype/view/'.$encid.'/'.$item->name, ENT_COMPAT); ?>
 			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
 			<td><?php echo $item->job; ?></td>
 			<td><?php echo strftime('%c', strtotime($item->starttime)); ?></td>
