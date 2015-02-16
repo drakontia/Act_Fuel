@@ -1,83 +1,81 @@
-<h2>Viewing <span class='muted'>#<?php echo $damagetype_table->id; ?></span></h2>
+<h2>Viewing <span class='muted'><?php echo $damagetype->combatant; ?></span></h2>
 
-<p>
-	<strong>Encid:</strong>
-	<?php echo $damagetype_table->encid; ?></p>
-<p>
-	<strong>Combatant:</strong>
-	<?php echo $damagetype_table->combatant; ?></p>
-<p>
-	<strong>Grouping:</strong>
-	<?php echo $damagetype_table->grouping; ?></p>
-<p>
-	<strong>Type:</strong>
-	<?php echo $damagetype_table->type; ?></p>
-<p>
-	<strong>Starttime:</strong>
-	<?php echo $damagetype_table->starttime; ?></p>
-<p>
-	<strong>Endtime:</strong>
-	<?php echo $damagetype_table->endtime; ?></p>
-<p>
-	<strong>Duration:</strong>
-	<?php echo $damagetype_table->duration; ?></p>
-<p>
-	<strong>Damage:</strong>
-	<?php echo $damagetype_table->damage; ?></p>
-<p>
-	<strong>Encdps:</strong>
-	<?php echo $damagetype_table->encdps; ?></p>
-<p>
-	<strong>Chardps:</strong>
-	<?php echo $damagetype_table->chardps; ?></p>
-<p>
-	<strong>Dps:</strong>
-	<?php echo $damagetype_table->dps; ?></p>
-<p>
-	<strong>Average:</strong>
-	<?php echo $damagetype_table->average; ?></p>
-<p>
-	<strong>Median:</strong>
-	<?php echo $damagetype_table->median; ?></p>
-<p>
-	<strong>Minhit:</strong>
-	<?php echo $damagetype_table->minhit; ?></p>
-<p>
-	<strong>Maxhit:</strong>
-	<?php echo $damagetype_table->maxhit; ?></p>
-<p>
-	<strong>Hits:</strong>
-	<?php echo $damagetype_table->hits; ?></p>
-<p>
-	<strong>Crithits:</strong>
-	<?php echo $damagetype_table->crithits; ?></p>
-<p>
-	<strong>Blocked:</strong>
-	<?php echo $damagetype_table->blocked; ?></p>
-<p>
-	<strong>Misses:</strong>
-	<?php echo $damagetype_table->misses; ?></p>
-<p>
-	<strong>Swings:</strong>
-	<?php echo $damagetype_table->swings; ?></p>
-<p>
-	<strong>Tohit:</strong>
-	<?php echo $damagetype_table->tohit; ?></p>
-<p>
-	<strong>Averagedelay:</strong>
-	<?php echo $damagetype_table->averagedelay; ?></p>
-<p>
-	<strong>Critperc:</strong>
-	<?php echo $damagetype_table->critperc; ?></p>
-<p>
-	<strong>Parrypct:</strong>
-	<?php echo $damagetype_table->parrypct; ?></p>
-<p>
-	<strong>Blockpct:</strong>
-	<?php echo $damagetype_table->blockpct; ?></p>
-<p>
-	<strong>Overheal:</strong>
-	<?php echo $damagetype_table->overheal; ?></p>
+<br>
+<?php if ($damagetype): ?>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Combatant</th>
+			<th>Grouping</th>
+			<th>Type</th>
+			<th>Starttime</th>
+			<th>Endtime</th>
+			<th>Duration</th>
+			<th>Damage</th>
+			<th>Encdps</th>
+			<th>Chardps</th>
+			<th>Dps</th>
+			<th>Average</th>
+			<th>Median</th>
+			<th>Minhit</th>
+			<th>Maxhit</th>
+			<th>Hits</th>
+			<th>Crithits</th>
+			<th>Blocked</th>
+			<th>Misses</th>
+			<th>Swings</th>
+			<th>Tohit</th>
+			<th>Averagedelay</th>
+			<th>Critperc</th>
+			<th>Parrypct</th>
+			<th>Blockpct</th>
+			<th>Overheal</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach ($damagetype as $item): ?>
+        <tr>
+			<td><?php echo $item->combatant; ?></td>
+			<td><?php echo $item->grouping; ?></td>
+			<td><?php echo $item->type; ?></td>
+			<td><?php echo $item->starttime; ?></td>
+			<td><?php echo $item->endtime; ?></td>
+			<td><?php echo $item->duration; ?></td>
+			<td><?php echo $item->damage; ?></td>
+			<td><?php echo $item->encdps; ?></td>
+			<td><?php echo $item->chardps; ?></td>
+			<td><?php echo $item->dps; ?></td>
+			<td><?php echo $item->average; ?></td>
+			<td><?php echo $item->median; ?></td>
+			<td><?php echo $item->minhit; ?></td>
+			<td><?php echo $item->maxhit; ?></td>
+			<td><?php echo $item->hits; ?></td>
+			<td><?php echo $item->crithits; ?></td>
+			<td><?php echo $item->blocked; ?></td>
+			<td><?php echo $item->misses; ?></td>
+			<td><?php echo $item->swings; ?></td>
+			<td><?php echo $item->tohit; ?></td>
+			<td><?php echo $item->averagedelay; ?></td>
+			<td><?php echo $item->critperc; ?></td>
+			<td><?php echo $item->parrypct; ?></td>
+			<td><?php echo $item->blockpct; ?></td>
+			<td><?php echo $item->overheal; ?></td>
+			<td>
+				<div class="btn-toolbar">
+					<div class="btn-group">
+                        <?php echo Html::anchor('damagetype/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>
+                    </div>
+				</div>
 
-<?php echo Html::anchor('damagetype/table/edit/'.$damagetype_table->id, 'Edit'); ?> |
-<?php echo Html::anchor('damagetype/table', 'Back'); ?>
+			</td>
+		</tr>
+<?php endforeach; ?>
+    </tbody>
+</table>
+
+<?php else: ?>
+<p>No Damagetype.</p>
+
+<?php endif; ?>
+<?php echo Html::anchor('combatant/view', 'Back'); ?>
