@@ -5,8 +5,6 @@
 <table class="table table-bordered">
 	<thead>
 		<tr>
-			<th>Combatant</th>
-			<th>Grouping</th>
 			<th>Type</th>
 			<th>Starttime</th>
 			<th>Endtime</th>
@@ -30,15 +28,13 @@
 			<th>Parrypct</th>
 			<th>Blockpct</th>
 			<th>Overheal</th>
-			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
 <?php foreach ($damagetype as $item): ?>
         <tr>
-			<td><?php echo $item->combatant; ?></td>
-			<td><?php echo $item->grouping; ?></td>
-			<td><?php echo $item->type; ?></td>
+<?php $escapedurl = htmlentities('damagetype/view/'.$encid.'?'.$grouping, ENT_COMPAT); ?>
+			<td><?php echo Html::anchor($escapedurl, $item->type); ?></td>
 			<td><?php echo $item->starttime; ?></td>
 			<td><?php echo $item->endtime; ?></td>
 			<td><?php echo $item->duration; ?></td>
@@ -61,14 +57,6 @@
 			<td><?php echo $item->parrypct; ?></td>
 			<td><?php echo $item->blockpct; ?></td>
 			<td><?php echo $item->overheal; ?></td>
-			<td>
-				<div class="btn-toolbar">
-					<div class="btn-group">
-                        <?php echo Html::anchor('damagetype/delete/'.$item->id, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?>
-                    </div>
-				</div>
-
-			</td>
 		</tr>
 <?php endforeach; ?>
     </tbody>
