@@ -10,17 +10,24 @@ class Controller_Damagetype extends Controller_Template
 
 	}
 
-	public function action_view($id = null)
+	public function action_view($encid = null, $name = null)
 	{
-		is_null($id) and Response::redirect('damagetype');
+		(is_null($encid) || is_null($name)) and Response::redirect('combatant/view/'.$encid);
 
-		if ( ! $data['damagetype'] = Model_Damagetype::find($id))
+        $data['name'] = $name;
+        if ( ! $data['damagetype'] = Model_Damagetype::find('all', array(
+            'where' => array('encid' => $encid, 'name' => $name),
+            'order_by' => array('job' => 'desc'),
+        )))
 		{
-			Session::set_flash('error', 'Could not find damagetype #'.$id);
-			Response::redirect('damagetype');
-		}
+			Session::set_flash('error', 'Could not find damagetype '.$name);
+			Response::redirect('combatant/index/'.$encid);
+		};
 
-		$this->template->title = "Damagetype";
+        $this->template->title = Model_Encounter::find('first', array(
+            'select' => array('zone'),
+            'where' => array('encid' => $encid),
+        ))->zone;
 		$this->template->content = View::forge('damagetype/view', $data);
 
 	}
