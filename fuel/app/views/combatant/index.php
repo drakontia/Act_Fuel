@@ -32,8 +32,8 @@
 			<td><?php echo $item->name; ?></td>
 			<td><?php echo Html::anchor('damagetype/view/'.$encid.'/'.$item->name, $item->name); ?></td>
 			<td><?php echo $item->job; ?></td>
-			<td><?php strftime('%c', $item->starttime); ?></td>
-			<td><?php strftime('%c', $item->endtime); ?></td>
+			<td><?php strftime('%c', strtotime($item->starttime)); ?></td>
+			<td><?php strftime('%c', strtotime($item->endtime)); ?></td>
 			<td><?php sprintf ('%d:%d', $item->duration / 60, $item->duration % 60); ?></td>
 			<td><?php echo round($item->damage); ?></td>
 			<td><?php echo $item->damageperc; ?></td>
