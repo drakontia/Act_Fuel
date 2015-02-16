@@ -1,98 +1,74 @@
-<h2>Viewing <span class='muted'>#<?php echo $attacktype->id; ?></span></h2>
+<h2>Listing <span class='muted'><?php echo $name ?></span></h2>
+<br>
+<?php if ($attacktype): ?>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Type</th>
+			<th>Starttime</th>
+			<th>Endtime</th>
+			<th>Duration</th>
+			<th>Damage</th>
+			<th>Encdps</th>
+			<th>Chardps</th>
+			<th>Dps</th>
+			<th>Average</th>
+			<th>Median</th>
+			<th>Minhit</th>
+			<th>Maxhit</th>
+			<th>Resist</th>
+			<th>Hits</th>
+			<th>Crithits</th>
+			<th>Blocked</th>
+			<th>Misses</th>
+			<th>Swings</th>
+			<th>Tohit</th>
+			<th>Averagedelay</th>
+			<th>Critperc</th>
+			<th>Parry</th>
+			<th>Parrypct</th>
+			<th>Block</th>
+			<th>Blockpct</th>
+			<th>Dmgreduced</th>
+			<th>Overheal</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach ($attacktype as $item): ?>
+        <tr>
+			<td><?php echo $item->type; ?></td>
+			<td><?php echo $item->starttime; ?></td>
+			<td><?php echo $item->endtime; ?></td>
+			<td><?php echo $item->duration; ?></td>
+			<td><?php echo $item->damage; ?></td>
+			<td><?php echo $item->encdps; ?></td>
+			<td><?php echo $item->chardps; ?></td>
+			<td><?php echo $item->dps; ?></td>
+			<td><?php echo $item->average; ?></td>
+			<td><?php echo $item->median; ?></td>
+			<td><?php echo $item->minhit; ?></td>
+			<td><?php echo $item->maxhit; ?></td>
+			<td><?php echo $item->resist; ?></td>
+			<td><?php echo $item->hits; ?></td>
+			<td><?php echo $item->crithits; ?></td>
+			<td><?php echo $item->blocked; ?></td>
+			<td><?php echo $item->misses; ?></td>
+			<td><?php echo $item->swings; ?></td>
+			<td><?php echo $item->tohit; ?></td>
+			<td><?php echo $item->averagedelay; ?></td>
+			<td><?php echo $item->critperc; ?></td>
+			<td><?php echo $item->parry; ?></td>
+			<td><?php echo $item->parrypct; ?></td>
+			<td><?php echo $item->block; ?></td>
+			<td><?php echo $item->blockpct; ?></td>
+			<td><?php echo $item->dmgreduced; ?></td>
+			<td><?php echo $item->overheal; ?></td>
+		</tr>
+<?php endforeach; ?>
+    </tbody>
+</table>
 
-<p>
-	<strong>Encid:</strong>
-	<?php echo $attacktype->encid; ?></p>
-<p>
-	<strong>Attacker:</strong>
-	<?php echo $attacktype->attacker; ?></p>
-<p>
-	<strong>Victim:</strong>
-	<?php echo $attacktype->victim; ?></p>
-<p>
-	<strong>Swingtype:</strong>
-	<?php echo $attacktype->swingtype; ?></p>
-<p>
-	<strong>Type:</strong>
-	<?php echo $attacktype->type; ?></p>
-<p>
-	<strong>Starttime:</strong>
-	<?php echo $attacktype->starttime; ?></p>
-<p>
-	<strong>Endtime:</strong>
-	<?php echo $attacktype->endtime; ?></p>
-<p>
-	<strong>Duration:</strong>
-	<?php echo $attacktype->duration; ?></p>
-<p>
-	<strong>Damage:</strong>
-	<?php echo $attacktype->damage; ?></p>
-<p>
-	<strong>Encdps:</strong>
-	<?php echo $attacktype->encdps; ?></p>
-<p>
-	<strong>Chardps:</strong>
-	<?php echo $attacktype->chardps; ?></p>
-<p>
-	<strong>Dps:</strong>
-	<?php echo $attacktype->dps; ?></p>
-<p>
-	<strong>Average:</strong>
-	<?php echo $attacktype->average; ?></p>
-<p>
-	<strong>Median:</strong>
-	<?php echo $attacktype->median; ?></p>
-<p>
-	<strong>Minhit:</strong>
-	<?php echo $attacktype->minhit; ?></p>
-<p>
-	<strong>Maxhit:</strong>
-	<?php echo $attacktype->maxhit; ?></p>
-<p>
-	<strong>Resist:</strong>
-	<?php echo $attacktype->resist; ?></p>
-<p>
-	<strong>Hits:</strong>
-	<?php echo $attacktype->hits; ?></p>
-<p>
-	<strong>Crithits:</strong>
-	<?php echo $attacktype->crithits; ?></p>
-<p>
-	<strong>Blocked:</strong>
-	<?php echo $attacktype->blocked; ?></p>
-<p>
-	<strong>Misses:</strong>
-	<?php echo $attacktype->misses; ?></p>
-<p>
-	<strong>Swings:</strong>
-	<?php echo $attacktype->swings; ?></p>
-<p>
-	<strong>Tohit:</strong>
-	<?php echo $attacktype->tohit; ?></p>
-<p>
-	<strong>Averagedelay:</strong>
-	<?php echo $attacktype->averagedelay; ?></p>
-<p>
-	<strong>Critperc:</strong>
-	<?php echo $attacktype->critperc; ?></p>
-<p>
-	<strong>Parry:</strong>
-	<?php echo $attacktype->parry; ?></p>
-<p>
-	<strong>Parrypct:</strong>
-	<?php echo $attacktype->parrypct; ?></p>
-<p>
-	<strong>Block:</strong>
-	<?php echo $attacktype->block; ?></p>
-<p>
-	<strong>Blockpct:</strong>
-	<?php echo $attacktype->blockpct; ?></p>
-<p>
-	<strong>Dmgreduced:</strong>
-	<?php echo $attacktype->dmgreduced; ?></p>
-<p>
-	<strong>Overheal:</strong>
-	<?php echo $attacktype->overheal; ?></p>
+<?php else: ?>
+<p>No Attacktype.</p>
 
-<?php echo Html::anchor('attacktype/edit/'.$attacktype->id, 'Edit'); ?> |
-<?php echo Html::anchor('attacktype', 'Back'); ?>
+<?php endif; ?>
