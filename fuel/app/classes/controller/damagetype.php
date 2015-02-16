@@ -16,7 +16,7 @@ class Controller_Damagetype extends Controller_Template
 
         $data['name'] = html_entity_decode($name);
         if ( ! $data['damagetype'] = Model_Damagetype::find('all', array(
-            'where' => array(array('encid' => $encid), array('name' => html_entity_decode($name))),
+            'where' => array(array('encid' => $encid), array('combatant' => html_entity_decode($name))),
             'order_by' => array('job' => 'desc'),
         )))
 		{
