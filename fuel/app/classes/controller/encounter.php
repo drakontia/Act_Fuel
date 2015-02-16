@@ -4,7 +4,7 @@ class Controller_Encounter extends Controller_Template
 
 	public function action_index()
 	{
-		$data['encounter'] = Model_Encounter::find('all');
+		$data['encounter'] = Model_Encounter::find('all', array('order_by' => 'starttime'));
 		$this->template->title = "Encounter";
 		$this->template->content = View::forge('encounter/index', $data);
 
@@ -33,7 +33,7 @@ class Controller_Encounter extends Controller_Template
 
 			if ($val->run())
 			{
-				$encounter = Model_Encounter_Tables::forge(array(
+				$encounter = Model_Encounter::forge(array(
 					'encid' => Input::post('encid'),
 					'title' => Input::post('title'),
 					'starttime' => Input::post('starttime'),
@@ -133,20 +133,78 @@ class Controller_Encounter extends Controller_Template
 
 	}
 
-	public function action_delete($id = null)
+	public function action_delete($encid = null)
 	{
-		is_null($id) and Response::redirect('encounter');
+		is_null($encid) and Response::redirect('encounter');
 
-		if ($encounter = Model_Encounter::find($id))
+        if ($encounter = Model_Encounter::find('all', array(
+            'where' => array('encid' => $encid),
+        )))
 		{
 			$encounter->delete();
 
-			Session::set_flash('success', 'Deleted encounter #'.$id);
+			Session::set_flash('success', 'Deleted encounter '.$encid);
 		}
 
 		else
 		{
-			Session::set_flash('error', 'Could not delete encounter #'.$id);
+			Session::set_flash('error', 'Could not delete encounter '.$encid);
+		}
+
+        if ($combatant = Model_Combatant::find('all', array(
+            'where' => array('encid' => $encid),
+        )))
+		{
+			$combatant->delete();
+
+			Session::set_flash('success', 'Deleted combatant '.$encid);
+		}
+
+		else
+		{
+			Session::set_flash('error', 'Could not delete combatant '.$encid);
+		}
+
+        if ($attacktype= Model_Attacktype::find('all', array(
+            'where' => array('encid' => $encid),
+        )))
+		{
+			$attacktype->delete();
+
+			Session::set_flash('success', 'Deleted attacktype '.$encid);
+		}
+
+		else
+		{
+			Session::set_flash('error', 'Could not delete attacktype '.$encid);
+		}
+
+        if ($damagetype= Model_Damagetype::find('all', array(
+            'where' => array('encid' => $encid),
+        )))
+		{
+			$damagetype->delete();
+
+			Session::set_flash('success', 'Deleted damagetype '.$encid);
+		}
+
+		else
+		{
+			Session::set_flash('error', 'Could not delete damagetype '.$encid);
+		}
+
+        if ($swing= Model_Swing::find('all', array(
+            'where' => array('encid' => $encid),
+        )))
+		{
+			$swing->delete();
+
+			Session::set_flash('success', 'Deleted swing '.$encid);
+		}
+
+		else
+		{
+			Session::set_flash('error', 'Could not delete swing '.$encid);
 		}
 
 		Response::redirect('encounter');

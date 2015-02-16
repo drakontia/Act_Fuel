@@ -29,7 +29,7 @@
 			<td><?php echo $item->kills; ?></td>
 			<td><?php echo $item->deaths; ?></td>
 			<td><div class="btn-toolbar"><div class="btn-group">
-                <?php echo Html::anchor('encounter/view'.$item->id, 'View'); ?>
+                <?php echo Html::anchor('encounter/view/'.$item->id, 'View'); ?>
             </div></div></td>
 		</tr>
 <?php endforeach; ?>
