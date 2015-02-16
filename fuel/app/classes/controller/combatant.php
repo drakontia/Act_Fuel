@@ -11,9 +11,10 @@ class Controller_Combatant extends Controller_Template
             'where' => array('encid' => $encid),
             'order_by' => array('job' => 'desc'),
         ));
-        $this->template->title = Model_Encounter::find('title', array(
-            'where' => array('encid' => $encid)
-        ));
+        $this->template->title = Model_Encounter::find('first', array(
+            'select' => array('zone'),
+            'where' => array('encid' => $encid),
+        ))->zone;
 		$this->template->content = View::forge('combatant/index', $data);
 
 	}
