@@ -13,10 +13,10 @@ class Controller_Attacktype extends Controller_Template
 	public function action_view($encid = null)
 	{
 		is_null($encid) and Response::redirect('attacktype');
-        $attacker   = Input::param('attacker')
-        $victim = Input::param('victim')
-        $swingtype = Input::param('swingtype')
-        $swingtype2 = Input::param('swingtype2')
+        $attacker   = Input::param('attacker');
+        $victim = Input::param('victim');
+        $swingtype = Input::param('swingtype');
+        $swingtype2 = Input::param('swingtype2');
 
         $where[] = array('encid' => $encid);
 
