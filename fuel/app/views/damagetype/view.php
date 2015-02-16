@@ -1,4 +1,4 @@
-<h2>Viewing <span class='muted'><?php echo $damagetype->combatant; ?></span></h2>
+<h2>Viewing <span class='muted'><?php echo $name; ?></span></h2>
 
 <br>
 <?php if ($damagetype): ?>
