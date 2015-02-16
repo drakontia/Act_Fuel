@@ -1,4 +1,4 @@
-<h2>Viewing <span class='muted'>#<?php echo $encounter->id; ?></span></h2>
+<h2>Viewing <span class='muted'>#<?php echo $encounter->title; ?></span></h2>
 
 <p>
 	<strong>Encid:</strong>
@@ -31,5 +31,6 @@
 	<strong>Deaths:</strong>
 	<?php echo $encounter->deaths; ?></p>
 
-<?php echo Html::anchor('encounter/edit/'.$encounter->id, 'Edit'); ?> |
+<?php echo Html::anchor('encounter/edit'.$encounter->id, 'Edit'); ?> |
+<?php echo Html::anchor('encounter/delete'.$encounter->encid, '<i class="icon-trash icon-white"></i> Delete', array('class' => 'btn btn-small btn-danger', 'onclick' => "return confirm('Are you sure?')")); ?> |
 <?php echo Html::anchor('encounter/index', 'Back'); ?>
