@@ -20,9 +20,9 @@
 <?php foreach ($encounter as $item): ?>
         <tr>
 			<td><?php echo Html::anchor('combatant/index/'.$item->encid, $item->title); ?></td>
-			<td><?php strftime('%c', strtotime($item->starttime)); ?></td>
-			<td><?php strftime('%c', strtotime($item->endtime)); ?></td>
-			<td><?php sprintf ('%d:%d', $item->duration / 60, $item->duration % 60); ?></td>
+			<td><?php echo strftime('%c', strtotime($item->starttime)); ?></td>
+			<td><?php echo strftime('%c', strtotime($item->endtime)); ?></td>
+			<td><?php echo sprintf ('%d:%d', $item->duration / 60, $item->duration % 60); ?></td>
 			<td><?php echo $item->damage; ?></td>
 			<td><?php echo round($item->encdps); ?></td>
 			<td><?php echo $item->zone; ?></td>
