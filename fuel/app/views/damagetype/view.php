@@ -33,7 +33,7 @@
 	<tbody>
 <?php foreach ($damagetype as $item): ?>
         <tr>
-<?php $escapedurl = htmlentities(urlencode('attacktype/view/'.$item->encid.'?'.$item->grouping, ENT_COMPAT)); ?>
+<?php $escapedurl = htmlentities(urlencode('attacktype/view/'.$item->encid.'?'.$item->grouping)); ?>
 			<td><?php echo Html::anchor($escapedurl, $item->type); ?></td>
 			<td><?php echo $item->starttime; ?></td>
 			<td><?php echo $item->endtime; ?></td>
