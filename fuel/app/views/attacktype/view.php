@@ -36,7 +36,7 @@
 	<tbody>
 <?php foreach ($attacktype as $item): ?>
         <tr>
-<?php $escapedurl = 'swing/view/'.$item->encid.'?attacker='.$item->attacker.'&victim='.$item->victim.'&swingtype='.$item->swingtype.'&swingtype2='.$swingtype2.'&attacktype='.$item->type; ?>
+<?php $escapedurl = 'swing/view/'.$item->encid.'?attacker='.$item->attacker.'&victim='.$item->victim.'&swingtype='.$item->swingtype.'&attacktype='.$item->type; ?>
 			<td><?php echo Html::anchor($escapedurl, $item->type); ?></td>
 			<td><?php echo $item->starttime; ?></td>
 			<td><?php echo $item->endtime; ?></td>
