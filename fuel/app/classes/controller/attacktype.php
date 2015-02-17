@@ -12,9 +12,9 @@ class Controller_Attacktype extends Controller_Template
 
 	public function action_view($encid = null)
 	{
-		is_null($encid) and Response::redirect('attacktype');
-        $attacker   = html_entity_decode(Input::param('attacker'));
-        $victim = html_entity_decode(Input::param('victim'));
+		is_null($encid) and Response::redirect('combatant/');
+        $attacker   = Input::param('attacker');
+        $victim = Input::param('victim');
         $swingtype = Input::param('swingtype');
         $swingtype2 = Input::param('swingtype2');
 
@@ -28,13 +28,13 @@ class Controller_Attacktype extends Controller_Template
             if ( isset($swingtype) and isset($swingtype2))
             {
                 $where[] = array(
-                    array('swingtype', '=', $swingtype),
-                    'or' => array('swingtype', '=', $swingtype2),
+                    array('swingtype' => $swingtype),
+                    'or' => array('swingtype' => $swingtype2),
                 );
             }
             elseif ( isset($swingtype))
             {
-                $where[] = array('swingtype', '=', $swingtype);
+                $where[] = array('swingtype' => $swingtype);
             }
         }
 
@@ -46,13 +46,13 @@ class Controller_Attacktype extends Controller_Template
             if ( isset($swingtype) and isset($swingtype2))
             {
                 $where[] = array(
-                    array('swingtype', '=', $swingtype),
-                    'or' => array('swingtype', '=', $swingtype2),
+                    array('swingtype' => $swingtype),
+                    'or' => array('swingtype' => $swingtype2),
                 );
             }
             elseif ( isset($swingtype))
             {
-                $where[] = array('swingtype', '=', $swingtype);
+                $where[] = array('swingtype' => $swingtype);
             }
         }
 
