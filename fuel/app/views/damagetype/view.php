@@ -11,8 +11,6 @@
 			<th>Duration</th>
 			<th>Damage</th>
 			<th>Encdps</th>
-			<th>Chardps</th>
-			<th>Dps</th>
 			<th>Average</th>
 			<th>Median</th>
 			<th>Minhit</th>
@@ -23,7 +21,6 @@
 			<th>Misses</th>
 			<th>Swings</th>
 			<th>Tohit</th>
-			<th>Averagedelay</th>
 			<th>Critperc</th>
 			<th>Parrypct</th>
 			<th>Blockpct</th>
@@ -40,8 +37,6 @@
 			<td><?php echo $item->duration; ?></td>
 			<td><?php echo $item->damage; ?></td>
 			<td><?php echo $item->encdps; ?></td>
-			<td><?php echo $item->chardps; ?></td>
-			<td><?php echo $item->dps; ?></td>
 			<td><?php echo $item->average; ?></td>
 			<td><?php echo $item->median; ?></td>
 			<td><?php echo $item->minhit; ?></td>
@@ -52,7 +47,6 @@
 			<td><?php echo $item->misses; ?></td>
 			<td><?php echo $item->swings; ?></td>
 			<td><?php echo $item->tohit; ?></td>
-			<td><?php echo $item->averagedelay; ?></td>
 			<td><?php echo $item->critperc; ?></td>
 			<td><?php echo $item->parrypct; ?></td>
 			<td><?php echo $item->blockpct; ?></td>
