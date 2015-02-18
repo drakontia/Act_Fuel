@@ -55,7 +55,7 @@ class Controller_Swing extends Controller_Template
 
         if ( ! $data['swing'] = Model_Swing::find('all', array(
             'where' => $where,
-            'order_by' => array('type' => 'asc'),
+            'order_by' => array('attacktype' => 'asc'),
         )))
 		{
 			Session::set_flash('error', 'Could not find swing #'.$encid);
