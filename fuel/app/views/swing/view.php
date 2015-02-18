@@ -1,6 +1,6 @@
 <h2>Listing <span class='muted'>Swings</span></h2>
 <br>
-<?php if ($swings): ?>
+<?php if ($swing): ?>
 <table class="table table-striped">
 	<thead>
 		<tr>
