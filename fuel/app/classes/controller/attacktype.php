@@ -20,40 +20,30 @@ class Controller_Attacktype extends Controller_Template
 
         $where[] = array('encid' => $encid);
 
-        if ( isset($attacker))
+        if (isset($attacker))
         {
             $data['name'] = $attacker;
             $where[] = array('attacker' => $attacker);
-
-            if ( isset($swingtype) and isset($swingtype2))
-            {
-                $where[] = array(
-                    array('swingtype' => $swingtype),
-                    'or' => array('swingtype' => $swingtype2),
-                );
-            }
-            elseif ( isset($swingtype))
-            {
-                $where[] = array('swingtype' => $swingtype);
-            }
         }
-
-        if ( isset($victim))
+        elseif (isset($victim))
         {
             $data['name'] = $victim;
             $where[] = array('victim' => $victim);
+        }
+        else {
+            Response::redirect('encounter/index');
+        }
 
-            if ( isset($swingtype) and isset($swingtype2))
-            {
-                $where[] = array(
-                    array('swingtype' => $swingtype),
-                    'or' => array('swingtype' => $swingtype2),
-                );
-            }
-            elseif ( isset($swingtype))
-            {
-                $where[] = array('swingtype' => $swingtype);
-            }
+        if (isset($swingtype) and isset($swingtype2))
+        {
+            $where[] = array(
+                array('swingtype' => $swingtype),
+                'or' => array('swingtype' => $swingtype2),
+            );
+        }
+        elseif ( isset($swingtype))
+        {
+            $where[] = array('swingtype' => $swingtype);
         }
 
         if ( ! $data['attacktype'] = Model_Attacktype::find('all', array(
@@ -62,7 +52,7 @@ class Controller_Attacktype extends Controller_Template
         )))
 		{
 			Session::set_flash('error', 'Could not find attacktype '.$encid);
-			Response::redirect('damagetype/view/'.$encid.'/'.$attacker.$victim);
+			Response::redirect('damagetype/view/'.$encid.'?attacker='.urlencode($attacker).'&victim='.urlencode($victim));
 		}
 
         $this->template->title = Model_Damagetype::find('first', array(
@@ -71,7 +61,7 @@ class Controller_Attacktype extends Controller_Template
                 array('grouping', 'like', 'swingtype2='.$swingtype2),
                 'or' => array('grouping', 'like', 'swingtype='.$swingtype),
             ),
-        ))->type;
+        ));
 		$this->template->content = View::forge('attacktype/view', $data);
 
 	}

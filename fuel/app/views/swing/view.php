@@ -1,47 +1,44 @@
-<h2>Viewing <span class='muted'>#<?php echo $swing_table->id; ?></span></h2>
+<h2>Listing <span class='muted'>Swings</span></h2>
+<br>
+<?php if ($swings): ?>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Stime</th>
+			<th>Attacker</th>
+			<th>Attacktype</th>
+			<th>Damagetype</th>
+			<th>Victim</th>
+			<th>Damage</th>
+			<th>Damagestring</th>
+			<th>Critical</th>
+			<th>Special</th>
+			<th>Dmgadjust</th>
+			<th>Dmgreduced</th>
+			<th>Overheal</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach ($swing as $item): ?>
+        <tr>
+			<td><?php echo $item->stime; ?></td>
+			<td><?php echo $item->attacker; ?></td>
+			<td><?php echo $item->attacktype; ?></td>
+			<td><?php echo $item->damagetype; ?></td>
+			<td><?php echo $item->victim; ?></td>
+			<td><?php echo $item->damage; ?></td>
+			<td><?php echo $item->damagestring; ?></td>
+			<td><?php echo $item->critical; ?></td>
+			<td><?php echo $item->special; ?></td>
+			<td><?php echo $item->dmgadjust; ?></td>
+			<td><?php echo $item->dmgreduced; ?></td>
+			<td><?php echo $item->overheal; ?></td>
+		</tr>
+<?php endforeach; ?>
+    </tbody>
+</table>
 
-<p>
-	<strong>Encid:</strong>
-	<?php echo $swing_table->encid; ?></p>
-<p>
-	<strong>Stime:</strong>
-	<?php echo $swing_table->stime; ?></p>
-<p>
-	<strong>Attacker:</strong>
-	<?php echo $swing_table->attacker; ?></p>
-<p>
-	<strong>Swingtype:</strong>
-	<?php echo $swing_table->swingtype; ?></p>
-<p>
-	<strong>Attacktype:</strong>
-	<?php echo $swing_table->attacktype; ?></p>
-<p>
-	<strong>Damagetype:</strong>
-	<?php echo $swing_table->damagetype; ?></p>
-<p>
-	<strong>Victim:</strong>
-	<?php echo $swing_table->victim; ?></p>
-<p>
-	<strong>Damage:</strong>
-	<?php echo $swing_table->damage; ?></p>
-<p>
-	<strong>Damagestring:</strong>
-	<?php echo $swing_table->damagestring; ?></p>
-<p>
-	<strong>Critical:</strong>
-	<?php echo $swing_table->critical; ?></p>
-<p>
-	<strong>Special:</strong>
-	<?php echo $swing_table->special; ?></p>
-<p>
-	<strong>Dmgadjust:</strong>
-	<?php echo $swing_table->dmgadjust; ?></p>
-<p>
-	<strong>Dmgreduced:</strong>
-	<?php echo $swing_table->dmgreduced; ?></p>
-<p>
-	<strong>Overheal:</strong>
-	<?php echo $swing_table->overheal; ?></p>
+<?php else: ?>
+<p>No Swing.</p>
 
-<?php echo Html::anchor('swing/table/edit/'.$swing_table->id, 'Edit'); ?> |
-<?php echo Html::anchor('swing/table', 'Back'); ?>
+<?php endif; ?>
