@@ -137,8 +137,12 @@
         "fuel/parser": "1.7.2",
         "fuelphp/upload": "2.0.1",
         "monolog/monolog": "1.5.*",
-        "michelf/php-markdown": "1.4.0",
-        "phpunit/phpunit": "4.1.*",
+        "michelf/php-markdown": "1.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.5.*",
+        "phpunit/dbunit": ">=1.2",
+        "phpunit/phpunit-selenium": ">=1.2",
         "piece/stagehand-testrunner": ">=3.5.0"
     },
     "suggest": {

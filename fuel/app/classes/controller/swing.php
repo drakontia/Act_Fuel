@@ -14,23 +14,23 @@ class Controller_Swing extends Controller_Template
 	{
 		is_null($encid) and Response::redirect('encounter/index');
 
-        $attacker   = Input::param('attacker');
-        $victim = Input::param('victim');
-        $swingtype = Input::param('swingtype');
-        $swingtype2 = Input::param('swingtype2');
-        $attacktype = Input::param('attacktype');
+        $attacker    = Input::param('attacker');
+        $victim      = Input::param('victim');
+        $swingtype   = Input::param('swingtype');
+        $swingtype2  = Input::param('swingtype2');
+        $attacktype  = Input::param('attacktype');
 
         $where[] = array('encid' => $encid);
 
         if (isset($attacker))
         {
-            $data['name'] = $attacker;
-            $where[] = array('attacker' => $attacker);
+            $data['name'] = urldecode($attacker);
+            $where[] = array('attacker' => urldecode($attacker));
         }
         elseif (isset($victim))
         {
-            $data['name'] = $victim;
-            $where[] = array('victim' => $victim);
+            $data['name'] = urldecode($victim);
+            $where[] = array('victim' => urldecode($victim));
         }
         else {
             Response::redirect('encounter/index');
@@ -50,7 +50,7 @@ class Controller_Swing extends Controller_Template
 
         if (isset($attacktype))
         {
-            $where[] = array('attacktype' => $attacktype);
+            $where[] = array('attacktype' => urldecode($attacktype));
         }
 
         if ( ! $data['swing'] = Model_Swing::find('all', array(
@@ -58,7 +58,7 @@ class Controller_Swing extends Controller_Template
             'order_by' => array('type' => 'asc'),
         )))
 		{
-			Session::set_flash('error', 'Could not find swing #'.$id);
+			Session::set_flash('error', 'Could not find swing #'.$encid);
 			Response::redirect('swing');
 		}
 
