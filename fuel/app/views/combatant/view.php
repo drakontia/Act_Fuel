@@ -1,116 +1,67 @@
-<h2>Viewing <span class='muted'>#<?php echo $combatant->id; ?></span></h2>
+<h2>Listing <span class='muted'>Combatants</span></h2>
+<br>
+<?php if ($combatant): ?>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Job</th>
+			<th>Starttime</th>
+			<th>Endtime</th>
+			<th>Duration</th>
+			<th>Damage</th>
+			<th>Damageperc</th>
+			<th>Encdps</th>
+			<th>Healed</th>
+			<th>Healedperc</th>
+			<th>Enchps</th>
+			<th>Overhealpct</th>
+			<th>Tohit</th>
+			<th>Critdamperc</th>
+			<th>Crithealperc</th>
+			<th>Kills</th>
+			<th>Deaths</th>
+			<th>Parrypct</th>
+			<th>Blockpct</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+<?php foreach ($combatant as $item): ?>
+        <tr>
+<?php $escapedurl = htmlentities('damagetype/view/'.$encid.'/'.$item->name, ENT_COMPAT); ?>
+			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
+			<td><?php echo $item->job; ?></td>
+			<td><?php echo strftime('%c', strtotime($item->starttime)); ?></td>
+			<td><?php echo strftime('%c', strtotime($item->endtime)); ?></td>
+			<td><?php echo sprintf ("%'.02d:%'.02d", $item->duration / 60, $item->duration % 60); ?></td>
+			<td><?php echo round($item->damage); ?></td>
+			<td><?php echo $item->damageperc; ?></td>
+			<td><?php echo round($item->encdps); ?></td>
+			<td><?php echo round($item->healed); ?></td>
+			<td><?php echo $item->healedperc; ?></td>
+			<td><?php echo round($item->enchps); ?></td>
+			<td><?php echo $item->overhealpct; ?></td>
+			<td><?php echo sprintf('%d%%', round($item->tohit, 2)); ?></td>
+			<td><?php echo $item->critdamperc; ?></td>
+			<td><?php echo $item->crithealperc; ?></td>
+			<td><?php echo $item->kills; ?></td>
+			<td><?php echo $item->deaths; ?></td>
+			<td><?php echo $item->parrypct; ?></td>
+			<td><?php echo $item->blockpct; ?></td>
+			<td>
+				<div class="btn-toolbar">
+					<div class="btn-group">
+                        <?php echo Html::anchor('combatant/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>
+				</div>
 
-<p>
-	<strong>Encid:</strong>
-	<?php echo $combatant->encid; ?></p>
-<p>
-	<strong>Ally:</strong>
-	<?php echo $combatant->ally; ?></p>
-<p>
-	<strong>Name:</strong>
-	<?php echo $combatant->name; ?></p>
-<p>
-	<strong>Starttime:</strong>
-	<?php echo $combatant->starttime; ?></p>
-<p>
-	<strong>Endtime:</strong>
-	<?php echo $combatant->endtime; ?></p>
-<p>
-	<strong>Duration:</strong>
-	<?php echo $combatant->duration; ?></p>
-<p>
-	<strong>Damage:</strong>
-	<?php echo $combatant->damage; ?></p>
-<p>
-	<strong>Damageperc:</strong>
-	<?php echo $combatant->damageperc; ?></p>
-<p>
-	<strong>Kills:</strong>
-	<?php echo $combatant->kills; ?></p>
-<p>
-	<strong>Healed:</strong>
-	<?php echo $combatant->healed; ?></p>
-<p>
-	<strong>Healedperc:</strong>
-	<?php echo $combatant->healedperc; ?></p>
-<p>
-	<strong>Critheals:</strong>
-	<?php echo $combatant->critheals; ?></p>
-<p>
-	<strong>Heals:</strong>
-	<?php echo $combatant->heals; ?></p>
-<p>
-	<strong>Curedispels:</strong>
-	<?php echo $combatant->curedispels; ?></p>
-<p>
-	<strong>Powerdrain:</strong>
-	<?php echo $combatant->powerdrain; ?></p>
-<p>
-	<strong>Powerreplenish:</strong>
-	<?php echo $combatant->powerreplenish; ?></p>
-<p>
-	<strong>Dps:</strong>
-	<?php echo $combatant->dps; ?></p>
-<p>
-	<strong>Encdps:</strong>
-	<?php echo $combatant->encdps; ?></p>
-<p>
-	<strong>Enchps:</strong>
-	<?php echo $combatant->enchps; ?></p>
-<p>
-	<strong>Hits:</strong>
-	<?php echo $combatant->hits; ?></p>
-<p>
-	<strong>Crithits:</strong>
-	<?php echo $combatant->crithits; ?></p>
-<p>
-	<strong>Blocked:</strong>
-	<?php echo $combatant->blocked; ?></p>
-<p>
-	<strong>Misses:</strong>
-	<?php echo $combatant->misses; ?></p>
-<p>
-	<strong>Swings:</strong>
-	<?php echo $combatant->swings; ?></p>
-<p>
-	<strong>Healstaken:</strong>
-	<?php echo $combatant->healstaken; ?></p>
-<p>
-	<strong>Damagetaken:</strong>
-	<?php echo $combatant->damagetaken; ?></p>
-<p>
-	<strong>Deaths:</strong>
-	<?php echo $combatant->deaths; ?></p>
-<p>
-	<strong>Tohit:</strong>
-	<?php echo $combatant->tohit; ?></p>
-<p>
-	<strong>Critdamperc:</strong>
-	<?php echo $combatant->critdamperc; ?></p>
-<p>
-	<strong>Crithealperc:</strong>
-	<?php echo $combatant->crithealperc; ?></p>
-<p>
-	<strong>Threatstr:</strong>
-	<?php echo $combatant->threatstr; ?></p>
-<p>
-	<strong>Threatdelta:</strong>
-	<?php echo $combatant->threatdelta; ?></p>
-<p>
-	<strong>Job:</strong>
-	<?php echo $combatant->job; ?></p>
-<p>
-	<strong>Parrypct:</strong>
-	<?php echo $combatant->parrypct; ?></p>
-<p>
-	<strong>Blockpct:</strong>
-	<?php echo $combatant->blockpct; ?></p>
-<p>
-	<strong>Inctohit:</strong>
-	<?php echo $combatant->inctohit; ?></p>
-<p>
-	<strong>Overhealpct:</strong>
-	<?php echo $combatant->overhealpct; ?></p>
+			</td>
+		</tr>
+<?php endforeach; ?>
+    </tbody>
+</table>
 
-<?php echo Html::anchor('combatant/edit/'.$combatant->id, 'Edit'); ?> |
-<?php echo Html::anchor('combatant', 'Back'); ?>
+<?php else: ?>
+<p>No Combatants.</p>
+
+<?php endif; ?>
