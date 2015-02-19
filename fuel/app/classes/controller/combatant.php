@@ -36,7 +36,7 @@ class Controller_Combatant extends Controller_Template
         )))
 		{
 			Session::set_flash('error', 'Could not find combatant #'.$id);
-			Response::redirect('combatant');
+			Response::redirect_back('encounter/index');
 		}
 
         $this->template->title = Model_Encounter::find('first', array(

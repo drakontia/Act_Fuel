@@ -59,7 +59,7 @@ class Controller_Swing extends Controller_Template
         )))
 		{
 			Session::set_flash('error', 'Could not find swing #'.$encid);
-			Response::redirect('swing');
+			Response::redirect_back('attacktype/view/'.$encid);
 		}
 
 		$this->template->title = "Swing";

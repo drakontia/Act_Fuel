@@ -5,16 +5,16 @@
 <table class="table table-bordered">
 	<thead>
 		<tr>
-            <th><?php echo __('swing.stime'); ?></th>
-            <th><?php echo __('swing.attacker'); ?></th>
-            <th><?php echo __('swing.attacktype'); ?></th>
-            <th><?php echo __('swing.damagetype'); ?></th>
-            <th><?php echo __('swing.victim'); ?></th>
-            <th><?php echo __('swing.damage'); ?></th>
-            <th><?php echo __('swing.critical'); ?></th>
-            <th><?php echo __('swing.special'); ?></th>
-            <th><?php echo __('swing.dmgadjust'); ?></th>
-            <th><?php echo __('swing.overheal'); ?></th>
+			<th>時刻</th>
+			<th>実施者</th>
+			<th>項目</th>
+			<th>タイプ</th>
+			<th>対象</th>
+			<th>ダメージ</th>
+			<th>クリティカル</th>
+			<th>状態</th>
+			<th>調整率</th>
+			<th>超過回復</th>
 		</tr>
 	</thead>
 	<tbody>
