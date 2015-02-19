@@ -25,7 +25,7 @@ Fuel::$env = (isset($_SERVER['FUEL_ENV']) ? $_SERVER['FUEL_ENV'] : Fuel::DEVELOP
 Fuel::init('config.php');
 
 //Internationalization of Web Application
-$languages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+$languages = explode(',', Input::server('HTTP_ACCEPT_LANGUAGE'));
 if (isset($languages[0]))
 {
     $langfile = File::read_dir(APPPATH.'lang/'.$language[0], 0, array(
