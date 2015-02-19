@@ -36,6 +36,7 @@ class Controller_Attacktype extends Controller_Template
 
         if (isset($swingtype) and isset($swingtype2))
         {
+            $data['swingtype2'] = $swingtype2;
             $where[] = array(
                 array('swingtype' => $swingtype),
                 'or' => array('swingtype' => $swingtype2),
