@@ -25,7 +25,7 @@ class Controller_Damagetype extends Controller_Template
         )))
 		{
 			Session::set_flash('error', 'Could not find damagetype '.$name);
-			Response::redirect('combatant/view/'.$encid);
+			Response::redirect_back('combatant/view/'.$encid);
 		};
 
         $this->template->title = Model_Encounter::find('first', array(

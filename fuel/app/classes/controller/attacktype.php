@@ -53,7 +53,7 @@ class Controller_Attacktype extends Controller_Template
         )))
 		{
 			Session::set_flash('error', 'Could not find attacktype '.$encid);
-			Response::redirect('damagetype/view/'.$encid.'?attacker='.urlencode($attacker).'&victim='.urlencode($victim));
+			Response::redirect_back('damagetype/view/'.$encid.'?name='.urlencode($attacker).urlencode($victim));
 		}
 
         $this->template->title = Model_Damagetype::find('first', array(
