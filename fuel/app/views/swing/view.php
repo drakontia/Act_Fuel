@@ -5,16 +5,16 @@
 <table class="table table-bordered">
 	<thead>
 		<tr>
-            <th><?php echo __('stime'); ?></th>
-            <th><?php echo __('attacker'); ?></th>
-            <th><?php echo __('attacktype'); ?></th>
-            <th><?php echo __('damagetype'); ?></th>
-            <th><?php echo __('victim'); ?></th>
-            <th><?php echo __('damage'); ?></th>
-            <th><?php echo __('critical'); ?></th>
-            <th><?php echo __('special'); ?></th>
-            <th><?php echo __('dmgadjust'); ?></th>
-            <th><?php echo __('overheal'); ?></th>
+            <th><?php echo __('swing.stime'); ?></th>
+            <th><?php echo __('swing.attacker'); ?></th>
+            <th><?php echo __('swing.attacktype'); ?></th>
+            <th><?php echo __('swing.damagetype'); ?></th>
+            <th><?php echo __('swing.victim'); ?></th>
+            <th><?php echo __('swing.damage'); ?></th>
+            <th><?php echo __('swing.critical'); ?></th>
+            <th><?php echo __('swing.special'); ?></th>
+            <th><?php echo __('swing.dmgadjust'); ?></th>
+            <th><?php echo __('swing.overheal'); ?></th>
 		</tr>
 	</thead>
 	<tbody>
