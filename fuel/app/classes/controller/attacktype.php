@@ -41,9 +41,9 @@ class Controller_Attacktype extends Controller_Template
             $data['swingtype2'] = $swingtype2;
             $data['swingtype3'] = $swingtype3;
             if (
-                ($swingtype = 2 or $swingtype = 10 or $swingtype = 20)
-                or ($swingtype2 = 2 or $swingtype2 = 10 or $swingtype2 = 20)
-                or ($swingtype3 = 2 or $swingtype3 = 10 or $swingtype3 = 20)
+                ($swingtype == 2 or $swingtype == 10 or $swingtype == 20)
+                or ($swingtype2 == 2 or $swingtype2 == 10 or $swingtype2 == 20)
+                or ($swingtype3 == 2 or $swingtype3 == 10 or $swingtype3 == 20)
             )
             {
                 $where[] = array('swingtype', 'in', array($swingtype, $swingtype2, $swingtype3, 100));
@@ -57,8 +57,8 @@ class Controller_Attacktype extends Controller_Template
         {
             $data['swingtype2'] = $swingtype2;
             if (
-                ($swingtype = 2 or $swingtype = 10 or $swingtype = 20)
-                or ($swingtype2 = 2 or $swingtype2 = 10 or $swingtype2 = 20)
+                ($swingtype == 2 or $swingtype == 10 or $swingtype == 20)
+                or ($swingtype2 == 2 or $swingtype2 == 10 or $swingtype2 == 20)
             )
             {
                 $where[] = array('swingtype', 'in', array($swingtype, $swingtype2, 100));
@@ -70,7 +70,7 @@ class Controller_Attacktype extends Controller_Template
         }
         elseif ( isset($swingtype))
         {
-            if ($swingtype = 2 or $swingtype = 10 or $swingtype = 20)
+            if ($swingtype == 2 or $swingtype == 10 or $swingtype == 20)
             {
                 $where[] = array('swingtype', 'in', array($swingtype, 100));
             }
@@ -95,7 +95,7 @@ class Controller_Attacktype extends Controller_Template
                 array('grouping', 'like', 'swingtype2='.$swingtype2),
                 'or' => array('grouping', 'like', 'swingtype='.$swingtype),
             ),
-        ));
+        ))->type;
 		$this->template->content = View::forge('attacktype/view', $data);
 
 	}
