@@ -16,7 +16,7 @@
 			<th>Misses</th>
 			<th>Swings</th>
 			<th>Tohit</th>
-			<th>Averagedelay</th>
+			<th>Delay</th>
 			<th>Critperc</th>
 			<th>Parrypct</th>
 			<th>Blockpct</th>
