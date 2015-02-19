@@ -1,19 +1,20 @@
+<?php Lang::load('swing.yaml'); ?>
 <h2>Listing <span class='muted'>Swings of <?php echo $name ?></span></h2>
 <br>
 <?php if ($swing): ?>
 <table class="table table-bordered">
 	<thead>
 		<tr>
-			<th>Stime</th>
-			<th>Attacker</th>
-			<th>Attacktype</th>
-			<th>Damagetype</th>
-			<th>Victim</th>
-			<th>Damage</th>
-			<th>Critical</th>
-			<th>Special</th>
-			<th>Dmgadjust</th>
-			<th>Overheal</th>
+            <th><?php echo __('stime'); ?></th>
+            <th><?php echo __('attacker'); ?></th>
+            <th><?php echo __('attacktype'); ?></th>
+            <th><?php echo __('damagetype'); ?></th>
+            <th><?php echo __('victim'); ?></th>
+            <th><?php echo __('damage'); ?></th>
+            <th><?php echo __('critical'); ?></th>
+            <th><?php echo __('special'); ?></th>
+            <th><?php echo __('dmgadjust'); ?></th>
+            <th><?php echo __('overheal'); ?></th>
 		</tr>
 	</thead>
 	<tbody>
