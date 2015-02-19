@@ -1,4 +1,3 @@
-<?php Lang::load('swing'); ?>
 <h2>Listing <span class='muted'>Swings of <?php echo $name ?></span></h2>
 <br>
 <?php if ($swing): ?>
