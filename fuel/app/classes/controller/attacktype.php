@@ -95,7 +95,7 @@ class Controller_Attacktype extends Controller_Template
                 array('grouping', 'like', 'swingtype2='.$swingtype2),
                 'or' => array('grouping', 'like', 'swingtype='.$swingtype),
             ),
-        ))->type;
+        ));
 		$this->template->content = View::forge('attacktype/view', $data);
 
 	}
