@@ -28,7 +28,7 @@ Fuel::init('config.php');
 $languages = explode(',', Input::server('HTTP_ACCEPT_LANGUAGE'));
 if (isset($languages[0]))
 {
-    $langfile = File::read_dir(APPPATH.'lang/'.$language[0], 0, array(
+    $langfile = File::read_dir(APPPATH.'lang/'.$languages[0], 0, array(
         '!^\.',
         '\.php$' => 'file',
         '\.yaml$' => 'file',
@@ -37,11 +37,11 @@ if (isset($languages[0]))
 
     if (isset($langfile))
     {
-        Config::set('language', $language[0]);
+        Config::set('language', $languages[0]);
     }
     else
     {
-        $lang2 = Str::sub($language[0], 0, 2);
+        $lang2 = Str::sub($languages[0], 0, 2);
         $langfile2 = File::read_dir(APPPATH.'lang/'.$lang2, 0, array(
             '!^\.',
             '\.php$' => 'file',
