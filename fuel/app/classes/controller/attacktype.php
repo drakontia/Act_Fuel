@@ -38,6 +38,7 @@ class Controller_Attacktype extends Controller_Template
         // swingtype '100' is special magic number. this means skill and healed and buff.
         if (isset($swingtype) and isset($swingtype2) and isset($swingtype3))
         {
+            $data['swingtype'] = $swingtype;
             $data['swingtype2'] = $swingtype2;
             $data['swingtype3'] = $swingtype3;
             if (
@@ -55,6 +56,7 @@ class Controller_Attacktype extends Controller_Template
         }
         elseif (isset($swingtype) and isset($swingtype2))
         {
+            $data['swingtype'] = $swingtype;
             $data['swingtype2'] = $swingtype2;
             if (
                 ($swingtype == 2 or $swingtype == 10 or $swingtype == 21)
@@ -70,6 +72,7 @@ class Controller_Attacktype extends Controller_Template
         }
         elseif ( isset($swingtype))
         {
+            $data['swingtype'] = $swingtype;
             if ($swingtype == 2 or $swingtype == 10 or $swingtype == 21)
             {
                 $where[] = array('swingtype', 'in', array($swingtype, 100));

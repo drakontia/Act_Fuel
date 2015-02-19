@@ -26,13 +26,23 @@
 	<tbody>
 <?php foreach ($attacktype as $item): ?>
         <tr>
-<?php if (isset($swingtype2))
+<?php
+if ($item->swingtype == 100)
 {
-    $escapedurl = 'swing/view/'.$item->encid.'?attacker='.urlencode($item->attacker).'&victim='.urlencode($item->victim).'&swingtype='.$item->swingtype.'&swingtype2='.$swingtype2.'&attacktype='.urlencode($item->type);
+    $realswing = $swingtype;
 }
 else
 {
-    $escapedurl = 'swing/view/'.$item->encid.'?attacker='.urlencode($item->attacker).'&victim='.urlencode($item->victim).'&swingtype='.$item->swingtype.'&attacktype='.urlencode($item->type);
+    $realswing = $item->swingtype;
+}
+
+if (isset($swingtype2))
+{
+    $escapedurl = 'swing/view/'.$item->encid.'?attacker='.urlencode($item->attacker).'&victim='.urlencode($item->victim).'&swingtype='.$realswing.'&swingtype2='.$swingtype2.'&attacktype='.urlencode($item->type);
+}
+else
+{
+    $escapedurl = 'swing/view/'.$item->encid.'?attacker='.urlencode($item->attacker).'&victim='.urlencode($item->victim).'&swingtype='.$realswing.'&attacktype='.urlencode($item->type);
 }?>
 			<td><?php echo Html::anchor($escapedurl, $item->type); ?></td>
 			<td><?php echo $item->damage; ?></td>
