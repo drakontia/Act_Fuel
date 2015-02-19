@@ -37,7 +37,7 @@ if (isset($languages[0]))
             '!^_',
         ));
     }
-    catch (PhpErrorException $e)
+    catch (Exception $e)
     {
         $langfile = null;
     }
@@ -58,7 +58,7 @@ if (isset($languages[0]))
                 '!^_',
             ));
         }
-        catch (PhpErrorException $e)
+        catch (Exception $e)
         {
             $langfile2 = null;
         }
