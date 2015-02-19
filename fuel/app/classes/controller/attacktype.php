@@ -17,6 +17,7 @@ class Controller_Attacktype extends Controller_Template
         $victim = Input::param('victim');
         $swingtype = Input::param('swingtype');
         $swingtype2 = Input::param('swingtype2');
+        $swingtype3 = Input::param('swingtype3');
 
         $where[] = array('encid' => $encid);
 
@@ -34,17 +35,49 @@ class Controller_Attacktype extends Controller_Template
             Response::redirect('encounter/index');
         }
 
-        if (isset($swingtype) and isset($swingtype2))
+        // swingtype '100' is special magic number. this means skill and healed and buff.
+        if (isset($swingtype) and isset($swingtype2) and isset($swingtype3))
         {
             $data['swingtype2'] = $swingtype2;
-            $where[] = array(
-                array('swingtype' => $swingtype),
-                'or' => array('swingtype' => $swingtype2),
-            );
+            $data['swingtype3'] = $swingtype3;
+            if (
+                ($swingtype = 2 or $swingtype = 10 or $swingtype = 20)
+                or ($swingtype2 = 2 or $swingtype2 = 10 or $swingtype2 = 20)
+                or ($swingtype3 = 2 or $swingtype3 = 10 or $swingtype3 = 20)
+            )
+            {
+                $where[] = array('swingtype', 'in', array($swingtype, $swingtype2, $swingtype3, 100));
+            }
+            else
+            {
+                $where[] = array('swingtype', 'in', array($swingtype, $swingtype2, $swingtype3));
+            }
+        }
+        elseif (isset($swingtype) and isset($swingtype2))
+        {
+            $data['swingtype2'] = $swingtype2;
+            if (
+                ($swingtype = 2 or $swingtype = 10 or $swingtype = 20)
+                or ($swingtype2 = 2 or $swingtype2 = 10 or $swingtype2 = 20)
+            )
+            {
+                $where[] = array('swingtype', 'in', array($swingtype, $swingtype2, 100));
+            }
+            else
+            {
+                $where[] = array('swingtype', 'in', array($swingtype, $swingtype2));
+            }
         }
         elseif ( isset($swingtype))
         {
-            $where[] = array('swingtype' => $swingtype);
+            if ($swingtype = 2 or $swingtype = 10 or $swingtype = 20)
+            {
+                $where[] = array('swingtype', 'in', array($swingtype, 100));
+            }
+            else
+            {
+                $where[] = array('swingtype' => $swingtype);
+            }
         }
 
         if ( ! $data['attacktype'] = Model_Attacktype::find('all', array(
