@@ -5,6 +5,7 @@
 	<thead>
 		<tr>
 			<th>Stime</th>
+			<th>Attacker</th>
 			<th>Attacktype</th>
 			<th>Damagetype</th>
 			<th>Victim</th>
@@ -19,6 +20,7 @@
 <?php foreach ($swing as $item): ?>
         <tr>
 			<td><?php echo strftime('%c', strtotime($item->stime)); ?></td>
+			<td><?php echo $item->attacker; ?></td>
 			<td><?php echo $item->attacktype; ?></td>
 			<td><?php echo $item->damagetype; ?></td>
 			<td><?php echo $item->victim; ?></td>
