@@ -1,8 +1,11 @@
 <h2>Viewing <span class='muted'><?php echo $name; ?></span></h2>
 
 <br>
-<?php $escapedurl = 'swing/flow/'.$encid.'?attacker='.$name; ?>
-<p><?php echo Html::anchor($escapedurl, 'Swing flow of '.$name); ?></p>
+<?php $escapedbuff = 'swing/flow/'.$encid.'?attacker='.$name; ?>
+<p><?php echo Html::anchor($escapedbuff, 'Swing flow of '.$name); ?></p>
+<br>
+<?php $escapednobuff = 'swing/flow/'.$encid.'?attacker='.$name.'&nobuff=1'; ?>
+<p><?php echo Html::anchor($escapednobuff, 'Swing flow without buff of '.$name); ?></p>
 <?php if ($damagetype): ?>
 <table class="table table-bordered">
 	<thead>

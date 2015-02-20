@@ -71,13 +71,13 @@ class Controller_Swing extends Controller_Template
 	{
 		is_null($encid) and Response::redirect_back('encounter/index');
 
-        $attacker= Input::param('attacker');
+        $attacker = Input::param('attacker');
+        $nobuff     = Input::param('nobuff');
 
         $query = DB::select('stime', 'attacker', 'attacktype', 'damagetype', 'swingtype', 'special', 'dmgadjust')
             ->from('swing_table')
             ->distinct(true)
-            ->where(array('encid' => $encid))
-            ->where('swingtype', 'not in', array(1,11,20));
+            ->where(array('encid' => $encid));
 
         if (isset($attacker))
         {
@@ -86,6 +86,15 @@ class Controller_Swing extends Controller_Template
         }
         else {
             Response::redirect_back('encounter/index');
+        }
+
+        if (isset($nobuff) and $nobuff == 1)
+        {
+            $query = $query->where('swingtype', 'not in', array(1,11,20,21));
+        }
+        else
+        {
+            $query = $query->where('swingtype', 'not in', array(1,11,20));
         }
 
         if ( ! $data['swing'] = $query->execute()->as_array() )
