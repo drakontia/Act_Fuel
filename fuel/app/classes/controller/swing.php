@@ -88,7 +88,7 @@ class Controller_Swing extends Controller_Template
             Response::redirect_back('encounter/index');
         }
 
-        if ( ! $data['swing'] = $query->execute()->as_object('Model_swing') )
+        if ( ! $data['swing'] = $query->execute()->as_array() )
 		{
 			Session::set_flash('error', 'Could not find swing #'.$encid);
 			Response::redirect_back('attacktype/view/'.$encid);
