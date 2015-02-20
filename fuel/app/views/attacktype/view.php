@@ -18,8 +18,6 @@
 			<th>Tohit</th>
 			<th>Delay</th>
 			<th>Critperc</th>
-			<th>Parrypct</th>
-			<th>Blockpct</th>
 			<th>Overheal</th>
 		</tr>
 	</thead>
@@ -55,11 +53,9 @@ else
 			<td><?php echo $item->hits; ?></td>
 			<td><?php echo $item->misses; ?></td>
 			<td><?php echo $item->swings; ?></td>
-			<td><?php echo $item->tohit; ?></td>
+			<td><?php echo $item->tohit; ?>%</td>
 			<td><?php echo round($item->averagedelay, 1); ?></td>
 			<td><?php echo $item->critperc; ?></td>
-			<td><?php echo $item->parrypct; ?></td>
-			<td><?php echo $item->blockpct; ?></td>
 			<td><?php echo $item->overheal; ?></td>
 		</tr>
 <?php endforeach; ?>

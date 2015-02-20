@@ -32,8 +32,8 @@
 <?php $escapedurl = 'damagetype/view/'.$encid.'?name='.urlencode($item->name); ?>
 			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
 			<td><?php echo $item->job; ?></td>
-			<td><?php echo strftime('%c', strtotime($item->starttime)); ?></td>
-			<td><?php echo strftime('%c', strtotime($item->endtime)); ?></td>
+			<td><?php echo Date::forge(strtotime($item->starttime))->format('%X'); ?></td>
+			<td><?php echo Date::forge(strtotime($item->endtime))->format('%X'); ?></td>
 			<td><?php echo sprintf ("%'.02d:%'.02d", $item->duration / 60, $item->duration % 60); ?></td>
 			<td><?php echo round($item->damage); ?></td>
 			<td><?php echo $item->damageperc; ?></td>

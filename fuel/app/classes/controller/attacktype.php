@@ -94,9 +94,10 @@ class Controller_Attacktype extends Controller_Template
 
         $this->template->title = Model_Damagetype::find('first', array(
             'select' => array('type'),
+            'where' => array('encid' => $encid),
             'where' => array(
-                array('grouping', 'like', 'swingtype2='.$swingtype2),
-                'or' => array('grouping', 'like', 'swingtype='.$swingtype),
+                array('grouping', 'like', '%swingtype2='.$swingtype2),
+                'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
             ),
         ));
 		$this->template->content = View::forge('attacktype/view', $data);
