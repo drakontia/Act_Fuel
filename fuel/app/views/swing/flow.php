@@ -15,12 +15,12 @@
 	<tbody>
 <?php foreach ($swing as $item): ?>
         <tr>
-			<td><?php echo strftime('%c', strtotime($item->stime)); ?></td>
-			<td><?php echo $item->attacktype; ?></td>
-			<td><?php echo $item->swingtype; ?></td>
-			<td><?php echo $item->damagetype; ?></td>
-			<td><?php echo $item->special; ?></td>
-			<td><?php echo $item->dmgadjust; ?></td>
+			<td><?php echo strftime('%c', strtotime($item['stime'])); ?></td>
+			<td><?php echo $item['attacktype']; ?></td>
+			<td><?php echo $item['swingtype']; ?></td>
+			<td><?php echo $item['damagetype']; ?></td>
+			<td><?php echo $item['special']; ?></td>
+			<td><?php echo $item['dmgadjust']; ?></td>
 		</tr>
 <?php endforeach; ?>
     </tbody>
