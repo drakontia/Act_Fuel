@@ -82,7 +82,7 @@ class Controller_Swing extends Controller_Template
         if (isset($attacker))
         {
             $data['name'] = urldecode($attacker);
-            $query = $query->where(array('attacker' => urldecode($attacker)));
+            $query = $query->where('attacker', 'like', urldecode($attacker));
         }
         else {
             Response::redirect_back('encounter/index');
