@@ -1,7 +1,7 @@
 <h2>Viewing <span class='muted'><?php echo $name; ?></span></h2>
 
 <br>
-<?php $escapedurl = 'swing/flow/'.$item->encid.'?attacker='.$name; ?>
+<?php $escapedurl = 'swing/flow/'.$encid.'?attacker='.$name; ?>
 <p><?php echo Html::anchor($escapedurl, 'Swing flow of '.$name); ?></p>
 <?php if ($damagetype): ?>
 <table class="table table-bordered">

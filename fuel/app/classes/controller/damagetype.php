@@ -13,9 +13,11 @@ class Controller_Damagetype extends Controller_Template
 	public function action_view($encid = null)
 	{
 		is_null($encid) and Response::redirect('combatant/view/'.$encid);
-        $name = Input::param('name');
+        $data['encid'] = $encid;
 
+        $name = Input::param('name');
         $data['name'] = html_entity_decode($name);
+
         if ( ! $data['damagetype'] = Model_Damagetype::find('all', array(
                 'where' => array(
                     array('encid' => $encid),
