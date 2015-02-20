@@ -73,7 +73,7 @@ class Controller_Swing extends Controller_Template
 
         $attacker= Input::param('attacker');
 
-        $query = DB::select('stime', 'attacktype', 'damagetype', 'swingtype', 'special', 'dmgadjust')
+        $query = DB::select('stime', 'attacker', 'attacktype', 'damagetype', 'swingtype', 'special', 'dmgadjust')
             ->from('swing_table')
             ->distinct(true)
             ->where(array('encid' => $encid))
