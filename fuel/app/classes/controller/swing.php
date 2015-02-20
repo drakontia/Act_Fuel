@@ -77,7 +77,7 @@ class Controller_Swing extends Controller_Template
             ->from('swing_table')
             ->distinct(true)
             ->where(array('encid' => $encid))
-            ->where('swingtype', 'not in', '1,11,20');
+            ->where('swingtype', 'not in', array(1,11,20));
 
         if (isset($attacker))
         {
