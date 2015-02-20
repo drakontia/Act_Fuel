@@ -27,7 +27,7 @@
 <?php foreach ($attacktype as $item): ?>
         <tr>
 <?php
-if ($item->swingtype == 100)
+if (isset($swingtype) and $item->swingtype == 100)
 {
     $realswing = $swingtype;
 }
