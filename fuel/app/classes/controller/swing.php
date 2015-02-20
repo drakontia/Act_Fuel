@@ -12,7 +12,7 @@ class Controller_Swing extends Controller_Template
 
 	public function action_view($encid = null)
 	{
-		is_null($encid) and Response::redirect('encounter/index');
+		is_null($encid) and Response::redirect_back('encounter/index');
 
         $attacker    = Input::param('attacker');
         $victim      = Input::param('victim');
@@ -67,5 +67,36 @@ class Controller_Swing extends Controller_Template
 
 	}
 
+	public function action_flow($encid = null)
+	{
+		is_null($encid) and Response::redirect_back('encounter/index');
+
+        $attacker= Input::param('attacker');
+
+        $query = Model_Swing::query()
+            ->select('stime', 'attacktype', 'damagetype', 'swingtype', 'special', 'dmgadjust')
+            ->distinct(true)
+            ->where(array('encid' => $encid))
+            ->where('swingtype', 'not in', '1,11,20');
+
+        if (isset($attacker))
+        {
+            $data['name'] = urldecode($attacker);
+            $query = $query->where(array('attacker' => urldecode($attacker)));
+        }
+        else {
+            Response::redirect_back('encounter/index');
+        }
+
+        if ( ! $data['swing'] = $query->get() )
+		{
+			Session::set_flash('error', 'Could not find swing #'.$encid);
+			Response::redirect_back('attacktype/view/'.$encid);
+		}
+
+		$this->template->title = "Swing flow";
+		$this->template->content = View::forge('swing/flow', $data);
+
+	}
 
 }
