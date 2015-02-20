@@ -17,13 +17,7 @@
 			<th>Enchps</th>
 			<th>Overhealpct</th>
 			<th>Tohit</th>
-			<th>Critdamperc</th>
-			<th>Crithealperc</th>
-			<th>Kills</th>
 			<th>Deaths</th>
-			<th>Parrypct</th>
-			<th>Blockpct</th>
-			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -43,19 +37,7 @@
 			<td><?php echo round($item->enchps); ?></td>
 			<td><?php echo $item->overhealpct; ?></td>
 			<td><?php echo sprintf('%d%%', round($item->tohit, 2)); ?></td>
-			<td><?php echo $item->critdamperc; ?></td>
-			<td><?php echo $item->crithealperc; ?></td>
-			<td><?php echo $item->kills; ?></td>
 			<td><?php echo $item->deaths; ?></td>
-			<td><?php echo $item->parrypct; ?></td>
-			<td><?php echo $item->blockpct; ?></td>
-			<td>
-				<div class="btn-toolbar">
-					<div class="btn-group">
-                        <?php echo Html::anchor('combatant/view/'.$item->id, '<i class="icon-eye-open"></i> View', array('class' => 'btn btn-small')); ?>
-				</div>
-
-			</td>
 		</tr>
 <?php endforeach; ?>
     </tbody>
