@@ -96,9 +96,9 @@ class Controller_Attacktype extends Controller_Template
         {
             $this->template->title = Model_Damagetype::find('first', array(
                 'select' => array('type'),
-                'where' => array('encid' => $encid),
-                'where' => array('grouping', 'like', 'attacker='.$attacker.'%'),
                 'where' => array(
+                    array('encid' => $encid),
+                    array('grouping', 'like', 'attacker='.$attacker.'%'),
                     array('grouping', 'like', '%swingtype2='.$swingtype2),
                     'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
                 ),
@@ -108,9 +108,9 @@ class Controller_Attacktype extends Controller_Template
         {
             $this->template->title = Model_Damagetype::find('first', array(
                 'select' => array('type'),
-                'where' => array('encid' => $encid),
-                'where' => array('grouping', 'like', 'victim='.$victim.'%'),
                 'where' => array(
+                    array('encid' => $encid),
+                    array('grouping', 'like', 'victim='.$victim.'%'),
                     array('grouping', 'like', '%swingtype2='.$swingtype2),
                     'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
                 ),
