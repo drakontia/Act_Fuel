@@ -92,14 +92,30 @@ class Controller_Attacktype extends Controller_Template
 			Response::redirect_back('damagetype/view/'.$encid.'?name='.urlencode($attacker).urlencode($victim));
 		}
 
-        $this->template->title = Model_Damagetype::find('first', array(
-            'select' => array('type'),
-            'where' => array('encid' => $encid),
-            'where' => array(
-                array('grouping', 'like', '%swingtype2='.$swingtype2),
-                'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
-            ),
-        ));
+        if (isset($attacker))
+        {
+            $this->template->title = Model_Damagetype::find('first', array(
+                'select' => array('type'),
+                'where' => array('encid' => $encid),
+                'where' => array('grouping', 'like', 'attacker='.$attacker.'%'),
+                'where' => array(
+                    array('grouping', 'like', '%swingtype2='.$swingtype2),
+                    'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
+                ),
+            ))->type;
+        }
+        elseif (isset($victim))
+        {
+            $this->template->title = Model_Damagetype::find('first', array(
+                'select' => array('type'),
+                'where' => array('encid' => $encid),
+                'where' => array('grouping', 'like', 'victim='.$victim.'%'),
+                'where' => array(
+                    array('grouping', 'like', '%swingtype2='.$swingtype2),
+                    'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
+                ),
+            ))->type;
+        }
 		$this->template->content = View::forge('attacktype/view', $data);
 
 	}
