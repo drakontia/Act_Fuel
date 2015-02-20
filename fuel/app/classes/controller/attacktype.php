@@ -99,8 +99,10 @@ class Controller_Attacktype extends Controller_Template
                 'where' => array(
                     array('encid' => $encid),
                     array('grouping', 'like', 'attacker='.$attacker.'%'),
-                    array('grouping', 'like', '%swingtype2='.$swingtype2),
-                    'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
+                    array(
+                        array('grouping', 'like', '%swingtype%='.$swingtype2.'%'),
+                        'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
+                    ),
                 ),
             ))->type;
         }
@@ -111,8 +113,10 @@ class Controller_Attacktype extends Controller_Template
                 'where' => array(
                     array('encid' => $encid),
                     array('grouping', 'like', 'victim='.$victim.'%'),
-                    array('grouping', 'like', '%swingtype2='.$swingtype2),
-                    'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
+                    array(
+                        array('grouping', 'like', '%swingtype%='.$swingtype2.'%'),
+                        'or' => array('grouping', 'like', '%swingtype='.$swingtype.'%'),
+                    ),
                 ),
             ))->type;
         }
