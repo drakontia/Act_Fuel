@@ -15,7 +15,7 @@
 	<tbody>
 <?php foreach ($swing as $item): ?>
         <tr>
-			<td><?php echo strftime('%c', strtotime($item['stime'])); ?></td>
+			<td><?php echo Date::create_from_string($item['stime'])->format('%X'); ?></td>
 			<td><?php echo $item['attacktype']; ?></td>
 			<td><?php echo $item['swingtype']; ?></td>
 			<td><?php echo $item['damagetype']; ?></td>
