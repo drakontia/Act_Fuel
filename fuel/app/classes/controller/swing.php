@@ -73,8 +73,8 @@ class Controller_Swing extends Controller_Template
 
         $attacker= Input::param('attacker');
 
-        $query = Model_Swing::query()
-            ->select('stime', 'attacktype', 'damagetype', 'swingtype', 'special', 'dmgadjust')
+        $query = DB::select('stime', 'attacktype', 'damagetype', 'swingtype', 'special', 'dmgadjust')
+            ->from('swing_table')
             ->distinct(true)
             ->where(array('encid' => $encid))
             ->where('swingtype', 'not in', '1,11,20');
@@ -88,7 +88,7 @@ class Controller_Swing extends Controller_Template
             Response::redirect_back('encounter/index');
         }
 
-        if ( ! $data['swing'] = $query->get() )
+        if ( ! $data['swing'] = $query->as_object('Model_Swing')->execute() )
 		{
 			Session::set_flash('error', 'Could not find swing #'.$encid);
 			Response::redirect_back('attacktype/view/'.$encid);
