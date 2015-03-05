@@ -21,7 +21,7 @@ class Controller_Combatant extends Controller_Template
 				  var obja = document.getElementById("form_encountera");
                   index = obja.selectedIndex;
                   if (index != 0){
-                    encid = obj.options[index].value;
+                    encid = obja.options[index].value;
 				    var combatants = "combatant/list/" + encid;
                   }
 				
@@ -51,7 +51,7 @@ class Controller_Combatant extends Controller_Template
 				  var objb = document.getElementById("form_encounterb");
                   index = objb.selectedIndex;
                   if (index != 0){
-                    encid = obj.options[index].value;
+                    encid = objb.options[index].value;
 				    var combatants = "combatant/list/" + encid;
                   }
 				
