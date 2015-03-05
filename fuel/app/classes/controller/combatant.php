@@ -42,7 +42,7 @@ class Controller_Combatant extends Controller_Template
 				
 				function checkStatusA(){
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-				    var node = document.getElementById("form_titlea");
+				    var node = document.getElementById("form_combatanta");
 				    node.innertext = xmlHttp.responseText;
 				  }
 				}
@@ -72,7 +72,7 @@ class Controller_Combatant extends Controller_Template
 				
 				function checkStatusB(){
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-				    var node = document.getElementById("form_titleb");
+				    var node = document.getElementById("form_combatantb");
 				    node.innertext = xmlHttp.responseText;
 				  }
 				}';
