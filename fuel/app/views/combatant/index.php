@@ -11,25 +11,25 @@
 <div class="form-group">
     <?php echo Form::label('実施場所A', 'encountera', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::select('encountera', $elist); ?>
+        <?php echo Form::select('encountera', 'none', $elist); ?>
     </div>
 </div>
 <div class="form-group">
     <?php echo Form::label('実施者A', 'titlea', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::select('titlea', array('none' => 'none')); ?>
+        <?php echo Form::select('titlea', 'none', array('none' => 'none')); ?>
     </div>
 </div>
 <div class="form-group">
     <?php echo Form::label('実施場所B', 'encounterb', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::select('encounterb', $elist); ?>
+        <?php echo Form::select('encounterb', 'none', $elist); ?>
     </div>
 </div>
 <div class="form-group">
     <?php echo Form::label('実施者B', 'titleb', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::select('titleb', array('none' => 'none')); ?>
+        <?php echo Form::select('titleb', 'none', array('none' => 'none')); ?>
     </div>
 </div>
 <div class="form-group">
