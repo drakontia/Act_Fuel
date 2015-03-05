@@ -7,7 +7,7 @@
     endforeach;
 ?>
 
-<?php echo Form::open('swing/compare', 'form-horizontal'); ?>
+<?php echo Form::open('swing/compare', array('class' => 'form-horizontal')); ?>
 <div class="form-group">
     <?php echo Form::label('実施場所A', 'encountera', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
