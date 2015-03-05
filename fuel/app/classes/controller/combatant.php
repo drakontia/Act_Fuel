@@ -18,7 +18,7 @@ class Controller_Combatant extends Controller_Template
                 var xmlHttp;
 
 				function setCombatantA(){
-				  var obja = document.getElementById("for_encountera");
+				  var obja = document.getElementById("form_encountera");
                   index = obja.selectedIndex;
                   if (index != 0){
                     encid = obj.options[index].value;
@@ -48,7 +48,7 @@ class Controller_Combatant extends Controller_Template
 				}
 
 				function setCombatantB(){
-				  var objb = document.getElementById("for_encounterb");
+				  var objb = document.getElementById("form_encounterb");
                   index = objb.selectedIndex;
                   if (index != 0){
                     encid = obj.options[index].value;
