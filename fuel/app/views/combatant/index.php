@@ -9,9 +9,9 @@
 
 <?php echo Form::open(array('action' => 'swing/compare', 'class' => 'form-horizontal')); ?>
 <div class="form-group">
-    <?php echo Form::label('実施場所A', 'encountera', array('class' => 'col-sm-2 control-label', 'onChange' => 'setCombatantA()')); ?>
+    <?php echo Form::label('実施場所A', 'encountera', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::select('encountera', 'none', $elist); ?>
+        <?php echo Form::select('encountera', 'none', $elist, array('onChange' => 'setCombatantA()')); ?>
     </div>
 </div>
 <div class="form-group">
@@ -21,9 +21,9 @@
     </div>
 </div>
 <div class="form-group">
-    <?php echo Form::label('実施場所B', 'encounterb', array('class' => 'col-sm-2 control-label', 'onChange' => 'setCombatantB()')); ?>
+    <?php echo Form::label('実施場所B', 'encounterb', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::select('encounterb', 'none', $elist); ?>
+        <?php echo Form::select('encounterb', 'none', $elist, array('onChange' => 'setCombatantB()')); ?>
     </div>
 </div>
 <div class="form-group">
