@@ -2,10 +2,12 @@
 class Controller_Swing extends Controller_Template
 {
 
-	public function action_index()
+	public function action_index($encid = null)
 	{
+		is_null($encid) and Response::redirect_back('encounter/index');
+
 		$data['swings'] = Model_Swing::find('all');
-		$this->template->title = "Swings";
+		$this->template->title = "Compare swings";
 		$this->template->content = View::forge('swing/index', $data);
 
 	}

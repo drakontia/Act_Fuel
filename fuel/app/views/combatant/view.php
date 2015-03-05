@@ -1,5 +1,7 @@
 <h2>Listing <span class='muted'>Combatants</span></h2>
 <br>
+<?php $compareurl = 'combatant/index'; ?>
+<p><?php echo Html::anchor($compareurl, 'Compare swing flow of combatants'); ?></p>
 <?php if ($combatant): ?>
 <table class="table table-bordered">
 	<thead>
