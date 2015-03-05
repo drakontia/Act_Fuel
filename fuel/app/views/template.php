@@ -10,7 +10,7 @@
     <?php if (isset($script)): ?>
     <script type="text/javascript">
     <!--
-    <?php echo $script; ?>
+    <?php echo html_entity_decode($script); ?>
     // -->
     </script>
     <?php endif; ?>

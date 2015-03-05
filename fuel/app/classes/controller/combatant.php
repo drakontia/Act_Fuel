@@ -14,7 +14,7 @@ class Controller_Combatant extends Controller_Template
 		}
 
         $this->template->title = 'Compare combatants';
-        $this->template->script= '
+        $scriptorg = '
                 var xmlHttp;
 
 				function setCombatantA(){
@@ -76,6 +76,7 @@ class Controller_Combatant extends Controller_Template
 				    node.innertext = xmlHttp.responseText;
 				  }
 				}';
+        $this->template->script= htmlentities($scriptorg);
 		$this->template->content = View::forge('combatant/index', $data);
 
 	}
