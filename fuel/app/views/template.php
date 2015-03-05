@@ -7,6 +7,13 @@
 	<style>
 		body { margin: 40px; }
 	</style>
+    <?php if (isset($script)): ?>
+    <script type="text/javascript">
+    <!--
+    <?php echo $script; ?>
+    // -->
+    </script>
+    <?php endif; ?>
 </head>
 <body>
 	<div class="container">
