@@ -113,15 +113,30 @@ class Controller_Swing extends Controller_Template
 	public function action_compare()
 	{
         $encountera = Input::param('encountera');
+        $titlea = Model_Encounter::find('first', array(
+            'select' => array('starttime', 'zone'),
+            'where' => array('encid' => $encountera),
+        ));
+        $data['encountera'] = $titlea->zone;
+        $data['starttimea'] = $titlea->starttime;
         $combatanta = Input::param('combatanta');
+        $data['combatanta'] = $combatanta;
         $encounterb = Input::param('encounterb');
+        $titleb = Model_Encounter::find('first', array(
+            'select' => array('starttime', 'zone'),
+            'where' => array('encid' => $encounterb),
+        ));
+        $data['encounterb'] = $titleb->zone;
+        $data['starttimeb'] = $titleb->starttime;
         $combatantb = Input::param('combatantb');
+        $data['combatantb'] = $combatantb;
 
         $queryA = DB::select('stime', 'attacker', 'attacktype', 'swingtype', 'special', 'dmgadjust')
             ->from('swing_table')
             ->distinct(true)
             ->where(array('encid' => $encountera))
             ->where(array('attacker' => $combatanta))
+            ->where('attacktype', 'not like', '鼓舞')
             ->where('swingtype', 'not in', array(1,11,20,21));
 
         $queryB = DB::select('stime', 'attacker', 'attacktype', 'swingtype', 'special', 'dmgadjust')
@@ -129,6 +144,7 @@ class Controller_Swing extends Controller_Template
             ->distinct(true)
             ->where(array('encid' => $encounterb))
             ->where(array('attacker' => $combatantb))
+            ->where('attacktype', 'not like', '鼓舞')
             ->where('swingtype', 'not in', array(1,11,20,21));
 
         if ( ! $data['swingA'] = $queryA->execute()->as_array() )

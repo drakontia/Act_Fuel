@@ -1,13 +1,15 @@
-<h2>Listing <span class='muted'>Swing Compare</span></h2>
-<br>
-<div class="col-md-12">
+<div class="row">
 
 <div class="col-md-6">
 <?php if ($swingA): ?>
+<h3><?php echo $encountera.' - '.$starttimea; ?></h3>
+<br>
+<h4><?php echo $combatanta; ?></h4>
+<br>
 <table class="table table-bordered">
 	<thead>
 		<tr>
-			<th>時刻</th>
+			<th>経過時間</th>
 			<th>項目</th>
 			<th>状態</th>
 			<th>調整率</th>
@@ -16,7 +18,7 @@
 	<tbody>
 <?php foreach ($swingA as $item): ?>
         <tr>
-			<td><?php echo Date::forge(strtotime($item['stime']))->format('%X'); ?></td>
+			<td><?php echo sprintf ("%'.02d:%'.02d", (strtotime($item['stime']) - strtotime($starttimea)) / 60, (strtotime($item['stime']) - strtotime($starttimea)) % 60); ?></td>
 			<td><?php echo $item['attacktype']; ?></td>
 			<td><?php echo $item['special']; ?></td>
 			<td><?php echo $item['dmgadjust']; ?></td>
@@ -33,10 +35,14 @@
 
 <div class="col-md-6">
 <?php if ($swingB): ?>
+<h3><?php echo $encounterb.' - '.$starttimeb; ?></h3>
+<br>
+<h4><?php echo $combatantb; ?></h4>
+<br>
 <table class="table table-bordered">
 	<thead>
 		<tr>
-			<th>時刻</th>
+			<th>経過時間</th>
 			<th>項目</th>
 			<th>状態</th>
 			<th>調整率</th>
@@ -45,7 +51,7 @@
 	<tbody>
 <?php foreach ($swingB as $item): ?>
         <tr>
-			<td><?php echo Date::forge(strtotime($item['stime']))->format('%X'); ?></td>
+			<td><?php echo sprintf ("%'.02d:%'.02d", (strtotime($item['stime']) - strtotime($starttimeb)) / 60, (strtotime($item['stime']) - strtotime($starttimeb)) % 60); ?></td>
 			<td><?php echo $item['attacktype']; ?></td>
 			<td><?php echo $item['special']; ?></td>
 			<td><?php echo $item['dmgadjust']; ?></td>
