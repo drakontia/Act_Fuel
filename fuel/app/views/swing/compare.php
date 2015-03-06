@@ -14,7 +14,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($swing as $item): ?>
+<?php foreach ($swingA as $item): ?>
         <tr>
 			<td><?php echo Date::forge(strtotime($item['stime']))->format('%X'); ?></td>
 			<td><?php echo $item['attacktype']; ?></td>
@@ -43,7 +43,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($swing as $item): ?>
+<?php foreach ($swingB as $item): ?>
         <tr>
 			<td><?php echo Date::forge(strtotime($item['stime']))->format('%X'); ?></td>
 			<td><?php echo $item['attacktype']; ?></td>
