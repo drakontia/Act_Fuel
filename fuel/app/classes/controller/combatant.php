@@ -43,7 +43,13 @@ class Controller_Combatant extends Controller_Template
 				function checkStatusA(){
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 				    var node = document.getElementById("form_combatanta");
-				    node.innertext = xmlHttp.responseText;
+                    var lists = JSON.parse(xmlHttp.responseText);
+                    len = lists.length;
+
+                    for(var i = 0; i < len; i++)
+                    {
+                        node.append($("<option>").attr({"value":lists[i].name}).text(lists[i].name));
+                    }
 				  }
 				}
 
@@ -73,7 +79,13 @@ class Controller_Combatant extends Controller_Template
 				function checkStatusB(){
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 				    var node = document.getElementById("form_combatantb");
-				    node.innertext = xmlHttp.responseText;
+                    var lists = JSON.parse(xmlHttp.responseText);
+                    len = lists.length;
+
+                    for(var i = 0; i < len; i++)
+                    {
+                        node.append($("<option>").attr({"value":lists[i].name}).text(lists[i].name));
+                    }
 				  }
 				}';
         $this->template->script= htmlentities($scriptorg);
@@ -104,20 +116,19 @@ class Controller_Combatant extends Controller_Template
 
 	}
 
-	public function action_list($encid = null)
+    protected $format = 'json';
+
+	public function get_list($encid = null)
 	{
-		is_null($encid) and Response::redirect('combatant/index');
+
+		is_null($encid) and Response::redirect('404');
 
         if ( $combatants = Model_Combatant::find('all', array(
+            'select' => array('name'),
             'where' => array('encid' => $encid),
-            'order_by' => array('job' => 'desc'),
         )))
         {
-            foreach($combatants as $item)
-            {
-                $value .= html_tag('option', array('value' => $item->name), $item->name);
-            }
-            return $value;
+            return $this->response($combatants);
         }
 
 	}
