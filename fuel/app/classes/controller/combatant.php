@@ -22,7 +22,7 @@ class Controller_Combatant extends Controller_Template
                   index = obja.selectedIndex;
                   if (index != 0){
                     encid = obja.options[index].value;
-				    var combatants = "combatant/list/" + encid;
+				    var combatants = "list/" + encid;
                   }
 				
 				  if (window.XMLHttpRequest){
@@ -58,7 +58,7 @@ class Controller_Combatant extends Controller_Template
                   index = objb.selectedIndex;
                   if (index != 0){
                     encid = objb.options[index].value;
-				    var combatants = "combatant/list/" + encid;
+				    var combatants = "list/" + encid;
                   }
 				
 				  if (window.XMLHttpRequest){
