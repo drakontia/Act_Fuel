@@ -45,9 +45,9 @@ class Controller_Combatant extends Controller_Template
 				    var node = document.getElementById("form_combatanta");
                     var lists = JSON.parse(xmlHttp.responseText);
 
-                    var option = document.createElement("option");
                     for(var i in lists)
                     {
+                        var option = document.createElement("option");
                         option.value = lists[i].name;
                         option.appendChild(document.createTextNode(lists[i].name));
                         node.appendChild(option);
@@ -83,9 +83,9 @@ class Controller_Combatant extends Controller_Template
 				    var node = document.getElementById("form_combatantb");
                     var lists = JSON.parse(xmlHttp.responseText);
 
-                    var option = document.createElement("option");
                     for(var i in lists)
                     {
+                        var option = document.createElement("option");
                         option.value = lists[i].name;
                         option.appendChild(document.createTextNode(lists[i].name));
                         node.appendChild(option);
