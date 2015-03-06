@@ -22,7 +22,7 @@ class Controller_Combatant extends Controller_Template
                   index = obja.selectedIndex;
                   if (index != 0){
                     encid = obja.options[index].value;
-				    var combatants = "list/" + encid;
+				    var combatants = "http://drakontia.com/list/combatants/" + encid;
                   }
 				
 				  if (window.XMLHttpRequest){
@@ -58,7 +58,7 @@ class Controller_Combatant extends Controller_Template
                   index = objb.selectedIndex;
                   if (index != 0){
                     encid = objb.options[index].value;
-				    var combatants = "list/" + encid;
+				    var combatants = "http://drakontia.com/list/combatants/" + encid;
                   }
 				
 				  if (window.XMLHttpRequest){
@@ -116,20 +116,4 @@ class Controller_Combatant extends Controller_Template
 
 	}
 
-    protected $format = 'json';
-
-	public function get_list($encid = null)
-	{
-
-		is_null($encid) and Response::redirect('404');
-
-        if ( $combatants = Model_Combatant::find('all', array(
-            'select' => array('name'),
-            'where' => array('encid' => $encid),
-        )))
-        {
-            return $this->response($combatants);
-        }
-
-	}
 }
