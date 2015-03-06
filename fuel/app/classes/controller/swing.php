@@ -110,4 +110,40 @@ class Controller_Swing extends Controller_Template
 
 	}
 
+	public function action_compare()
+	{
+        $encountera = Input::param('encountera');
+        $combatanta = Input::param('combatanta');
+        $encounterb = Input::param('encounterb');
+        $combatantb = Input::param('combatantb');
+
+        $queryA = DB::select('stime', 'attacker', 'attacktype', 'swingtype')
+            ->from('swing_table')
+            ->distinct(true)
+            ->where(array('encid' => $encountera))
+            ->where(array('attacker' => $combatanta))
+            ->where('swingtype', 'not in', array(1,11,20,21));
+
+        $queryB = DB::select('stime', 'attacker', 'attacktype', 'swingtype')
+            ->from('swing_table')
+            ->distinct(true)
+            ->where(array('encid' => $encounterb))
+            ->where(array('attacker' => $combatantb))
+            ->where('swingtype', 'not in', array(1,11,20,21));
+
+        if ( ! $data['swingA'] = $queryA->execute()->as_array() )
+		{
+			Session::set_flash('error', 'Could not find swing of'.$encountera);
+			Response::redirect_back('combatant/index');
+		}
+
+        if ( ! $data['swingB'] = $queryB->execute()->as_array() )
+		{
+			Session::set_flash('error', 'Could not find swing of'.$encounterb);
+			Response::redirect_back('combatant/index');
+		}
+
+		$this->template->title = "Swing Compare";
+		$this->template->content = View::forge('swing/compare', $data);
+    }
 }

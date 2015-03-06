@@ -3,11 +3,11 @@
 <?php if ($encounter):
     $elist = array('none' => 'none');
     foreach ($encounter as $item):
-        $elist[] = array($item->encid => $item->title.' - '.$item->starttime);
+        $elist += array($item->encid => $item->title.' - '.$item->starttime);
     endforeach;
 ?>
 
-<?php echo Form::open(array('action' => 'swing/compare', 'class' => 'form-horizontal')); ?>
+<?php echo Form::open(array('action' => 'swing/compare', 'class' => 'form-horizontal', 'method' => 'GET')); ?>
 <div class="form-group">
     <?php echo Form::label('実施場所A', 'encountera', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-4">
