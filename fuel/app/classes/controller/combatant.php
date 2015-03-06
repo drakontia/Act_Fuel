@@ -84,7 +84,10 @@ class Controller_Combatant extends Controller_Template
 
                     for(var i = 0; i < len; i++)
                     {
-                        node.append($("<option>").attr({"value":lists[i].name}).text(lists[i].name));
+                        var option = document.createElement("option");
+                        option.value = lists[i].name;
+                        option.text  = lists[i].name;
+                        node.appendChild(option);
                     }
 				  }
 				}';
