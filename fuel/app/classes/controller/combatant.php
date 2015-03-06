@@ -35,7 +35,7 @@ class Controller_Combatant extends Controller_Template
 				    }
 				  }
 				  xmlHttp.onreadystatechange = checkStatusA;
-				  xmlHttp.open("POST", combatants, true);
+				  xmlHttp.open("GET", combatants, true);
 				
 				  xmlHttp.send(null);
 				}
@@ -71,7 +71,7 @@ class Controller_Combatant extends Controller_Template
 				    }
 				  }
 				  xmlHttp.onreadystatechange = checkStatusB;
-				  xmlHttp.open("POST", combatants, true);
+				  xmlHttp.open("GET", combatants, true);
 				
 				  xmlHttp.send(null);
 				}
