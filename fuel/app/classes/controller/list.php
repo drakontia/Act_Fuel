@@ -1,3 +1,4 @@
+<?php
 class Controller_List extends Controller_Rest
 {
 	protected $format = 'json';
