@@ -6,15 +6,18 @@ class Controller_List extends Controller_Rest
 	public function get_combatants($encid = null)
 	{
 
-		is_null($encid) and Response::redirect_back('encounter/index');
+		is_null($encid) and Response::redirect_back('combatant/index');
 
-        if ( $combatants = Model_Combatant::find('all', array(
-            'select' => array('name', 'encid'),
+        if ( ! $combatants = Model_Combatant::find('all', array(
+            'select' => array('name', 'encid', 'job'),
             'where' => array('encid' => $encid),
         )))
         {
-            return $this->response($combatants);
+			Session::set_flash('error', 'Could not find combatant #'.$encid);
+			Response::redirect_back('combatant/index');
         }
+
+        return $this->response($combatants);
 
     }
 

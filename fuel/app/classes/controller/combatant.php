@@ -53,7 +53,7 @@ class Controller_Combatant extends Controller_Template
                     {
                         var option = document.createElement("option");
                         option.value = lists[i].name;
-                        option.appendChild(document.createTextNode(lists[i].name));
+                        option.appendChild(document.createTextNode(lists[i].name + " " + lists[i].job));
                         node.appendChild(option);
                     }
 				  }
@@ -95,7 +95,7 @@ class Controller_Combatant extends Controller_Template
                     {
                         var option = document.createElement("option");
                         option.value = lists[i].name;
-                        option.appendChild(document.createTextNode(lists[i].name));
+                        option.appendChild(document.createTextNode(lists[i].name + " " + lists[i].job));
                         node.appendChild(option);
                     }
 				  }
