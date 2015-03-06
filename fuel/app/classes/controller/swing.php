@@ -137,7 +137,8 @@ class Controller_Swing extends Controller_Template
             ->where(array('encid' => $encountera))
             ->where(array('attacker' => $combatanta))
             ->where('attacktype', 'not like', '鼓舞')
-            ->where('swingtype', 'not in', array(1,11,20,21));
+            ->where('attacktype', 'not like', '%：効果')
+            ->where('swingtype', 'not in', array(1,11,20));
 
         $queryB = DB::select('stime', 'attacker', 'attacktype', 'swingtype', 'special', 'dmgadjust')
             ->from('swing_table')
@@ -145,7 +146,8 @@ class Controller_Swing extends Controller_Template
             ->where(array('encid' => $encounterb))
             ->where(array('attacker' => $combatantb))
             ->where('attacktype', 'not like', '鼓舞')
-            ->where('swingtype', 'not in', array(1,11,20,21));
+            ->where('attacktype', 'not like', '%：効果')
+            ->where('swingtype', 'not in', array(1,11,20));
 
         if ( ! $data['swingA'] = $queryA->execute()->as_array() )
 		{

@@ -2,9 +2,11 @@
 
 <div class="col-md-6">
 <?php if ($swingA): ?>
-<h3><?php echo $encountera.' - '.$starttimea; ?></h3>
+<h3><?php echo $combatanta; ?></h3>
 <br>
-<h4><?php echo $combatanta; ?></h4>
+<h4><?php echo $encountera; ?></h4>
+<br>
+<h4><?php echo $starttimea; ?></h4>
 <br>
 <table class="table table-bordered">
 	<thead>
@@ -35,9 +37,11 @@
 
 <div class="col-md-6">
 <?php if ($swingB): ?>
-<h3><?php echo $encounterb.' - '.$starttimeb; ?></h3>
+<h3><?php echo $combatantb; ?></h3>
 <br>
-<h4><?php echo $combatantb; ?></h4>
+<h4><?php echo $encounterb; ?></h4>
+<br>
+<h4><?php echo $starttimeb; ?></h4>
 <br>
 <table class="table table-bordered">
 	<thead>
