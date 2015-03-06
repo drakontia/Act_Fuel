@@ -8,12 +8,13 @@ class Controller_List extends Controller_Rest
 		is_null($encid) and Response::redirect_back('encounter/index');
 
         if ( $combatants = Model_Combatant::find('all', array(
-            'select' => array('name'),
+            'select' => array('name', 'encid'),
             'where' => array('encid' => $encid),
         )))
         {
             return $this->response($combatants);
         }
 
-	}
+    }
 
+}

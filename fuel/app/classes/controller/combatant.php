@@ -22,7 +22,7 @@ class Controller_Combatant extends Controller_Template
                   index = obja.selectedIndex;
                   if (index != 0){
                     encid = obja.options[index].value;
-				    var combatants = "http://drakontia.com/list/combatants/" + encid;
+				    var combatants = "http://drakontia.com/actdb/list/combatants/" + encid;
                   }
 				
 				  if (window.XMLHttpRequest){
@@ -58,7 +58,7 @@ class Controller_Combatant extends Controller_Template
                   index = objb.selectedIndex;
                   if (index != 0){
                     encid = objb.options[index].value;
-				    var combatants = "http://drakontia.com/list/combatants/" + encid;
+				    var combatants = "http://drakontia.com/actdb/list/combatants/" + encid;
                   }
 				
 				  if (window.XMLHttpRequest){
