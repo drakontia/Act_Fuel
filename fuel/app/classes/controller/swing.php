@@ -131,7 +131,7 @@ class Controller_Swing extends Controller_Template
         $combatantb = Input::param('combatantb');
         $data['combatantb'] = $combatantb;
 
-        $queryA = DB::select('stime', 'attacker', 'attacktype', 'swingtype', 'special', 'dmgadjust')
+        $queryA = DB::select('stime', 'attacker', 'attacktype', 'special', 'dmgadjust')
             ->from('swing_table')
             ->distinct(true)
             ->where(array('encid' => $encountera))
@@ -140,7 +140,7 @@ class Controller_Swing extends Controller_Template
             ->where('attacktype', 'not like', '%：効果')
             ->where('swingtype', 'not in', array(1,11,20));
 
-        $queryB = DB::select('stime', 'attacker', 'attacktype', 'swingtype', 'special', 'dmgadjust')
+        $queryB = DB::select('stime', 'attacker', 'attacktype', 'special', 'dmgadjust')
             ->from('swing_table')
             ->distinct(true)
             ->where(array('encid' => $encounterb))
