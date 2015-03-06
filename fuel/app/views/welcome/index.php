@@ -47,6 +47,7 @@
 			<div class="col-md-4">
 				<h2>ACT DPS</h2>
                 <p><?php echo Html::anchor('encounter', 'Encounter List'); ?></p>
+                <p><?php echo Html::anchor('combatant/index', 'Compare combatants'); ?></p>
 			</div>
 			<div class="col-md-4">
 				<h2>Links</h2>
