@@ -44,11 +44,13 @@ class Controller_Combatant extends Controller_Template
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 				    var node = document.getElementById("form_combatanta");
                     var lists = JSON.parse(xmlHttp.responseText);
-                    len = lists.length;
 
-                    for(var i = 0; i < len; i++)
+                    var option = document.createElement("option");
+                    for(var i in lists)
                     {
-                        node.append($("<option>").attr({"value":lists[i].name}).text(lists[i].name));
+                        option.value = lists[i].name;
+                        option.appendChild(document.createTextNode(lists[i].name));
+                        node.appendChild(option);
                     }
 				  }
 				}
@@ -80,13 +82,12 @@ class Controller_Combatant extends Controller_Template
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 				    var node = document.getElementById("form_combatantb");
                     var lists = JSON.parse(xmlHttp.responseText);
-                    len = lists.length;
 
-                    for(var i = 0; i < len; i++)
+                    var option = document.createElement("option");
+                    for(var i in lists)
                     {
-                        var option = document.createElement("option");
                         option.value = lists[i].name;
-                        option.text  = lists[i].name;
+                        option.appendChild(document.createTextNode(lists[i].name));
                         node.appendChild(option);
                     }
 				  }
