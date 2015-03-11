@@ -11,11 +11,13 @@
 		a:hover{
 			color: #af4cf0;
 		}
-		body { margin: 0px 0px 40px 0px; }
+        body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+            font-family: Georgia, Meiryo;
+        }
 	</style>
 </head>
 <body>
-<nav class="navbar navbar-inversed">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -25,8 +27,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
-      <?php echo Html::anchor('welcome/index', 'Home'); ?>
+      <?php echo Html::anchor('welcome/index', 'Home', array('class' => 'navbar-brand')); ?>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
