@@ -27,7 +27,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">Brand</a>
-      <?php echo Html::anchor(__root__, 'Home'); ?>
+      <?php echo Html::anchor('welcome/index', 'Home'); ?>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
