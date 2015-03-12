@@ -95,12 +95,12 @@ class Controller_Attacktype extends Controller_Template
         //Get buff/debuff time if attacktype is buff/debuff.
         if (isset($attacker) && $swingtype == 21)
         {
-            $timedata = DB::select()->from('swing_table')
+            $query = DB::select()->from('swing_table')
                 ->where('encid', $encid)
                 ->and_where('attacker', $attacker)
-                ->and_where('swingtype', 'in', array(21,22))
-                ->join('skills', 'LEFT')->on('attacktype', '=', 'skills.name');
-            $queryA->execute()->as_array();
+                ->and_where('swing_table.swingtype', 'in', array(21,22))
+                ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
+            $timedata = $query->execute();
 
             foreach($timedata as $item)
             {
