@@ -32,7 +32,7 @@ class Controller_Attacktype extends Controller_Template
             $where[] = array('victim' => $victim);
         }
         else {
-            Response::redirect('encounter/index');
+            Response::redirect_back('encounter/index');
         }
 
         // swingtype '100' is special magic number. this means skill and healed and buff.
@@ -91,6 +91,30 @@ class Controller_Attacktype extends Controller_Template
 			Session::set_flash('error', 'Could not find attacktype '.$encid);
 			Response::redirect_back('damagetype/view/'.$encid.'?name='.urlencode($attacker).urlencode($victim));
 		}
+
+        //Get buff/debuff time if attacktype is buff/debuff.
+        if (isset($attacker) && $swingtype == 21)
+        {
+            $timedata = DB::select()->from('swing_table')
+                ->where('encid', $encid)
+                ->and_where('attacker', $attacker)
+                ->and_where('swingtype', 'in', array(21,22))
+                ->join('skills', 'LEFT')->on('attacktype', '=', 'skills.name');
+            $queryA->execute()->as_array();
+
+            foreach($timedata as $item)
+            {
+                $timejson[] = array($item->attacktype, $item->victim, strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime)), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime + $item->duration)));
+                if (isset($item->recast))
+                {
+                    $timejson[] = array($item->attacktype, $item->victim,strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime + $item->duration)), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime + $item->recast)));
+                }
+            }
+
+            $data['bufftime'] = json_encode($timejson);
+        }
+
+
 
         if (isset($attacker))
         {

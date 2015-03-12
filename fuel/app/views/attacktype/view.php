@@ -61,7 +61,42 @@ else
 <?php endforeach; ?>
     </tbody>
 </table>
+<script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
+       'version':'1','packages':['timeline']}]}"></script>
+<script type="text/javascript">
 
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+  var dataJson = JSON.parse(<?php echo $bufftime; ?>);
+  var container = document.getElementById('timeline');
+  var chart = new google.visualization.Timeline(container);
+  var dataTable = new google.visualization.DataTable();
+  dataTable.addColumn({ type: 'string', id: 'Attacktype' });
+  dataTable.addColumn({ type: 'string', id: 'Victim' });
+  dataTable.addColumn({ type: 'date', id: 'Start' });
+  dataTable.addColumn({ type: 'date', id: 'End' });
+  var length = dataJson.length;
+  for(var i=0; i < length; i++)
+  {
+    dataTable.addRow([dataJson[i][0], dataJson[i][1], new Date(dataJson[i][2]),  new Date(dataJson[i][3])],);
+  }
+
+  var options = {
+    timeline: { colorByRowLabel: true,
+                rowLabelStyle: { fontName: 'Meiryo', fontSize: 18, color: '#603913' },
+                barLabelStyle: { fontName: 'Georgia', fontSize: 14 }
+              },
+    avoidOverlappingGridLines: false
+  };
+
+  chart.draw(dataTable, options);
+}
+
+</script>
+
+<h2>Buff timer</h2>
+<div id="timeline" style="width: 900px; height: 1000px;"></div>
 <?php else: ?>
 <p>No Attacktype.</p>
 

@@ -43,7 +43,8 @@ class Controller_Combatant extends Controller_Template
 				function checkStatusA(){
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 				    var node = document.getElementById("form_combatanta");
-                    for (var i = node.childNodes.length-1; i>=0; i--)
+                    var length = node.childNodes.length;
+                    for (var i = length-1; i>=0; i--)
                     {
                         node.removeChild(node.childNodes[i]);
                     }
@@ -85,7 +86,8 @@ class Controller_Combatant extends Controller_Template
 				function checkStatusB(){
 				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 				    var node = document.getElementById("form_combatantb");
-                    for (var i = node.childNodes.length-1; i>=0; i--)
+                    var length = node.childNodes.length;
+                    for (var i = length-1; i>=0; i--)
                     {
                         node.removeChild(node.childNodes[i]);
                     }

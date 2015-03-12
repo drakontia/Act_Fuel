@@ -6,7 +6,6 @@
 		<tr>
 			<th>Title</th>
 			<th>Starttime</th>
-			<th>Endtime</th>
 			<th>Duration</th>
 			<th>Damage</th>
 			<th>Encdps</th>
@@ -21,7 +20,6 @@
         <tr>
 			<td><?php echo Html::anchor('combatant/view/'.$item->encid, $item->title); ?></td>
 			<td><?php echo strftime('%c', strtotime($item->starttime)); ?></td>
-			<td><?php echo strftime('%c', strtotime($item->endtime)); ?></td>
 			<td><?php echo sprintf ('%d:%d', $item->duration / 60, $item->duration % 60); ?></td>
 			<td><?php echo $item->damage; ?></td>
 			<td><?php echo round($item->encdps); ?></td>
