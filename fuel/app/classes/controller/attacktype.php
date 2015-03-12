@@ -100,14 +100,14 @@ class Controller_Attacktype extends Controller_Template
                 ->and_where('attacker', $attacker)
                 ->and_where('swing_table.swingtype', 'in', array(21,22))
                 ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
-            $timedata = $query->execute();
+            $timedata = $query->execute()->as_array();
 
             foreach($timedata as $item)
             {
-                $timejson[] = array($item->attacktype, $item->victim, strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime)), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime + $item->duration)));
-                if (isset($item->recast))
+                $timejson[] = array($item['attacktype'], $item['victim'], strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'])), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'] + $item['duration'])));
+                if (isset($item['recast']))
                 {
-                    $timejson[] = array($item->attacktype, $item->victim,strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime + $item->duration)), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item->stime + $item->recast)));
+                    $timejson[] = array($item['attacktype'], $item['victim'], strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'] + $item['duration'])), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'] + $item['recast'])));
                 }
             }
 
