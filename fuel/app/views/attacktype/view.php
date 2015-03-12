@@ -61,6 +61,7 @@ else
 <?php endforeach; ?>
     </tbody>
 </table>
+<?php if($swingtype == 21): ?>
 <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization',
        'version':'1','packages':['timeline']}]}"></script>
 <script type="text/javascript">
@@ -97,6 +98,8 @@ function drawChart() {
 
 <h2>Buff timer</h2>
 <div id="timeline" style="width: 900px; height: 1000px;"></div>
+<?php endif; ?>
+
 <?php else: ?>
 <p>No Attacktype.</p>
 
