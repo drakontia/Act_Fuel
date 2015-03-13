@@ -104,10 +104,10 @@ class Controller_Attacktype extends Controller_Template
 
             foreach($timedata as $item)
             {
-                $timejson[] = array($item['attacktype'], $item['victim'], strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'])), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'] + $item['duration'])));
-                if (isset($item['recast']))
+                $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']), strtotime($item['stime']) + $item['duration']);
+                if ($item['recast'] > 0)
                 {
-                    $timejson[] = array($item['attacktype'], $item['victim'], strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'] + $item['duration'])), strftime('%Y,%m,%d,%H,%M,%S', strtotime($item['stime'] + $item['recast'])));
+                    $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
                 }
             }
 
