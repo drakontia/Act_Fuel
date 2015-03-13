@@ -4,18 +4,15 @@
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css('bootstrap.css'); ?>
+    <?php echo Asset::js(array('jquery.min.js', 'jquery-ui.min.js'), array(), 'jquery', false); ?>
+    <?php if (isset($script)): ?>
+    <?php echo Asset::js($script); ?>
+    <?php endif; ?>
     <style>
         body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
             font-family: Georgia, Meiryo;
         }
     </style>
-    <?php if (isset($script)): ?>
-    <script type="text/javascript">
-    <!--
-    <?php echo html_entity_decode($script); ?>
-    // -->
-    </script>
-    <?php endif; ?>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
