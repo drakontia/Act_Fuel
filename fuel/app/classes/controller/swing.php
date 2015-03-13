@@ -1,5 +1,5 @@
 <?php
-class Controller_Swing extends Controller_Template
+class Controller_Swing extends Controller_Hybrid
 {
 
 	public function action_index($encid = null)
@@ -163,5 +163,27 @@ class Controller_Swing extends Controller_Template
 
 		$this->template->title = "Swing Compare";
 		$this->template->content = View::forge('swing/compare', $data);
+    }
+
+    public function get_timeline($encid = null)
+    {
+        $query = DB::select()->from('swing_table')
+            ->where('encid', $encid)
+            ->and_where('attacker', $attacker)
+            ->and_where('attacktype', $attacktype)
+            ->and_where('swing_table.swingtype', 'in', array(21,22))
+            ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
+        $timedata = $query->execute()->as_array();
+
+        foreach($timedata as $item)
+        {
+            $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']), strtotime($item['stime']) + $item['duration']);
+            if ($item['recast'] > 0)
+            {
+                $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
+            }
+        }
+
+        return $this->response($timejson);
     }
 }

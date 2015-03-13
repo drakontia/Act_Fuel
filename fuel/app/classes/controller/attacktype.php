@@ -1,5 +1,5 @@
 <?php
-class Controller_Attacktype extends Controller_Template
+class Controller_Attacktype extends Controller_Hybrid
 {
 
 	public function action_index()
@@ -91,30 +91,6 @@ class Controller_Attacktype extends Controller_Template
 			Session::set_flash('error', 'Could not find attacktype '.$encid);
 			Response::redirect_back('damagetype/view/'.$encid.'?name='.urlencode($attacker).urlencode($victim));
 		}
-
-        //Get buff/debuff time if attacktype is buff/debuff.
-        if (isset($attacker) && $swingtype == 21)
-        {
-            $query = DB::select()->from('swing_table')
-                ->where('encid', $encid)
-                ->and_where('attacker', $attacker)
-                ->and_where('swing_table.swingtype', 'in', array(21,22))
-                ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
-            $timedata = $query->execute()->as_array();
-
-            foreach($timedata as $item)
-            {
-                $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']), strtotime($item['stime']) + $item['duration']);
-                if ($item['recast'] > 0)
-                {
-                    $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
-                }
-            }
-
-            $data['bufftime'] = json_encode($timejson);
-        }
-
-
 
         if (isset($attacker))
         {

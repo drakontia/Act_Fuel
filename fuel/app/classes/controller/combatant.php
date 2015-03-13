@@ -1,117 +1,34 @@
 <?php
-class Controller_Combatant extends Controller_Template
+class Controller_Combatant extends Controller_Hybrid
 {
 
-	public function action_index()
-	{
-        if ( ! $data['encounter'] = Model_Encounter::find('all', array(
-            'select' => array('encid', 'title', 'starttime'),
-            'order_by' => array('starttime' => 'desc'),
-        )))
-		{
-			Session::set_flash('error', 'Could not find combatant');
-			Response::redirect_back('encounter');
-		}
+  public function action_index()
+  {
+    if ( ! $data['encounter'] = Model_Encounter::find('all', array(
+      'select' => array('encid', 'title', 'starttime'),
+      'order_by' => array('starttime' => 'desc'),
+    )))
+    {
+      Session::set_flash('error', 'Could not find combatant');
+      Response::redirect_back('encounter');
+    }
 
-        $this->template->title = 'Compare combatants';
-        $scriptorg = '
-                var xmlHttp;
+    $this->template->title = 'Compare combatants';
+    $this->template->script= array('combatant.js', array(), 'combatant', false);
+    $this->template->content = View::forge('combatant/index', $data);
 
-				function setCombatantA(){
-				  var obja = document.getElementById("form_encountera");
-                  index = obja.selectedIndex;
-                  if (index != 0){
-                    encid = obja.options[index].value;
-				    var combatants = "http://drakontia.com/actdb/list/combatants/" + encid;
-                  }
-				
-				  if (window.XMLHttpRequest){
-				    xmlHttp = new XMLHttpRequest();
-				  }else{
-				    if (window.ActiveXObject){
-				      xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-				    }else{
-				      xmlHttp = null;
-				    }
-				  }
-				  xmlHttp.onreadystatechange = checkStatusA;
-				  xmlHttp.open("GET", combatants, true);
-				
-				  xmlHttp.send(null);
-				}
-				
-				function checkStatusA(){
-				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-				    var node = document.getElementById("form_combatanta");
-                    var length = node.childNodes.length;
-                    for (var i = length-1; i>=0; i--)
-                    {
-                        node.removeChild(node.childNodes[i]);
-                    }
-                    var lists = JSON.parse(xmlHttp.responseText);
-
-                    for(var i in lists)
-                    {
-                        var option = document.createElement("option");
-                        option.value = lists[i].name;
-                        option.appendChild(document.createTextNode(lists[i].name + " " + lists[i].job));
-                        node.appendChild(option);
-                    }
-				  }
-				}
-
-				function setCombatantB(){
-				  var objb = document.getElementById("form_encounterb");
-                  index = objb.selectedIndex;
-                  if (index != 0){
-                    encid = objb.options[index].value;
-				    var combatants = "http://drakontia.com/actdb/list/combatants/" + encid;
-                  }
-				
-				  if (window.XMLHttpRequest){
-				    xmlHttp = new XMLHttpRequest();
-				  }else{
-				    if (window.ActiveXObject){
-				      xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
-				    }else{
-				      xmlHttp = null;
-				    }
-				  }
-				  xmlHttp.onreadystatechange = checkStatusB;
-				  xmlHttp.open("GET", combatants, true);
-				
-				  xmlHttp.send(null);
-				}
-				
-				function checkStatusB(){
-				  if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
-				    var node = document.getElementById("form_combatantb");
-                    var length = node.childNodes.length;
-                    for (var i = length-1; i>=0; i--)
-                    {
-                        node.removeChild(node.childNodes[i]);
-                    }
-                    var lists = JSON.parse(xmlHttp.responseText);
-
-                    for(var i in lists)
-                    {
-                        var option = document.createElement("option");
-                        option.value = lists[i].name;
-                        option.appendChild(document.createTextNode(lists[i].name + " " + lists[i].job));
-                        node.appendChild(option);
-                    }
-				  }
-				}';
-        $this->template->script= htmlentities($scriptorg);
-		$this->template->content = View::forge('combatant/index', $data);
-
-	}
+  }
 
 	public function action_view($encid = null)
 	{
-		is_null($encid) and Response::redirect('encounter/index');
-
-        $data['encid'] = $encid;
+        if ( is_null($encid) or
+             ( ! $data['encounter'] = Model_Encounter::find('first', array(
+               'where' => array('encid' => $encid),
+        ))))
+        {
+			Session::set_flash('error', 'Could not find encounter #'.$id);
+			Response::redirect_back('encounter/index');
+		}
 
         if ( ! $data['combatant'] = Model_Combatant::find('all', array(
             'where' => array('encid' => $encid),
@@ -122,12 +39,28 @@ class Controller_Combatant extends Controller_Template
 			Response::redirect_back('encounter/index');
 		}
 
-        $this->template->title = Model_Encounter::find('first', array(
-            'select' => array('zone'),
-            'where' => array('encid' => $encid),
-        ))->zone;
+        $this->template->title = $data['encounter']->zone;
 		$this->template->content = View::forge('combatant/view', $data);
 
 	}
+
+	protected $format = 'json';
+
+	public function get_combatants($encid = null)
+	{
+
+		is_null($encid) and Response::redirect_back('combatant/index');
+
+        if ( ! $combatants = Model_Combatant::find('all', array(
+            'select' => array('name', 'encid', 'job'),
+            'where' => array('encid' => $encid),
+        )))
+        {
+			Session::set_flash('error', 'Could not find combatant #'.$encid);
+			Response::redirect_back('combatant/index');
+        }
+
+        return $this->response($combatants);
+    }
 
 }
