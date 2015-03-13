@@ -165,13 +165,16 @@ class Controller_Swing extends Controller_Hybrid
 		$this->template->content = View::forge('swing/compare', $data);
     }
 
-    public function get_timeline($encid = null)
+    public function get_timeline()
     {
+        $encid = Input::param('encid');
+        $attacker = Input::param('attacker');
+        $skill = Input::param('skill');
+
         $query = DB::select()->from('swing_table')
             ->where('encid', $encid)
             ->and_where('attacker', $attacker)
-            ->and_where('attacktype', $attacktype)
-            ->and_where('swing_table.swingtype', 'in', array(21,22))
+            ->and_where('attacktype', $skill)
             ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
         $timedata = $query->execute()->as_array();
 
@@ -185,5 +188,18 @@ class Controller_Swing extends Controller_Hybrid
         }
 
         return $this->response($timejson);
+    }
+    public function get_skills()
+    {
+        $encid = Input::param('encid');
+        $attacker = Input::param('attacker');
+        $query = DB::select()->from('swing_table')
+            ->select('attacktype')
+            ->distinct(true)
+            ->where('encid', $encid)
+            ->and_where('attacker', $attacker);
+        $skilllist = $query->execute()->as_array();
+
+        return $this->response($skilllist);
     }
 }

@@ -15,7 +15,7 @@ $(document).ready(function(){
     }).done(function(data, status, xhr){
       $.each(data, function(i, item){
         $('#skills > option').remove();
-        $('#skills').append($('<option>').html(item.skill).val(item.skill));
+        $('#skills').append($('<option>').html(item.attacktype).val(item.attacktype));
       });
     }).fail(function(xhr, status, error){
       alert(error);
