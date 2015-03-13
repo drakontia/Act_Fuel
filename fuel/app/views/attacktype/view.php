@@ -68,7 +68,6 @@ else
 google.setOnLoadCallback(drawChart);
 function drawChart() {
 
-  //var dataJson = JSON.parse(<?php echo html_entity_decode($bufftime); ?>);
   var dataJson = <?php echo html_entity_decode(mb_convert_encoding($bufftime,"UTF-8")); ?>;
   var container = document.getElementById('timeline');
   var chart = new google.visualization.Timeline(container);
@@ -96,7 +95,7 @@ function drawChart() {
 
 </script>
 
-<h2>Buff timer</h2>
+<h2>Buff timeline</h2>
 <div id="timeline" style="width: 1200px; height: 1000px;"></div>
 <?php endif; ?>
 

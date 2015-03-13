@@ -1,8 +1,14 @@
-<h2>Listing <span class='muted'>Combatants</span></h2>
+<h2><span class='muted'><?php echo $encounter->title; ?></span></h2>
+<ul>
+  <li>開始時刻:<?php echo $encounter->starttime; ?></li>
+  <li>PTDPS:<?php echo $encounter->ptdps; ?></li>
+</ul>
 <br>
 <?php $compareurl = 'combatant/index'; ?>
 <p><?php echo Html::anchor($compareurl, 'Compare swing flow of combatants'); ?></p>
+<br>
 <?php if ($combatant): ?>
+<h4>Buff Timeline</h4>
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -21,9 +27,11 @@
 		</tr>
 	</thead>
 	<tbody>
+<?php $attackerlist = array('none' => 'none'); ?>
 <?php foreach ($combatant as $item): ?>
+<?php $attackerlist[] = array($item->name => $item->name); ?>
         <tr>
-<?php $escapedurl = 'damagetype/view/'.$encid.'?name='.urlencode($item->name); ?>
+<?php $escapedurl = 'damagetype/view/'.$encounter->encid.'?name='.urlencode($item->name); ?>
 			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
 			<td><?php echo $item->job; ?></td>
 			<td><?php echo sprintf ("%'.02d:%'.02d", $item->duration / 60, $item->duration % 60); ?></td>
@@ -41,6 +49,26 @@
     </tbody>
 </table>
 
+<h4>Buff Timeline</h4>
+<?php echo Form::open(array('action' => 'swing/timline', 'class' => 'form-horizontal', 'method' => 'GET')); ?>
+<div class="form-group">
+    <?php echo Form::label('実施者', 'attacker', array('class' => 'col-sm-1 control-label')); ?>
+    <div class="col-sm-4">
+        <?php echo Form::select('attacker', 'none', $attackerlist, array('class' => 'form-control')); ?>
+    </div>
+    <?php echo Form::label('スキル', 'skill', array('class' => 'col-sm-1 control-label')); ?>
+    <div class="col-sm-4">
+        <?php echo Form::select('skill', 'none', array('none' => 'none'), array('class' => 'form-control')); ?>
+    </div>
+</div>
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <?php echo Form::button('addbtn', '追加', array('class' => 'btn btn-primary')); ?>
+        <?php echo Form::button('resetbtn', 'リセット', array('class' => 'btn btn-primary')); ?>
+    </div>
+</div>
+<?php echo Form::close(); ?>
+<div id="timeline" style="width: 1200px; height: 1000px;"></div>
 <?php else: ?>
 <p>No Combatants.</p>
 
