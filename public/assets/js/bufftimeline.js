@@ -31,6 +31,7 @@ $(document).ready(function(){
 
     'clearChart': function() {
       chart.clearChart();
+      dataTable.removeRows(0, dataTable.getNumberOfRows());
     },
   };
 
