@@ -67,24 +67,24 @@ $(function() {
     avoidOverlappingGridLines: false
   };
 
-  gChart = {
+  var gChart = {
     prepareChart: function() {
       dataTable.addColumn({ type: 'string', id: 'Attacktype' });
       dataTable.addColumn({ type: 'string', id: 'Victim' });
       dataTable.addColumn({ type: 'date', id: 'Start' });
       dataTable.addColumn({ type: 'date', id: 'End' });
-    }
+    };
 
     drawChart: function() {
       chart.draw(dataTable, options);
-    }
+    };
 
     addRow: function(data) {
       dataTable.addRow(data);
-    }
+    };
 
     clearChart: function() {
       chart.clearChart();
-    }
+    };
   };
 });
