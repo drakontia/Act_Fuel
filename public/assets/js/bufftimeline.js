@@ -22,6 +22,7 @@ $(document).ready(function(){
     }).always(function(arg1, status, arg2){
       //something
     });
+  });
 
   $('#addbtn').click(function(){
     $.ajax({
