@@ -67,7 +67,7 @@ $(function() {
     avoidOverlappingGridLines: false
   };
 
-  var gChart = {
+  gChart = {
     'prepareChart': function() {
       dataTable.addColumn({ type: 'string', id: 'Attacktype' });
       dataTable.addColumn({ type: 'string', id: 'Victim' });
