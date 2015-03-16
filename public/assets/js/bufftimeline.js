@@ -42,7 +42,7 @@ $(document).ready(function(){
   $('#form_attacker').change(function(){
     $.ajax({
       type: 'GET',
-      url: 'http://drakontia.com/actdb/swing/skills',
+      url: 'http://drakontia.com/actdb/swing/skills.json',
       cache: false,
       datatype: 'json',
       data: {
@@ -64,7 +64,7 @@ $(document).ready(function(){
   $('#addbtn').click(function(){
     $.ajax({
       type: 'GET',
-      url: 'http://drakontia.com/actdb/swing/timeline',
+      url: 'http://drakontia.com/actdb/swing/timeline.json',
       cache: false,
       datatype: 'json',
       data: {
