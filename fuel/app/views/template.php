@@ -8,7 +8,8 @@
     <?php echo Asset::render('jquery'); ?>
     <?php if (isset($script)): ?>
     <?php Asset::js($script); ?>
-    <?php echo Asset::render('bufftimeline'); ?>
+    <?php echo Asset::render('combatant'); ?>
+    <?php Asset::js('https://www.google.com/jsapi'); ?>
     <?php endif; ?>
     <style>
         body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
