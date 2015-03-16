@@ -39,7 +39,7 @@ $(document).ready(function(){
   splitUri = location.pathname.split("/");
   encid = splitUri[splitUri.length - 1];
 
-  $('#attacker').change(function(){
+  $('#form_attacker').change(function(){
     $.ajax({
       type: 'GET',
       url: 'http://drakontia.com/actdb/swing/skills',
