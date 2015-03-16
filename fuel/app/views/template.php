@@ -6,10 +6,10 @@
 	<?php echo Asset::css('bootstrap.css'); ?>
     <?php Asset::js(array('jquery.min.js', 'jquery-ui.min.js'), array(), 'jquery', false); ?>
     <?php echo Asset::render('jquery'); ?>
+    <?php echo Asset::js('https://www.google.com/jsapi'); ?>
     <?php if (isset($script)): ?>
     <?php Asset::js('bufftimeline.js',  array(), 'combatant', false); ?>
     <?php echo Asset::render('combatant'); ?>
-    <?php echo Asset::js('https://www.google.com/jsapi'); ?>
     <?php endif; ?>
     <style>
         body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
