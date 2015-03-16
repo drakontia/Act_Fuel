@@ -19,6 +19,7 @@ $(document).ready(function(){
       dataTable.addColumn({ type: 'string', id: 'Victim' });
       dataTable.addColumn({ type: 'date', id: 'Start' });
       dataTable.addColumn({ type: 'date', id: 'End' });
+      chart.draw(dataTable, options);
     },
 
     'drawChart': function() {
