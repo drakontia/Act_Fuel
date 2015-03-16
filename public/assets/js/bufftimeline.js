@@ -81,7 +81,7 @@ $(document).ready(function(){
       $.each(data, function(i, item){
         gChart.addRow([item[0], item[1], new Date(item[2] * 1000),  new Date(item[3] * 1000)]);
       });
-      gChart.drawChart;
+      gChart.drawChart();
     }).fail(function(xhr, status, error){
       alert(error);
     }).always(function(arg1, status, arg2){
