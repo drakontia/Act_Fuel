@@ -165,6 +165,8 @@ class Controller_Swing extends Controller_Hybrid
 		$this->template->content = View::forge('swing/compare', $data);
     }
 
+    protected $format = 'json';
+
     public function get_skills()
     {
         $encid = Input::param('encid');
