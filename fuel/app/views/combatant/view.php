@@ -52,11 +52,11 @@
 <h4>Buff Timeline</h4>
 <?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal')); ?>
 <div class="form-group">
-    <?php echo Form::label('実施者', 'attacker', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('実施者', 'attackeres', array('class' => 'col-sm-1 control-label')); ?>
     <div class="col-sm-4">
         <?php echo Form::select('attacker', 'none', $attackerlist, array('class' => 'form-control')); ?>
     </div>
-    <?php echo Form::label('スキル', 'skill', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('スキル', 'skills', array('class' => 'col-sm-1 control-label')); ?>
     <div class="col-sm-4">
         <?php echo Form::select('skill', 'none', array('none' => 'none'), array('class' => 'form-control')); ?>
     </div>
