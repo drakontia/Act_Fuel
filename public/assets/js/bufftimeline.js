@@ -7,11 +7,11 @@ $(document).ready(function(){
       type: 'GET',
       url: 'http://drakontia.com/actdb/swing/skills',
       cache: false,
-      datatype: 'json'
+      datatype: 'json',
       data: {
         encid: encid,
         attacker: $('#attacker option:selected').val(),
-      }
+      },
     }).done(function(data, status, xhr){
       $.each(data, function(i, item){
         $('#skills > option').remove();
@@ -28,12 +28,12 @@ $(document).ready(function(){
       type: 'GET',
       url: 'http://drakontia.com/actdb/swing/timeline',
       cache: false,
-      datatype: 'json'
+      datatype: 'json',
       data: {
         encid: encid,
         attacker: $('#attacker option:selected').val(),
         skill: $('#skill option:selected').val(),
-      }
+      },
     }).done(function(data, status, xhr){
       $.each(data, function(i, item){
         gChart.addRow([item[0], item[1], new Date(item[2] * 1000),  new Date(item[3] * 1000)]);
