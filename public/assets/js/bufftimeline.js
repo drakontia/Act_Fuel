@@ -68,23 +68,23 @@ $(function() {
   };
 
   var gChart = {
-    prepareChart: function() {
+    'prepareChart': function() {
       dataTable.addColumn({ type: 'string', id: 'Attacktype' });
       dataTable.addColumn({ type: 'string', id: 'Victim' });
       dataTable.addColumn({ type: 'date', id: 'Start' });
       dataTable.addColumn({ type: 'date', id: 'End' });
-    };
+    },
 
-    drawChart: function() {
+    'drawChart': function() {
       chart.draw(dataTable, options);
-    };
+    },
 
-    addRow: function(data) {
+    'addRow': function(data) {
       dataTable.addRow(data);
-    };
+    },
 
-    clearChart: function() {
+    'clearChart': function() {
       chart.clearChart();
-    };
+    },
   };
 });
