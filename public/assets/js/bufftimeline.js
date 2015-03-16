@@ -50,8 +50,8 @@ $(document).ready(function(){
         attacker: $('#form_attacker option:selected').val(),
       },
     }).done(function(data, status, xhr){
+      $('#form_skill > option').remove();
       $.each(data, function(i, item){
-        $('#form_skill > option').remove();
         $('#form_skill').append($('<option>').html(item.attacktype).val(item.attacktype));
       });
     }).fail(function(xhr, status, error){
