@@ -9,7 +9,7 @@
     <?php if (isset($script)): ?>
     <?php Asset::js('bufftimeline.js',  array(), 'combatant', false); ?>
     <?php echo Asset::render('combatant'); ?>
-    <?php Asset::js('https://www.google.com/jsapi', array(), null, false); ?>
+    <?php echo Asset::js('https://www.google.com/jsapi'); ?>
     <?php endif; ?>
     <style>
         body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
