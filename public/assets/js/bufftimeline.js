@@ -26,7 +26,7 @@ $(document).ready(function(){
     },
 
     'addRow': function(data) {
-      dataTable.addRow(data[0], data[1], data[2], data[3]);
+      dataTable.addRow([data[0], data[1], data[2], data[3]]);
     },
 
     'clearChart': function() {
