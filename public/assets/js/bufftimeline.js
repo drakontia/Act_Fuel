@@ -25,8 +25,8 @@ $(document).ready(function(){
       chart.draw(dataTable, options);
     },
 
-    'addRow': function(data) {
-      dataTable.addRow(data);
+    'addRow': function(skill, victim, start, end) {
+      dataTable.addRow(skill, victim, start, end);
     },
 
     'clearChart': function() {
