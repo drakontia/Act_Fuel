@@ -63,8 +63,8 @@
 </div>
 <div class="form-group">
     <div id="buttons" class="col-sm-offset-2 col-sm-10">
-        <?php echo Form::button('addbtn', '追加', array('class' => 'btn btn-primary')); ?>
-        <?php echo Form::button('resetbtn', 'リセット', array('class' => 'btn btn-primary')); ?>
+        <?php echo Form::button('addbtn', '追加', array('type' => 'button', 'class' => 'btn btn-primary')); ?>
+        <?php echo Form::button('resetbtn', 'リセット', array('type' => 'button', 'class' => 'btn btn-primary')); ?>
     </div>
 </div>
 <?php echo Form::close(); ?>
