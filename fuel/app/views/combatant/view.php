@@ -1,7 +1,7 @@
 <h2><span class='muted'><?php echo $encounter->title; ?></span></h2>
 <ul>
   <li>開始時刻:<?php echo $encounter->starttime; ?></li>
-  <li>PTDPS:<?php echo $encounter->ptdps; ?></li>
+  <li>PTDPS:<?php echo $encounter->encdps; ?></li>
 </ul>
 <br>
 <?php $compareurl = 'combatant/index'; ?>
