@@ -1,4 +1,41 @@
+google.load("visualization", "1", {packages:["timeline"]});
+
 $(document).ready(function(){
+
+  var container = document.getElementById('timeline');
+  var chart = new google.visualization.Timeline(container);
+  var dataTable = new google.visualization.DataTable();
+  var options = {
+    timeline: { colorByRowLabel: true,
+                rowLabelStyle: { fontName: 'Meiryo', fontSize: 12, color: '#603913' },
+                barLabelStyle: { fontName: 'Georgia', fontSize: 8 }
+              },
+    avoidOverlappingGridLines: false
+  };
+
+  gChart = {
+    'prepareChart': function() {
+      dataTable.addColumn({ type: 'string', id: 'Attacktype' });
+      dataTable.addColumn({ type: 'string', id: 'Victim' });
+      dataTable.addColumn({ type: 'date', id: 'Start' });
+      dataTable.addColumn({ type: 'date', id: 'End' });
+    },
+
+    'drawChart': function() {
+      chart.draw(dataTable, options);
+    },
+
+    'addRow': function(data) {
+      dataTable.addRow(data);
+    },
+
+    'clearChart': function() {
+      chart.clearChart();
+    },
+  };
+
+  gChart.prepareChart;
+
   splitUri = location.pathname.split("/");
   encid = splitUri[splitUri.length - 1];
 
@@ -51,42 +88,3 @@ $(document).ready(function(){
     gChart.prepareChart();
   });
 });
-
-google.load("visualization", "1", {packages:["timeline"]});
-
-$(function() {
-
-  var container = document.getElementById('timeline');
-  var chart = new google.visualization.Timeline(container);
-  var dataTable = new google.visualization.DataTable();
-  var options = {
-    timeline: { colorByRowLabel: true,
-                rowLabelStyle: { fontName: 'Meiryo', fontSize: 12, color: '#603913' },
-                barLabelStyle: { fontName: 'Georgia', fontSize: 8 }
-              },
-    avoidOverlappingGridLines: false
-  };
-
-  gChart = {
-    'prepareChart': function() {
-      dataTable.addColumn({ type: 'string', id: 'Attacktype' });
-      dataTable.addColumn({ type: 'string', id: 'Victim' });
-      dataTable.addColumn({ type: 'date', id: 'Start' });
-      dataTable.addColumn({ type: 'date', id: 'End' });
-    },
-
-    'drawChart': function() {
-      chart.draw(dataTable, options);
-    },
-
-    'addRow': function(data) {
-      dataTable.addRow(data);
-    },
-
-    'clearChart': function() {
-      chart.clearChart();
-    },
-  };
-});
-
-google.setOnLoadCallback(gChart.prepareChart());
