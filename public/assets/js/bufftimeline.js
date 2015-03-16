@@ -34,7 +34,7 @@ $(document).ready(function(){
     },
   };
 
-  gChart.prepareChart;
+  gChart.prepareChart();
 
   splitUri = location.pathname.split("/");
   encid = splitUri[splitUri.length - 1];
