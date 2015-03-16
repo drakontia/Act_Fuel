@@ -47,12 +47,12 @@ $(document).ready(function(){
       datatype: 'json',
       data: {
         encid: encid,
-        attacker: $('#attacker option:selected').val(),
+        attacker: $('#form_attacker option:selected').val(),
       },
     }).done(function(data, status, xhr){
       $.each(data, function(i, item){
-        $('#skills > option').remove();
-        $('#skills').append($('<option>').html(item.attacktype).val(item.attacktype));
+        $('#form_skill > option').remove();
+        $('#form_skill').append($('<option>').html(item.attacktype).val(item.attacktype));
       });
     }).fail(function(xhr, status, error){
       alert(error);
@@ -69,8 +69,8 @@ $(document).ready(function(){
       datatype: 'json',
       data: {
         encid: encid,
-        attacker: $('#attacker option:selected').val(),
-        skill: $('#skill option:selected').val(),
+        attacker: $('#form_attacker option:selected').val(),
+        skill: $('#form_skill option:selected').val(),
       },
     }).done(function(data, status, xhr){
       $.each(data, function(i, item){
