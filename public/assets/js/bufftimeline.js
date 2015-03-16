@@ -90,6 +90,5 @@ $(document).ready(function(){
   })
   $('#buttons [name=resetbtn]').click(function(){
     gChart.clearChart();
-    gChart.prepareChart();
   });
 });
