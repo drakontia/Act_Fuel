@@ -165,30 +165,6 @@ class Controller_Swing extends Controller_Hybrid
 		$this->template->content = View::forge('swing/compare', $data);
     }
 
-    public function get_timeline()
-    {
-        $encid = Input::param('encid');
-        $attacker = Input::param('attacker');
-        $skill = Input::param('skill');
-
-        $query = DB::select()->from('swing_table')
-            ->where('encid', $encid)
-            ->and_where('attacker', $attacker)
-            ->and_where('attacktype', $skill)
-            ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
-        $timedata = $query->execute()->as_array();
-
-        foreach($timedata as $item)
-        {
-            $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']), strtotime($item['stime']) + $item['duration']);
-            if ($item['recast'] > 0)
-            {
-                $timejson[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
-            }
-        }
-
-        return $this->response($timejson);
-    }
     public function get_skills()
     {
         $encid = Input::param('encid');
@@ -197,9 +173,34 @@ class Controller_Swing extends Controller_Hybrid
             ->select('attacktype')
             ->distinct(true)
             ->where('encid', $encid)
-            ->and_where('attacker', $attacker);
-        $skilllist = $query->execute()->as_array();
+            ->and_where('attacker', urldecode($attacker));
+        $skills = $query->execute()->as_array();
 
-        return $this->response($skilllist);
+        return $this->response($skills);
+    }
+
+    public function get_timeline()
+    {
+        $encid = Input::param('encid');
+        $attacker = Input::param('attacker');
+        $skill = Input::param('skill');
+
+        $query = DB::select()->from('swing_table')
+            ->where('encid', $encid)
+            ->and_where('attacker', urldecode($attacker))
+            ->and_where('attacktype', urldecode($skill))
+            ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
+        $timedata = $query->execute()->as_array();
+
+        foreach($timedata as $item)
+        {
+            $timeline[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']), strtotime($item['stime']) + $item['duration']);
+            if ($item['recast'] > 0)
+            {
+                $timeline[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
+            }
+        }
+
+        return $this->response($timeline);
     }
 }
