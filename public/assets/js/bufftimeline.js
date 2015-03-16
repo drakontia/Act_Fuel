@@ -9,7 +9,7 @@ $(document).ready(function(){
       cache: false,
       datatype: 'json'
       data: {
-        encid: encid
+        encid: encid,
         attacker: $('#attacker option:selected').val(),
       }
     }).done(function(data, status, xhr){
@@ -30,7 +30,7 @@ $(document).ready(function(){
       cache: false,
       datatype: 'json'
       data: {
-        encid: encid
+        encid: encid,
         attacker: $('#attacker option:selected').val(),
         skill: $('#skill option:selected').val(),
       }
