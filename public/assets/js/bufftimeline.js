@@ -61,7 +61,7 @@ $(document).ready(function(){
     });
   });
 
-  $('#addbtn').click(function(){
+  $('#buttons [name=addbtn]').click(function(){
     $.ajax({
       type: 'GET',
       url: 'http://drakontia.com/actdb/swing/timeline',
@@ -83,7 +83,7 @@ $(document).ready(function(){
       //something
     });
   })
-  $('#resetbtn').click(function(){
+  $('#buttons [name=resetbtn]').click(function(){
     gChart.clearChart();
     gChart.prepareChart();
   });

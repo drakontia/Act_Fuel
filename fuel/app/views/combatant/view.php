@@ -50,7 +50,7 @@
 </table>
 
 <h4>Buff Timeline</h4>
-<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal')); ?>
+<?php echo Form::open(array('class' => 'form-horizontal')); ?>
 <div class="form-group">
     <?php echo Form::label('実施者', 'attackeres', array('class' => 'col-sm-1 control-label')); ?>
     <div class="col-sm-4">
@@ -62,7 +62,7 @@
     </div>
 </div>
 <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
+    <div id="buttons" class="col-sm-offset-2 col-sm-10">
         <?php echo Form::button('addbtn', '追加', array('class' => 'btn btn-primary')); ?>
         <?php echo Form::button('resetbtn', 'リセット', array('class' => 'btn btn-primary')); ?>
     </div>

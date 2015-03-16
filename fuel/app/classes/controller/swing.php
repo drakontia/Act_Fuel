@@ -175,7 +175,8 @@ class Controller_Swing extends Controller_Hybrid
             ->select('attacktype')
             ->distinct(true)
             ->where('encid', $encid)
-            ->and_where('attacker', urldecode($attacker));
+            ->and_where('attacker', urldecode($attacker))
+            ->order_by('attacktype');
         $skills = $query->execute()->as_array();
 
         return $this->response($skills);
@@ -191,6 +192,7 @@ class Controller_Swing extends Controller_Hybrid
             ->where('encid', $encid)
             ->and_where('attacker', urldecode($attacker))
             ->and_where('attacktype', urldecode($skill))
+            ->order_by('attacktype')
             ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
         $timedata = $query->execute()->as_array();
 
