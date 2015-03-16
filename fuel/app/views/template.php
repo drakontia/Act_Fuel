@@ -7,7 +7,7 @@
     <?php Asset::js(array('jquery.min.js', 'jquery-ui.min.js'), array(), 'jquery', false); ?>
     <?php echo Asset::render('jquery'); ?>
     <?php if (isset($script)): ?>
-    <?php Asset::js($script); ?>
+    <?php Asset::js('bufftimeline.js',  array(), 'combatant', false); ?>
     <?php echo Asset::render('combatant'); ?>
     <?php Asset::js('https://www.google.com/jsapi'); ?>
     <?php endif; ?>
