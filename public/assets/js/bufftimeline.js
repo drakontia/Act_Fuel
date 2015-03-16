@@ -19,11 +19,6 @@ $(document).ready(function(){
       dataTable.addColumn({ type: 'string', id: 'Victim' });
       dataTable.addColumn({ type: 'date', id: 'Start' });
       dataTable.addColumn({ type: 'date', id: 'End' });
-      dataTable.addRows([
-    [ '1', 'George Washington', new Date(1789, 3, 29), new Date(1797, 2, 3) ],
-    [ '2', 'John Adams',        new Date(1797, 2, 3),  new Date(1801, 2, 3) ],
-    [ '3', 'Thomas Jefferson',  new Date(1801, 2, 3),  new Date(1809, 2, 3) ]]);
-      chart.draw(dataTable, options);
     },
 
     'drawChart': function() {
@@ -36,6 +31,7 @@ $(document).ready(function(){
 
     'clearChart': function() {
       chart.clearChart();
+      dataTable.removeRows(0, dataTable.getNumberOfRows());
     },
   };
 
