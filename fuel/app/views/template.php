@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css('bootstrap.css'); ?>
-    <?php echo Asset::js(array('jquery.min.js', 'jquery-ui.min.js'), array(), 'jquery', false); ?>
+    <?php Asset::js(array('jquery.min.js', 'jquery-ui.min.js'), array(), 'jquery', false); ?>
+    <?php echo Asset::render('jquery'); ?>
     <?php if (isset($script)): ?>
-    <?php echo Asset::js($script); ?>
+    <?php Asset::js($script); ?>
+    <?php echo Asset::render('bufftimeline'); ?>
     <?php endif; ?>
     <style>
         body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
