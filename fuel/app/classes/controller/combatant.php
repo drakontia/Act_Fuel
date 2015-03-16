@@ -40,7 +40,7 @@ class Controller_Combatant extends Controller_Hybrid
 		}
 
         $this->template->title = $data['encounter']->zone;
-        $this->template->script= array('bufftimeline.js', array(), 'combatant', false);
+        $this->template->script= array(array('bufftimeline.js', 'https://www.google.com/jsapi'),  array(), 'combatant', false);
 		$this->template->content = View::forge('combatant/view', $data);
 
 	}

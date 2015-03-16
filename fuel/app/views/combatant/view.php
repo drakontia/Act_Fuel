@@ -8,7 +8,7 @@
 <p><?php echo Html::anchor($compareurl, 'Compare swing flow of combatants'); ?></p>
 <br>
 <?php if ($combatant): ?>
-<h4>Buff Timeline</h4>
+<h4>Combatant list</h4>
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -50,7 +50,7 @@
 </table>
 
 <h4>Buff Timeline</h4>
-<?php echo Form::open(array('action' => 'swing/timline', 'class' => 'form-horizontal', 'method' => 'GET')); ?>
+<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal')); ?>
 <div class="form-group">
     <?php echo Form::label('実施者', 'attacker', array('class' => 'col-sm-1 control-label')); ?>
     <div class="col-sm-4">

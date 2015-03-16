@@ -51,6 +51,7 @@ $(document).ready(function(){
   });
 });
 
+google.load("visualization", "1", {packages:["timeline"]});
 google.setOnLoadCallback(gChart.prepareChart());
 
 $(function() {
@@ -86,4 +87,4 @@ $(function() {
       chart.clearChart();
     }
   };
-}
+});
