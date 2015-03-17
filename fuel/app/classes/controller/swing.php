@@ -189,6 +189,8 @@ class Controller_Swing extends Controller_Hybrid
         $skill = Input::param('skill');
 
         $query = DB::select()->from('swing_table')
+            ->select('attacker', 'attacktype', 'victim', 'stime', 'skills.duration', 'skills.recast')
+            ->distinct(true)
             ->where('encid', $encid)
             ->and_where('attacker', urldecode($attacker))
             ->and_where('attacktype', urldecode($skill))
@@ -201,7 +203,7 @@ class Controller_Swing extends Controller_Hybrid
             $timeline[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']), strtotime($item['stime']) + $item['duration']);
             if ($item['recast'] > 0)
             {
-                $timeline[] = array($item['attacktype'], $item['victim'], strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
+                $timeline[] = array($item['attacktype'], 'Recast', strtotime($item['stime']) + $item['duration'], strtotime($item['stime']) + $item['recast']);
             }
         }
 
