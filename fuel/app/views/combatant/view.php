@@ -1,14 +1,16 @@
 <h2><span class='muted'><?php echo $encounter->title; ?></span></h2>
-<ul>
-  <li>開始時刻:<?php echo $encounter->starttime; ?></li>
-  <li>PTDPS:<?php echo round($encounter->encdps); ?></li>
-</ul>
+<dl>
+  <dt>開始時刻</dt>
+    <dd><?php echo $encounter->starttime; ?></dd>
+  <dt>PTDPS</dt>
+    <dd><?php echo round($encounter->encdps); ?></dd>
+</dl>
 <br>
 <?php $compareurl = 'combatant/index'; ?>
 <p><?php echo Html::anchor($compareurl, 'Compare swing flow of combatants'); ?></p>
 <br>
 <?php if ($combatant): ?>
-<h4>Combatant list</h4>
+<h3>Combatant list</h3>
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -27,9 +29,9 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php $attackerlist = array('none' => 'none'); ?>
+<?php $attackerlist = 'none'; ?>
 <?php foreach ($combatant as $item): ?>
-<?php $attackerlist[] = array($item->name => $item->name); ?>
+<?php $attackerlist[] = $item->name; ?>
         <tr>
 <?php $escapedurl = 'damagetype/view/'.$encounter->encid.'?name='.urlencode($item->name); ?>
 			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
@@ -49,7 +51,7 @@
     </tbody>
 </table>
 
-<h4>Buff Timeline</h4>
+<h3>Buff Timeline</h3>
 <?php echo Form::open(array('class' => 'form-horizontal')); ?>
 <div class="form-group">
     <?php echo Form::label('実施者', 'attackeres', array('class' => 'col-sm-1 control-label')); ?>
@@ -68,7 +70,7 @@
     </div>
 </div>
 <?php echo Form::close(); ?>
-<div id="timeline" style="width: 1200px; height: 1000px;"></div>
+<div id="timeline"></div>
 <?php else: ?>
 <p>No Combatants.</p>
 
