@@ -47,7 +47,7 @@ $(document).ready(function(){
       datatype: 'json',
       data: {
         encid: encid,
-        attacker: $('#form_attacker option:selected').val(),
+        attacker: $('#form_attacker option:selected').text(),
       },
     }).done(function(data, status, xhr){
       $('#form_skill > option').remove();
