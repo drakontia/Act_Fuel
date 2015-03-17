@@ -6,8 +6,7 @@ $(document).ready(function(){
   var chart = new google.visualization.Timeline(container);
   var dataTable = new google.visualization.DataTable();
   var options = {
-    timeline: { colorByRowLabel: true,
-                rowLabelStyle: { fontName: 'Meiryo', fontSize: 12, color: '#603913' },
+    timeline: { rowLabelStyle: { fontName: 'Meiryo', fontSize: 12 },
                 barLabelStyle: { fontName: 'Georgia', fontSize: 8 }
               },
     avoidOverlappingGridLines: false
