@@ -29,9 +29,9 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php $attackerlist = 'none'; ?>
+<?php $attackerlist = array('none'); ?>
 <?php foreach ($combatant as $item): ?>
-<?php $attackerlist[] = $item->name; ?>
+<?php $attackerlist[] = array($item->name); ?>
         <tr>
 <?php $escapedurl = 'damagetype/view/'.$encounter->encid.'?name='.urlencode($item->name); ?>
 			<td><?php echo Html::anchor($escapedurl, $item->name); ?></td>
