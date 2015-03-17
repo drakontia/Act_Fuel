@@ -69,7 +69,7 @@ $(document).ready(function(){
       datatype: 'json',
       data: {
         encid: encid,
-        attacker: $('#form_attacker option:selected').val(),
+        attacker: $('#form_attacker option:selected').text(),
         skill: $('#form_skill option:selected').val(),
       },
     }).done(function(data, status, xhr){
