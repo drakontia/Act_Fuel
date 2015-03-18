@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="advanced_combat_tracker">
+	<table_data name="encounter_table">
+	<row>
+		<field name="id">420</field>
+		<field name="encid">0032cfc0</field>
+		<field name="title">木人</field>
+		<field name="starttime">2015-03-08 19:04:28</field>
+		<field name="endtime">2015-03-08 19:06:28</field>
+		<field name="duration">120</field>
+		<field name="damage">57902</field>
+		<field name="encdps">482.516666666667</field>
+		<field name="zone">Lavender Beds</field>
+		<field name="kills">0</field>
+		<field name="deaths">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

@@ -7,9 +7,9 @@ return array(
 	'default' => array(
         'type' => 'mysqli',
 		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=actdb_dev',
+			'dsn'        => 'mysql:host=localhost;dbname=act_dev',
 			'username'   => 'user_act',
-			'password'   => 'ba7yd5lv',
+			'password'   => 'testpass',
 		),
 	),
 );

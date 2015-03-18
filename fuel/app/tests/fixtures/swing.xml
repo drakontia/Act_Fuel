@@ -1,0 +1,5090 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="advanced_combat_tracker">
+	<table_data name="swing_table">
+	<row>
+		<field name="id">574319</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:29</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">羅刹衝</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">317</field>
+		<field name="damagestring">317</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574320</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:29</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">スタン</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">2</field>
+		<field name="damagestring">2</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574321</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:28</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">スタン</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">2</field>
+		<field name="damagestring">2</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574322</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:29</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">踏鳴</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">10</field>
+		<field name="damagestring">10</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574323</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:30</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">197</field>
+		<field name="damagestring">197</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574324</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:29</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">踏鳴</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">10</field>
+		<field name="damagestring">10</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574325</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:31</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">206</field>
+		<field name="damagestring">206</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+57%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574326</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:31</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">18</field>
+		<field name="damagestring">18</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574327</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:31</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574328</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:32</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">198</field>
+		<field name="damagestring">198</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574329</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:33</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">421</field>
+		<field name="damagestring">421</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574330</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:33</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷ii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574331</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:34</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">88</field>
+		<field name="damagestring">88</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574332</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:35</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">214</field>
+		<field name="damagestring">214</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574333</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:35</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">415</field>
+		<field name="damagestring">415</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574334</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:35</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574335</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:37</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">243</field>
+		<field name="damagestring">243</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574336</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:37</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">382</field>
+		<field name="damagestring">382</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574337</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:37</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574338</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:37</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">87</field>
+		<field name="damagestring">87</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574339</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:39</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">275</field>
+		<field name="damagestring">275</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574340</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:39</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">440</field>
+		<field name="damagestring">440</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574341</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:39</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574342</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:40</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">捨身</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">20</field>
+		<field name="damagestring">20</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574343</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:40</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">88</field>
+		<field name="damagestring">88</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574344</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:41</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">発勁</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574345</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:41</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">306</field>
+		<field name="damagestring">306</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574346</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:42</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">789</field>
+		<field name="damagestring">789</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574347</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:42</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574348</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:43</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">87</field>
+		<field name="damagestring">87</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574349</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:44</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">473</field>
+		<field name="damagestring">473</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574350</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:44</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">977</field>
+		<field name="damagestring">977</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574351</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:44</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574352</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:45</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">空鳴拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">595</field>
+		<field name="damagestring">595</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574353</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:46</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">493</field>
+		<field name="damagestring">493</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574354</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:46</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">360</field>
+		<field name="damagestring">360</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+57%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574355</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:46</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">18</field>
+		<field name="damagestring">18</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574356</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:46</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574357</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:46</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574358</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">152</field>
+		<field name="damagestring">152</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574359</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">鉄山靠</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">498</field>
+		<field name="damagestring">498</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574360</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">スタン</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">2</field>
+		<field name="damagestring">2</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574361</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:48</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">秘孔拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">101</field>
+		<field name="damagestring">101</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574362</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:48</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">秘孔拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">30</field>
+		<field name="damagestring">30</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574363</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:48</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">468</field>
+		<field name="damagestring">468</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574364</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:50</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">152</field>
+		<field name="damagestring">152</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574365</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:50</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574366</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:50</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">フラクチャー</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">345</field>
+		<field name="damagestring">345</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574367</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:50</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">フラクチャー</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">30</field>
+		<field name="damagestring">30</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574368</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:51</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">471</field>
+		<field name="damagestring">471</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574369</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:52</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">546</field>
+		<field name="damagestring">546</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574370</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:52</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574371</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:52</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574372</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">153</field>
+		<field name="damagestring">153</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574373</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">95</field>
+		<field name="damagestring">95</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574374</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">71</field>
+		<field name="damagestring">71</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574375</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">309</field>
+		<field name="damagestring">309</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574376</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:54</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">693</field>
+		<field name="damagestring">693</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574377</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:54</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574378</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:54</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574379</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:55</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">425</field>
+		<field name="damagestring">425</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574380</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">152</field>
+		<field name="damagestring">152</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574381</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574382</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">72</field>
+		<field name="damagestring">72</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574383</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">617</field>
+		<field name="damagestring">617</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574384</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574385</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574386</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:57</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">306</field>
+		<field name="damagestring">306</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574387</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">761</field>
+		<field name="damagestring">761</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574388</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574389</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">152</field>
+		<field name="damagestring">152</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574390</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574391</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:04:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">72</field>
+		<field name="damagestring">72</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574392</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:00</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">334</field>
+		<field name="damagestring">334</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574393</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:01</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">691</field>
+		<field name="damagestring">691</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574394</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:01</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574395</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">152</field>
+		<field name="damagestring">152</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574396</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574397</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">71</field>
+		<field name="damagestring">71</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574398</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">290</field>
+		<field name="damagestring">290</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574399</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:03</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">893</field>
+		<field name="damagestring">893</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574400</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:03</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574401</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:03</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574402</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:04</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">279</field>
+		<field name="damagestring">279</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574403</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">479</field>
+		<field name="damagestring">479</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574404</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574405</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574406</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574407</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">72</field>
+		<field name="damagestring">72</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574408</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:06</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">300</field>
+		<field name="damagestring">300</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574409</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:07</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">420</field>
+		<field name="damagestring">420</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574410</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:07</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574411</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:07</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574412</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574413</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">71</field>
+		<field name="damagestring">71</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574414</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:09</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">303</field>
+		<field name="damagestring">303</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574415</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:09</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">227</field>
+		<field name="damagestring">227</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+57%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574416</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:09</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">18</field>
+		<field name="damagestring">18</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574417</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:09</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574418</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:09</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574419</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574420</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574421</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">680</field>
+		<field name="damagestring">680</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574422</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574423</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">442</field>
+		<field name="damagestring">442</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574424</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:13</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">601</field>
+		<field name="damagestring">601</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574425</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:13</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574426</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:13</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">460</field>
+		<field name="damagestring">460</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574427</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574428</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574429</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:15</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">564</field>
+		<field name="damagestring">564</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574430</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:15</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574431</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:15</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574432</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:16</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">433</field>
+		<field name="damagestring">433</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574433</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">96</field>
+		<field name="damagestring">96</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574434</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">120</field>
+		<field name="damagestring">120</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574435</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">489</field>
+		<field name="damagestring">489</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574436</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574437</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574438</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:18</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">303</field>
+		<field name="damagestring">303</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574439</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:19</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">秘孔拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">53</field>
+		<field name="damagestring">53</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574440</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:19</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">秘孔拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">30</field>
+		<field name="damagestring">30</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574441</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:20</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574442</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:20</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">76</field>
+		<field name="damagestring">76</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574443</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:20</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">284</field>
+		<field name="damagestring">284</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574444</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">460</field>
+		<field name="damagestring">460</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574445</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574446</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574447</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:22</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">301</field>
+		<field name="damagestring">301</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574448</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574449</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">76</field>
+		<field name="damagestring">76</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574450</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">595</field>
+		<field name="damagestring">595</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574451</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574452</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574453</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:25</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">281</field>
+		<field name="damagestring">281</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574454</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:25</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">746</field>
+		<field name="damagestring">746</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574455</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:25</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574456</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:26</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574457</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:26</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">75</field>
+		<field name="damagestring">75</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574458</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:27</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">300</field>
+		<field name="damagestring">300</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574459</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:27</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">622</field>
+		<field name="damagestring">622</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574460</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:27</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574461</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:29</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">76</field>
+		<field name="damagestring">76</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574462</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:29</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">292</field>
+		<field name="damagestring">292</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574463</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:30</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">218</field>
+		<field name="damagestring">218</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+57%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574464</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:30</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">18</field>
+		<field name="damagestring">18</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574465</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:30</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574466</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:30</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574467</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:31</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">鉄山靠</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">485</field>
+		<field name="damagestring">485</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574468</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:31</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">スタン</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">2</field>
+		<field name="damagestring">2</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574469</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:31</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">301</field>
+		<field name="damagestring">301</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574470</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:32</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">76</field>
+		<field name="damagestring">76</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574471</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:32</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574472</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:32</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">468</field>
+		<field name="damagestring">468</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574473</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:32</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574474</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:32</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574475</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:34</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">419</field>
+		<field name="damagestring">419</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574476</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:34</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">696</field>
+		<field name="damagestring">696</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574477</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:34</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574478</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:34</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574479</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:35</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">76</field>
+		<field name="damagestring">76</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574480</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:35</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574481</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:36</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">305</field>
+		<field name="damagestring">305</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574482</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:36</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">550</field>
+		<field name="damagestring">550</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574483</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:36</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574484</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:36</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574485</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:38</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">75</field>
+		<field name="damagestring">75</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574486</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:38</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574487</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:38</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">298</field>
+		<field name="damagestring">298</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574488</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:38</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">715</field>
+		<field name="damagestring">715</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574489</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:38</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574490</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:40</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">616</field>
+		<field name="damagestring">616</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574491</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:40</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574492</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:41</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">284</field>
+		<field name="damagestring">284</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574493</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:41</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">75</field>
+		<field name="damagestring">75</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574494</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:41</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574495</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:43</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">565</field>
+		<field name="damagestring">565</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574496</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:43</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574497</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:43</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574498</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:43</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">279</field>
+		<field name="damagestring">279</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574499</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:44</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">75</field>
+		<field name="damagestring">75</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574500</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:44</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574501</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:45</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">495</field>
+		<field name="damagestring">495</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574502</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:45</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574503</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:45</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574504</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:45</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">300</field>
+		<field name="damagestring">300</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574505</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:46</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">発勁</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574506</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">424</field>
+		<field name="damagestring">424</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574507</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574508</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574509</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">76</field>
+		<field name="damagestring">76</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574510</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">121</field>
+		<field name="damagestring">121</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574511</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:47</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">436</field>
+		<field name="damagestring">436</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574512</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:49</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">224</field>
+		<field name="damagestring">224</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+57%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574513</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:49</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">18</field>
+		<field name="damagestring">18</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574514</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:49</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574515</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:49</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574516</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:50</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">431</field>
+		<field name="damagestring">431</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574517</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:50</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">138</field>
+		<field name="damagestring">138</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574518</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:51</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">秘孔拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">91</field>
+		<field name="damagestring">91</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574519</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:51</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">秘孔拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">30</field>
+		<field name="damagestring">30</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574520</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:52</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">282</field>
+		<field name="damagestring">282</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574521</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">フラクチャー</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">464</field>
+		<field name="damagestring">464</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574522</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">フラクチャー</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">30</field>
+		<field name="damagestring">30</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574523</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">138</field>
+		<field name="damagestring">138</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574524</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574525</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:53</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574526</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:54</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">空鳴拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">534</field>
+		<field name="damagestring">534</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574527</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:54</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">288</field>
+		<field name="damagestring">288</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574528</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:55</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">709</field>
+		<field name="damagestring">709</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574529</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:55</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574530</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:55</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574531</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">138</field>
+		<field name="damagestring">138</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574532</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574533</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:56</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574534</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:57</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">419</field>
+		<field name="damagestring">419</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574535</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:57</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">445</field>
+		<field name="damagestring">445</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574536</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:57</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574537</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:57</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574538</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">298</field>
+		<field name="damagestring">298</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574539</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">543</field>
+		<field name="damagestring">543</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574540</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574541</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574542</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">138</field>
+		<field name="damagestring">138</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574543</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574544</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:05:59</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574545</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:01</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">451</field>
+		<field name="damagestring">451</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574546</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:01</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">710</field>
+		<field name="damagestring">710</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574547</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:01</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574548</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">137</field>
+		<field name="damagestring">137</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574549</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574550</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:02</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574551</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:03</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">588</field>
+		<field name="damagestring">588</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574552</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:03</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574553</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:03</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">303</field>
+		<field name="damagestring">303</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574554</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:04</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">捨身</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">20</field>
+		<field name="damagestring">20</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574555</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">138</field>
+		<field name="damagestring">138</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574556</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574557</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:05</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574558</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:06</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">316</field>
+		<field name="damagestring">316</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574559</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:06</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">102</field>
+		<field name="damagestring">102</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574560</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:06</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">破砕拳</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">18</field>
+		<field name="damagestring">18</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574561</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:06</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574562</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:06</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574563</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">327</field>
+		<field name="damagestring">327</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574564</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">508</field>
+		<field name="damagestring">508</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574565</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574566</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574567</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574568</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574569</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:08</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">134</field>
+		<field name="damagestring">134</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574570</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:10</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">484</field>
+		<field name="damagestring">484</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574571</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:10</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574572</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:10</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574573</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:10</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">303</field>
+		<field name="damagestring">303</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574574</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574575</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">65</field>
+		<field name="damagestring">65</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574576</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:11</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">134</field>
+		<field name="damagestring">134</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574577</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:12</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">フラクチャー</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">533</field>
+		<field name="damagestring">533</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574578</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:12</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">フラクチャー</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">30</field>
+		<field name="damagestring">30</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574579</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:12</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">328</field>
+		<field name="damagestring">328</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574580</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">908</field>
+		<field name="damagestring">908</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574581</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574582</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574583</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574584</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">134</field>
+		<field name="damagestring">134</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574585</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:14</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">63</field>
+		<field name="damagestring">63</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574586</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:15</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">332</field>
+		<field name="damagestring">332</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574587</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:16</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">連撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">816</field>
+		<field name="damagestring">816</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574588</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:16</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574589</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">309</field>
+		<field name="damagestring">309</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574590</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574591</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">134</field>
+		<field name="damagestring">134</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574592</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:17</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">62</field>
+		<field name="damagestring">62</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574593</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:18</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">正拳突き</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">1028</field>
+		<field name="damagestring">1028</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+21%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574594</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:18</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574595</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:19</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">鉄山靠</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">500</field>
+		<field name="damagestring">500</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574596</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:19</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">326</field>
+		<field name="damagestring">326</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574597</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Touch Of Death (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">86</field>
+		<field name="damagestring">86</field>
+		<field name="critical">T</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574598</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">134</field>
+		<field name="damagestring">134</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574599</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">63</field>
+		<field name="damagestring">63</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574600</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">638</field>
+		<field name="damagestring">638</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574601</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574602</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:21</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574603</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:22</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">315</field>
+		<field name="damagestring">315</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574604</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">518</field>
+		<field name="damagestring">518</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+33%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574605</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双竜脚</field>
+		<field name="damagetype"></field>
+		<field name="victim">木人</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574606</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:23</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">弐の型：走竜</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574607</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:24</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Demolish (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">133</field>
+		<field name="damagestring">133</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574608</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:24</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">62</field>
+		<field name="damagestring">62</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574609</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:24</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">308</field>
+		<field name="damagestring">308</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574610</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:26</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">442</field>
+		<field name="damagestring">442</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+28%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574611</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:26</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">双掌打</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">15</field>
+		<field name="damagestring">15</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574612</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:26</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">参の型：猛虎</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574613</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:26</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">1</field>
+		<field name="attacktype">攻撃</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">269</field>
+		<field name="damagestring">269</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574614</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:27</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">20</field>
+		<field name="attacktype">Fracture (*)</field>
+		<field name="damagetype">Physical</field>
+		<field name="victim">木人</field>
+		<field name="damage">63</field>
+		<field name="damagestring">63</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574615</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:28</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">2</field>
+		<field name="attacktype">崩拳</field>
+		<field name="damagetype">Blunt</field>
+		<field name="victim">木人</field>
+		<field name="damage">579</field>
+		<field name="damagestring">579</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust">+22%</field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574616</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:28</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">疾風迅雷iii</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">12</field>
+		<field name="damagestring">12</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">574617</field>
+		<field name="encid">0032cfc0</field>
+		<field name="stime">2015-03-08 19:06:28</field>
+		<field name="attacker">Drakontia</field>
+		<field name="swingtype">21</field>
+		<field name="attacktype">壱の型：魔猿</field>
+		<field name="damagetype"></field>
+		<field name="victim">Drakontia</field>
+		<field name="damage">0</field>
+		<field name="damagestring">No Damage</field>
+		<field name="critical">F</field>
+		<field name="special">None</field>
+		<field name="dmgadjust"></field>
+		<field name="dmgreduced">0</field>
+		<field name="overheal">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

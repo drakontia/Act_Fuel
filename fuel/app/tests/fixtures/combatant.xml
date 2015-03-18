@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="advanced_combat_tracker">
+	<table_data name="combatant_table">
+	<row>
+		<field name="id">2300</field>
+		<field name="encid">0032cfc0</field>
+		<field name="ally">T</field>
+		<field name="name">Drakontia</field>
+		<field name="starttime">2015-03-08 19:04:28</field>
+		<field name="endtime">2015-03-08 19:06:28</field>
+		<field name="duration">120</field>
+		<field name="damage">57902</field>
+		<field name="damageperc">100%</field>
+		<field name="kills">0</field>
+		<field name="healed">0</field>
+		<field name="healedperc">--</field>
+		<field name="critheals">0</field>
+		<field name="heals">0</field>
+		<field name="curedispels">0</field>
+		<field name="powerdrain">0</field>
+		<field name="powerreplenish">0</field>
+		<field name="dps">482.516666666667</field>
+		<field name="encdps">482.516666666667</field>
+		<field name="enchps">0</field>
+		<field name="hits">196</field>
+		<field name="crithits">60</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">196</field>
+		<field name="healstaken">0</field>
+		<field name="damagetaken">0</field>
+		<field name="deaths">0</field>
+		<field name="tohit">100</field>
+		<field name="critdamperc">31%</field>
+		<field name="crithealperc">0%</field>
+		<field name="threatstr">+(0)0/-(0)0</field>
+		<field name="threatdelta">0</field>
+		<field name="job">Mnk</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="inctohit">0</field>
+		<field name="overhealpct">0%</field>
+	</row>
+	<row>
+		<field name="id">2301</field>
+		<field name="encid">0032cfc0</field>
+		<field name="ally">F</field>
+		<field name="name">木人</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="damageperc">--</field>
+		<field name="kills">0</field>
+		<field name="healed">0</field>
+		<field name="healedperc">--</field>
+		<field name="critheals">0</field>
+		<field name="heals">0</field>
+		<field name="curedispels">0</field>
+		<field name="powerdrain">0</field>
+		<field name="powerreplenish">0</field>
+		<field name="dps">0</field>
+		<field name="encdps">0</field>
+		<field name="enchps">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="healstaken">0</field>
+		<field name="damagetaken">57902</field>
+		<field name="deaths">0</field>
+		<field name="tohit">0</field>
+		<field name="critdamperc">0%</field>
+		<field name="crithealperc">0%</field>
+		<field name="threatstr">+(0)0/-(0)0</field>
+		<field name="threatdelta">0</field>
+		<field name="job"></field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="inctohit">100.00</field>
+		<field name="overhealpct">0%</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

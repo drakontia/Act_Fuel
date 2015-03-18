@@ -1,0 +1,1283 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="advanced_combat_tracker">
+	<table_data name="damagetype_table">
+	<row>
+		<field name="id">50163</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=1</field>
+		<field name="type">Auto-Attack (Out)</field>
+		<field name="starttime">2015-03-08 19:04:30</field>
+		<field name="endtime">2015-03-08 19:04:30</field>
+		<field name="duration">116</field>
+		<field name="damage">17207</field>
+		<field name="encdps">143.391666666667</field>
+		<field name="chardps">143.391666666667</field>
+		<field name="dps">148.336206896552</field>
+		<field name="average">330.904</field>
+		<field name="median">305</field>
+		<field name="minhit">197</field>
+		<field name="maxhit">493</field>
+		<field name="hits">52</field>
+		<field name="crithits">13</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">52</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">2.27451</field>
+		<field name="critperc">25%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50164</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=2</field>
+		<field name="type">Skill/Ability (Out)</field>
+		<field name="starttime">2015-03-08 19:04:29</field>
+		<field name="endtime">2015-03-08 19:04:29</field>
+		<field name="duration">119</field>
+		<field name="damage">32579</field>
+		<field name="encdps">271.491666666667</field>
+		<field name="chardps">271.491666666667</field>
+		<field name="dps">273.773109243697</field>
+		<field name="average">525.468</field>
+		<field name="median">533</field>
+		<field name="minhit">53</field>
+		<field name="maxhit">1028</field>
+		<field name="hits">62</field>
+		<field name="crithits">21</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">62</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">1.95082</field>
+		<field name="critperc">34%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50165</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=20</field>
+		<field name="type">Simulated DoTs (Out)</field>
+		<field name="starttime">2015-03-08 19:04:34</field>
+		<field name="endtime">2015-03-08 19:04:34</field>
+		<field name="duration">113</field>
+		<field name="damage">8116</field>
+		<field name="encdps">67.6333333333333</field>
+		<field name="chardps">67.6333333333333</field>
+		<field name="dps">71.8230088495575</field>
+		<field name="average">98.9756</field>
+		<field name="median">88</field>
+		<field name="minhit">62</field>
+		<field name="maxhit">153</field>
+		<field name="hits">82</field>
+		<field name="crithits">26</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">82</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">3.05405</field>
+		<field name="critperc">32%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50166</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=1&amp;swingtype2=2&amp;swingtype3=20</field>
+		<field name="type">Outgoing Damage</field>
+		<field name="starttime">2015-03-08 19:04:29</field>
+		<field name="endtime">2015-03-08 19:04:29</field>
+		<field name="duration">119</field>
+		<field name="damage">57902</field>
+		<field name="encdps">482.516666666667</field>
+		<field name="chardps">482.516666666667</field>
+		<field name="dps">486.571428571429</field>
+		<field name="average">295.418</field>
+		<field name="median">281</field>
+		<field name="minhit">53</field>
+		<field name="maxhit">1028</field>
+		<field name="hits">196</field>
+		<field name="crithits">60</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">196</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">1.2268</field>
+		<field name="critperc">31%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50167</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=10&amp;swingtype2=11</field>
+		<field name="type">Healed (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50168</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=11</field>
+		<field name="type">Simulated HoTs (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50169</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=30</field>
+		<field name="type">Power Drain (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50170</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=31</field>
+		<field name="type">Power Replenish (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50171</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=15</field>
+		<field name="type">Cure/Dispel (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50172</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=21&amp;swingtype2=22</field>
+		<field name="type">Buff/Debuff (Out)</field>
+		<field name="starttime">2015-03-08 19:04:28</field>
+		<field name="endtime">2015-03-08 19:04:28</field>
+		<field name="duration">120</field>
+		<field name="damage">872</field>
+		<field name="encdps">7.26666666666667</field>
+		<field name="chardps">7.26666666666667</field>
+		<field name="dps">7.26666666666667</field>
+		<field name="average">8.46602</field>
+		<field name="median">12</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">30</field>
+		<field name="hits">103</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">103</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">1.90476</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50173</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia&amp;swingtype=50</field>
+		<field name="type">Threat (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50174</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">attacker=Drakontia</field>
+		<field name="type">All Outgoing (Ref)</field>
+		<field name="starttime">2015-03-08 19:04:28</field>
+		<field name="endtime">2015-03-08 19:04:28</field>
+		<field name="duration">120</field>
+		<field name="damage">58774</field>
+		<field name="encdps">489.783333333333</field>
+		<field name="chardps">489.783333333333</field>
+		<field name="dps">489.783333333333</field>
+		<field name="average">196.569</field>
+		<field name="median">96</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">1028</field>
+		<field name="hits">299</field>
+		<field name="crithits">60</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">299</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">1.2</field>
+		<field name="critperc">20%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50175</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=1&amp;swingtype2=2&amp;swingtype3=20</field>
+		<field name="type">Incoming Damage</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50176</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=20</field>
+		<field name="type">Simulated DoTs (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50177</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=10&amp;swingtype2=11</field>
+		<field name="type">Healed (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50178</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=11</field>
+		<field name="type">Simulated HoTs (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50179</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=30</field>
+		<field name="type">Power Drain (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50180</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=31</field>
+		<field name="type">Power Replenish (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50181</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=15</field>
+		<field name="type">Cure/Dispel (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50182</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=21&amp;swingtype2=22</field>
+		<field name="type">Buff/Debuff (Inc)</field>
+		<field name="starttime">2015-03-08 19:04:29</field>
+		<field name="endtime">2015-03-08 19:04:29</field>
+		<field name="duration">119</field>
+		<field name="damage">441</field>
+		<field name="encdps">3.675</field>
+		<field name="chardps">3.675</field>
+		<field name="dps">3.70588235294118</field>
+		<field name="average">5.65385</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">20</field>
+		<field name="hits">78</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">78</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">2.24528</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50183</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia&amp;swingtype=50</field>
+		<field name="type">Threat (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50184</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">Drakontia</field>
+		<field name="grouping">victim=Drakontia</field>
+		<field name="type">All Incoming (Ref)</field>
+		<field name="starttime">2015-03-08 19:04:29</field>
+		<field name="endtime">2015-03-08 19:04:29</field>
+		<field name="duration">119</field>
+		<field name="damage">441</field>
+		<field name="encdps">3.675</field>
+		<field name="chardps">3.675</field>
+		<field name="dps">3.70588235294118</field>
+		<field name="average">5.65385</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">20</field>
+		<field name="hits">78</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">78</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">2.24528</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50185</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=1</field>
+		<field name="type">Auto-Attack (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50186</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=2</field>
+		<field name="type">Skill/Ability (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50187</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=20</field>
+		<field name="type">Simulated DoTs (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50188</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=1&amp;swingtype2=2&amp;swingtype3=20</field>
+		<field name="type">Outgoing Damage</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50189</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=10&amp;swingtype2=11</field>
+		<field name="type">Healed (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50190</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=11</field>
+		<field name="type">Simulated HoTs (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50191</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=30</field>
+		<field name="type">Power Drain (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50192</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=31</field>
+		<field name="type">Power Replenish (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50193</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=15</field>
+		<field name="type">Cure/Dispel (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50194</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=21&amp;swingtype2=22</field>
+		<field name="type">Buff/Debuff (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50195</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人&amp;swingtype=50</field>
+		<field name="type">Threat (Out)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50196</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">attacker=木人</field>
+		<field name="type">All Outgoing (Ref)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50197</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=1&amp;swingtype2=2&amp;swingtype3=20</field>
+		<field name="type">Incoming Damage</field>
+		<field name="starttime">2015-03-08 19:04:29</field>
+		<field name="endtime">2015-03-08 19:04:29</field>
+		<field name="duration">119</field>
+		<field name="damage">57902</field>
+		<field name="encdps">482.516666666667</field>
+		<field name="chardps">0</field>
+		<field name="dps">486.571428571429</field>
+		<field name="average">295.418</field>
+		<field name="median">281</field>
+		<field name="minhit">53</field>
+		<field name="maxhit">1028</field>
+		<field name="hits">196</field>
+		<field name="crithits">60</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">196</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">1.2268</field>
+		<field name="critperc">31%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50198</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=20</field>
+		<field name="type">Simulated DoTs (Inc)</field>
+		<field name="starttime">2015-03-08 19:04:34</field>
+		<field name="endtime">2015-03-08 19:04:34</field>
+		<field name="duration">113</field>
+		<field name="damage">8116</field>
+		<field name="encdps">67.6333333333333</field>
+		<field name="chardps">0</field>
+		<field name="dps">71.8230088495575</field>
+		<field name="average">98.9756</field>
+		<field name="median">88</field>
+		<field name="minhit">62</field>
+		<field name="maxhit">153</field>
+		<field name="hits">82</field>
+		<field name="crithits">26</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">82</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">3.05405</field>
+		<field name="critperc">32%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50199</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=10&amp;swingtype2=11</field>
+		<field name="type">Healed (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50200</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=11</field>
+		<field name="type">Simulated HoTs (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50201</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=30</field>
+		<field name="type">Power Drain (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50202</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=31</field>
+		<field name="type">Power Replenish (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50203</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=15</field>
+		<field name="type">Cure/Dispel (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50204</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=21&amp;swingtype2=22</field>
+		<field name="type">Buff/Debuff (Inc)</field>
+		<field name="starttime">2015-03-08 19:04:28</field>
+		<field name="endtime">2015-03-08 19:04:28</field>
+		<field name="duration">115</field>
+		<field name="damage">431</field>
+		<field name="encdps">3.59166666666667</field>
+		<field name="chardps">0</field>
+		<field name="dps">3.74782608695652</field>
+		<field name="average">17.24</field>
+		<field name="median">15</field>
+		<field name="minhit">2</field>
+		<field name="maxhit">30</field>
+		<field name="hits">25</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">25</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">4.79167</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50205</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人&amp;swingtype=50</field>
+		<field name="type">Threat (Inc)</field>
+		<field name="starttime">0000-00-00 00:00:00</field>
+		<field name="endtime">0000-00-00 00:00:00</field>
+		<field name="duration">0</field>
+		<field name="damage">0</field>
+		<field name="encdps">0</field>
+		<field name="chardps">0</field>
+		<field name="dps">0</field>
+		<field name="average">0</field>
+		<field name="median">0</field>
+		<field name="minhit">0</field>
+		<field name="maxhit">0</field>
+		<field name="hits">0</field>
+		<field name="crithits">0</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">0</field>
+		<field name="tohit">0</field>
+		<field name="averagedelay">0</field>
+		<field name="critperc">0%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	<row>
+		<field name="id">50206</field>
+		<field name="encid">0032cfc0</field>
+		<field name="combatant">木人</field>
+		<field name="grouping">victim=木人</field>
+		<field name="type">All Incoming (Ref)</field>
+		<field name="starttime">2015-03-08 19:04:28</field>
+		<field name="endtime">2015-03-08 19:04:28</field>
+		<field name="duration">120</field>
+		<field name="damage">58333</field>
+		<field name="encdps">486.108333333333</field>
+		<field name="chardps">0</field>
+		<field name="dps">486.108333333333</field>
+		<field name="average">263.95</field>
+		<field name="median">153</field>
+		<field name="minhit">2</field>
+		<field name="maxhit">1028</field>
+		<field name="hits">221</field>
+		<field name="crithits">60</field>
+		<field name="blocked">0</field>
+		<field name="misses">0</field>
+		<field name="swings">221</field>
+		<field name="tohit">100</field>
+		<field name="averagedelay">1.22449</field>
+		<field name="critperc">27%</field>
+		<field name="parrypct">0%</field>
+		<field name="blockpct">0%</field>
+		<field name="overheal">0</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>
