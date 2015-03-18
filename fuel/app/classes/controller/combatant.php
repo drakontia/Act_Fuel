@@ -47,7 +47,7 @@ class Controller_Combatant extends Controller_Hybrid
 
 	protected $format = 'json';
 
-	public function get_combatants($encid = null)
+	public function get_lists($encid = null)
 	{
 
 		is_null($encid) and Response::redirect_back('combatant/index');

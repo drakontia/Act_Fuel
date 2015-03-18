@@ -8,7 +8,7 @@
     <?php echo Asset::render('jquery'); ?>
     <?php echo Asset::js('https://www.google.com/jsapi'); ?>
     <?php if (isset($script)): ?>
-    <?php Asset::js('bufftimeline.js',  array(), 'combatant', false); ?>
+    <?php Asset::js(array('combatant.js', 'bufftimeline.js'),  array(), 'combatant', false); ?>
     <?php echo Asset::render('combatant'); ?>
     <?php endif; ?>
     <style>

@@ -5,7 +5,7 @@ function setCombatantA(){
   index = obja.selectedIndex;
   if (index != 0){
     encid = obja.options[index].value;
-    var combatants = "http://drakontia.com/actdb/combatants/list/" + encid;
+    var combatants = "http://drakontia.com/actdb/combatants/lists/" + encid;
   }
 
   if (window.XMLHttpRequest){
@@ -48,7 +48,7 @@ function setCombatantB(){
   index = objb.selectedIndex;
   if (index != 0){
     encid = objb.options[index].value;
-    var combatants = "http://drakontia.com/actdb/combatants/list/" + encid;
+    var combatants = "http://drakontia.com/actdb/combatants/lists/" + encid;
   }
 
   if (window.XMLHttpRequest){
