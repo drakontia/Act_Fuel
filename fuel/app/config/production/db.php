@@ -4,7 +4,7 @@
  */
 
 return array(
-	'production' => array(
+	'default' => array(
         'type' => 'mysqli',
 		'connection'  => array(
             'hostname'   => 'localhost',
