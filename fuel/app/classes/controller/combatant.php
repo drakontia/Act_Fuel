@@ -39,7 +39,7 @@ class Controller_Combatant extends Controller_Hybrid
 			Response::redirect_back('encounter/index');
 		}
 
-        $this->template->title = $data['encounter']->zone;
+        $this->template->title = $data['encounter']->title;
         $this->template->script = array('bufftimeline.js',  array(), 'combatant', false);
 		$this->template->content = View::forge('combatant/view', $data);
 

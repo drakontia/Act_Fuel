@@ -1,4 +1,4 @@
-<h2><span class='muted'><?php echo $encounter->title; ?></span></h2>
+<h2><span class='muted'><?php echo $encounter->zone; ?></span></h2>
 <dl>
   <dt>開始時刻</dt>
     <dd><?php echo $encounter->starttime; ?></dd>
@@ -55,16 +55,14 @@
 <?php echo Form::open(array('class' => 'form-horizontal')); ?>
 <div class="form-group">
     <?php echo Form::label('実施者', 'attackeres', array('class' => 'col-sm-1 control-label')); ?>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <?php echo Form::select('attacker', 'none', $attackerlist, array('class' => 'form-control')); ?>
     </div>
     <?php echo Form::label('スキル', 'skills', array('class' => 'col-sm-1 control-label')); ?>
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <?php echo Form::select('skill', 'none', array('none' => 'none'), array('class' => 'form-control')); ?>
     </div>
-</div>
-<div class="form-group">
-    <div id="buttons" class="col-sm-offset-2 col-sm-10">
+    <div id="buttons" class="col-sm-2">
         <?php echo Form::button('addbtn', '追加', array('type' => 'button', 'class' => 'btn btn-primary')); ?>
         <?php echo Form::button('resetbtn', 'リセット', array('type' => 'button', 'class' => 'btn btn-primary')); ?>
     </div>
