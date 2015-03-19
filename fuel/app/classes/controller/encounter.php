@@ -95,25 +95,27 @@ class Controller_Encounter extends Controller_Template
 	{
 		is_null($encid) and Response::redirect('encounter');
 
-        if ($encounter = Model_Encounter::find('all', array(
+        if ( ! $encounter = Model_Encounter::find('all', array(
             'where' => array('encid' => $encid),
         )))
 		{
-			$encounter->delete();
-
-			Session::set_flash('success', 'Deleted encounter '.$encid);
+			Session::set_flash('error', 'Could not delete encounter '.$encid);
 		}
 
 		else
 		{
-			Session::set_flash('error', 'Could not delete encounter '.$encid);
+            $query = DB::delete('encounter_table')->where('encid', $encid);
+            $query->execute();
+
+			Session::set_flash('success', 'Deleted encounter '.$encid);
 		}
 
         if ($combatant = Model_Combatant::find('all', array(
             'where' => array('encid' => $encid),
         )))
 		{
-			$combatant->delete();
+            $query = DB::delete('combatant_table')->where('encid', $encid);
+            $query->execute();
 
 			Session::set_flash('success', 'Deleted combatant '.$encid);
 		}
@@ -127,7 +129,8 @@ class Controller_Encounter extends Controller_Template
             'where' => array('encid' => $encid),
         )))
 		{
-			$attacktype->delete();
+            $query = DB::delete('attacktype_table')->where('encid', $encid);
+            $query->execute();
 
 			Session::set_flash('success', 'Deleted attacktype '.$encid);
 		}
@@ -141,7 +144,8 @@ class Controller_Encounter extends Controller_Template
             'where' => array('encid' => $encid),
         )))
 		{
-			$damagetype->delete();
+            $query = DB::delete('damagetype_table')->where('encid', $encid);
+            $query->execute();
 
 			Session::set_flash('success', 'Deleted damagetype '.$encid);
 		}
@@ -155,7 +159,8 @@ class Controller_Encounter extends Controller_Template
             'where' => array('encid' => $encid),
         )))
 		{
-			$swing->delete();
+            $query = DB::delete('swing_table')->where('encid', $encid);
+            $query->execute();
 
 			Session::set_flash('success', 'Deleted swing '.$encid);
 		}
@@ -165,7 +170,7 @@ class Controller_Encounter extends Controller_Template
 			Session::set_flash('error', 'Could not delete swing '.$encid);
 		}
 
-		Response::redirect('encounter');
+		#Response::redirect('encounter');
 
 	}
 
