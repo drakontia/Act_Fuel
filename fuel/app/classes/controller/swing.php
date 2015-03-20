@@ -193,7 +193,7 @@ class Controller_Swing extends Controller_Hybrid
             ->distinct(true)
             ->where('encid', $encid)
             ->and_where('attacker', urldecode($attacker))
-            ->and_where('attacktype', urldecode($skill))
+            ->and_where('attacktype', $skill)
             ->order_by('attacktype')
             ->join('skills', 'LEFT')->on('swing_table.attacktype', '=', 'skills.name');
         $timedata = $query->execute()->as_array();

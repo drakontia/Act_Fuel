@@ -12,11 +12,25 @@ class Controller_Damagetype extends Controller_Template
 
 	public function action_view($encid = null)
 	{
-		is_null($encid) and Response::redirect('combatant/view/'.$encid);
-        $data['encid'] = $encid;
+        if ( is_null($encid) or
+             ( ! $data['encounter'] = Model_Encounter::find('first', array(
+               'where' => array('encid' => $encid),
+        ))))
+        {
+			Session::set_flash('error', 'Could not find encounter #'.$encid);
+			Response::redirect_back('encounter/index');
+		}
 
-        $name = Input::param('name');
+        if (\Fuel\Core\Fuel::$env != 'test')
+        {
+            $name = Input::param('name');
+        }
+        else {
+            $name = $name2;
+        }
         $data['name'] = html_entity_decode($name);
+        var_dump($encid);
+        var_dump($name);
 
         if ( ! $data['damagetype'] = Model_Damagetype::find('all', array(
                 'where' => array(
@@ -25,15 +39,12 @@ class Controller_Damagetype extends Controller_Template
                 ),
                 'order_by' => array('grouping' => 'asc'),
         )))
-		{
+        {
 			Session::set_flash('error', 'Could not find damagetype '.$name);
 			Response::redirect_back('combatant/view/'.$encid);
 		};
 
-        $this->template->title = Model_Encounter::find('first', array(
-            'select' => array('zone'),
-            'where' => array('encid' => $encid),
-        ))->zone;
+        $this->template->title = $data['encounter']->title;
 		$this->template->content = View::forge('damagetype/view', $data);
 
 	}

@@ -5,7 +5,9 @@
  * @group Encounter
  */
 
-class Test_Controller_Encounter extends TestCaseWithDatabase
+require_once __DIR__ . '/../withdatabase.php';
+
+class Test_Controller_Encounter extends Test_With_Database
 {
     public function test_to_have_title_and_table_when_access_index()
     {
@@ -42,11 +44,9 @@ class Test_Controller_Encounter extends TestCaseWithDatabase
         $expected = 200;
         $this->assertEquals($expected, $status);
 
-        $nume = DB::count_records('encounter_table');
-        $this->assertEquals(0, $nume);
+        $this->assertEquals(0, $this->getConnection()->getRowCount('encounter_table'), "Delete from encounter");
+        $this->assertEquals(0, $this->getConnection()->getRowCount('combatant_table'), "Delete from combatant");
 
-        $numc = DB::count_records('combatant_table');
-        $this->assertEquals(0, $numc);
     }
 
 }

@@ -26,7 +26,7 @@ class Controller_Combatant extends Controller_Hybrid
                'where' => array('encid' => $encid),
         ))))
         {
-			Session::set_flash('error', 'Could not find encounter #'.$id);
+			Session::set_flash('error', 'Could not find encounter #'.$encid);
 			Response::redirect_back('encounter/index');
 		}
 

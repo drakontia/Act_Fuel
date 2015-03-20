@@ -5,14 +5,16 @@
  * @group Swing
  */
 
-class Test_Controller_Swing extends TestCaseWithDatabase
+require_once __DIR__ . '/../withdatabase.php';
+
+class Test_Controller_Swing extends Test_With_Database
 {
-    public function test_swing_view()
+    public function test_expect_to_have_title_and_table()
     {
         // HMVCリクエストを生成
-        $request = Request::forge('swing/view/0032cfc0');
+        $request = Request::forge('swing/view');
         // リクエストを実行しレスポンスを取得
-        #$response = $request->execute(array('attacker' => 'Drakontia', 'victim' => null, 'swingtype' => 2, 'attacktype' => '双竜脚'))->response();
+        $response = $request->execute(array('encid' => '0032cfc0', 'attacker' => 'Drakontia', 'victim' => null, 'swingtype' => 2, 'attacktype' => '双竜脚'))->response();
 
         // HTTPステータスコードのテスト
         $status = $response->status;
@@ -21,7 +23,7 @@ class Test_Controller_Swing extends TestCaseWithDatabase
 
         // titleのテスト
         $title = $response->body->title;
-        $expected = 'Swings';
+        $expected = 'Swing';
         $this->assertEquals($expected, $title);
 
         // HTMLのテスト
@@ -35,7 +37,7 @@ class Test_Controller_Swing extends TestCaseWithDatabase
         // HMVCリクエストを生成
         $request = Request::forge('swing/skills');
         // リクエストを実行しレスポンスを取得
-        $response = $request->execute(array('encid' => '0032cfc0', 'attacker' => 'Drakontia'))->response();
+        $response = $request->execute(array('encid' => '0032cfc0', 'attacker' => 'Drakontia'))->response;
 
         // HTTPステータスコードのテスト
         $status = $response->status;
@@ -43,9 +45,9 @@ class Test_Controller_Swing extends TestCaseWithDatabase
         $this->assertEquals($expected, $status);
 
         // HTMLのテスト
-        $body = $response->body()->render();
-        $pattern = '/' . preg_quote('お問い合わせ', '/') . '/u';
-        $this->assertRegExp($pattern, $body);
+        $body = json_decode($response->body, true);
+        $expectedcount = 100;
+        $this->assertRegExp($expectedcount, $body);
     }
 
     public function test_swing_get_timeline()
@@ -53,21 +55,16 @@ class Test_Controller_Swing extends TestCaseWithDatabase
         // HMVCリクエストを生成
         $request = Request::forge('swing/timeline');
         // リクエストを実行しレスポンスを取得
-        $response = $request->execute(array('encid' => '0032cfc0', 'attacker' => 'Drakontia', 'skill' => urlencode('双竜脚')))->response();
+        $response = $request->execute(array('encid' => '0032cfc0', 'attacker' => 'Drakontia', 'skill' => '双竜脚'))->response;
 
         // HTTPステータスコードのテスト
         $status = $response->status;
         $expected = 200;
         $this->assertEquals($expected, $status);
 
-        // titleのテスト
-        $title = $response->body->title;
-        $expected = 'Compare Swing';
-        $this->assertEquals($expected, $title);
-
         // HTMLのテスト
-        $body = $response->body()->render();
-        $pattern = '/' . preg_quote('お問い合わせ', '/') . '/u';
-        $this->assertRegExp($pattern, $body);
+        $body = json_decode($response->body, true);
+        $expectedcount = 100;
+        $this->assertRegExp($expectedcount, $body);
     }
 }

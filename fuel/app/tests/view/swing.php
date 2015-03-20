@@ -1,13 +1,21 @@
 <?php
 /**
  * @group App
+ * @group View
  * @group Swing
  */
-class Test_View_Swing extends TestCaseWithWeb
+class Test_View_Swing extends PHPUnit_Extensions_Selenium2TestCase
+
 {
-    public function testTitle()
+    protected function setUp()
     {
-        $this->url('http://drakontia.com/actdb/index.php');
-        $this->assertEquals('深夜のバハ', $this->title());
+        $this->setBrowser('*firefox');
+        $this->setBrowserUrl('http://selenium.com/');
+    }
+
+    public function test_Title()
+    {
+        $this->url('encounter/index.php');
+        $this->assertEquals('Encounter', $this->title());
     }
 }

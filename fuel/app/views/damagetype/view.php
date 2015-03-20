@@ -1,10 +1,18 @@
-<h2>Viewing <span class='muted'><?php echo $name; ?></span></h2>
+<h2>Damagetype of <span class='muted'><?php echo $name; ?></span></h2>
+<dl>
+  <dt>場所</dt>
+    <dd><?php echo $encounter->zone; ?></dd>
+  <dt>開始時刻</dt>
+    <dd><?php echo $encounter->starttime; ?></dd>
+  <dt>PTDPS</dt>
+    <dd><?php echo round($encounter->encdps); ?></dd>
+</dl>
 
 <br>
-<?php $escapedbuff = 'swing/flow/'.$encid.'?attacker='.$name; ?>
+<?php $escapedbuff = 'swing/flow/'.$encounter->encid.'?attacker='.$name; ?>
 <p><?php echo Html::anchor($escapedbuff, 'Swing flow of '.$name); ?></p>
 <br>
-<?php $escapednobuff = 'swing/flow/'.$encid.'?attacker='.$name.'&nobuff=1'; ?>
+<?php $escapednobuff = 'swing/flow/'.$encounter->encid.'?attacker='.$name.'&nobuff=1'; ?>
 <p><?php echo Html::anchor($escapednobuff, 'Swing flow without buff of '.$name); ?></p>
 <?php if ($damagetype): ?>
 <table class="table table-bordered">
@@ -51,4 +59,4 @@
 <p>No Damagetype.</p>
 
 <?php endif; ?>
-<?php echo Html::anchor('combatant/view', 'Back'); ?>
+<?php echo Html::anchor('combatant/view/'.$encounter->encid, 'Back'); ?>

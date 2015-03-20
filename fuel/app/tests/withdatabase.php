@@ -2,7 +2,7 @@
 
 use Fuel\Core;
 
-abstract class TestCaseWithDatabase extends \PHPUnit_Extensions_Database_TestCase
+class Test_With_Database extends \PHPUnit_Extensions_Database_TestCase
 {
     static public $pdo = null;
     public $conn = null;
