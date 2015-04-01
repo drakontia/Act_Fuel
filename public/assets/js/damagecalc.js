@@ -357,7 +357,7 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d0').val(data.dpm);
-      var result.push(data.dpm);
+      result.push(data.dpm);
       upper.push($('#form_u0'));
       diff.push(100);
       param.push($('#form_a0'));
