@@ -1,7 +1,7 @@
 <h2>Comparing <span class='muted'>Combatants</span></h2>
 <br>
 <?php if ($encounter):
-    $elist = array('none' => 'none');
+    $elist = array();
     foreach ($encounter as $item):
         $elist += array($item->encid => $item->title.' - '.$item->starttime);
     endforeach;
