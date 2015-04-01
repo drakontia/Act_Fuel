@@ -25,14 +25,12 @@ $(document).ready(function(){
         skill: $('#form_skill').val(),
       },
     }).done(function(data, status, xhr){
-      $.each(data, function(i, item){
-        $('#form_aadmg').val(item.aadmg);
-        $('#form_wsdmg').val(item.wsdmg);
-        $('#form_critper').val(item.critper);
-        $('#form_gcd').val(item.gcd);
-        $('#form_dpm').val(item.dpm);
-        $('#form_dps').val(item.dps);
-      });
+      $('#form_aadmg').val(data.aadmg);
+      $('#form_wsdmg').val(data.wsdmg);
+      $('#form_critper').val(data.critper);
+      $('#form_gcd').val(data.gcd);
+      $('#form_dpm').val(data.dpm);
+      $('#form_dps').val(data.dps);
     }).fail(function(xhr, status, error){
       alert(error);
     }).always(function(arg1, status, arg2){
