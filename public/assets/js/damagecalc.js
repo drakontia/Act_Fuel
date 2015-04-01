@@ -398,11 +398,11 @@ $(document).ready(function(){
 
     l = result.length;
     for (i = 0; i < l; i++) {
-      upper[i].val = result[i]/result[0];
-      param[i].val = upper[i].val / diff[i];
+      upper[i].val(result[i]/result[0]);
+      param[i].val(upper[i].val() / diff[i]);
     }
     for (j = 0; j < l; j++) {
-      equiva[j].val = param[j].val/param[9].val;
+      equiva[j].val(param[j].val()/param[9].val());
     }
   });
 
