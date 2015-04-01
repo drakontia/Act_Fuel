@@ -76,6 +76,8 @@ class Controller_Damage extends Controller_Hybrid
     $this->template->content = View::forge('damage/index', $data);
   }
 
+  protected $format = 'json';
+
   public function get_calc()
   {
     bcscale(6);
