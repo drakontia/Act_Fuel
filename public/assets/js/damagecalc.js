@@ -69,11 +69,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d1').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u1');
-      diff[] = 0;
-      param[] = $('#form_a1');
-      equiva[] = $('#form_e1');
+      result.push(data.dpm);
+      upper.push($('#form_u1'));
+      diff.push(0);
+      param.push($('#form_a1'));
+      equiva.push($('#form_e1'));
     });
     $.ajax({
       type: 'GET',
@@ -101,11 +101,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d2').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u2');
-      diff[] = 56;
-      param[] = $('#form_a2');
-      equiva[] = $('#form_e2');
+      result.push(data.dpm);
+      upper.push($('#form_u2'));
+      diff.push(56);
+      param.push($('#form_a2'));
+      equiva.push($('#form_e2'));
     });
     $.ajax({
       type: 'GET',
@@ -133,11 +133,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d3').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u3');
-      diff[] = 100;
-      param[] = $('#form_a3');
-      equiva[] = $('#form_e3');
+      result.push(data.dpm);
+      upper.push($('#form_u3'));
+      diff.push(100);
+      param.push($('#form_a3'));
+      equiva.push($('#form_e3'));
     });
     $.ajax({
       type: 'GET',
@@ -165,11 +165,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d4').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u4');
-      diff[] = 150;
-      param[] = $('#form_a4');
-      equiva[] = $('#form_e4');
+      result.push(data.dpm);
+      upper.push($('#form_u4'));
+      diff.push(150);
+      param.push($('#form_a4'));
+      equiva.push($('#form_e4'));
     });
     $.ajax({
       type: 'GET',
@@ -197,11 +197,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d5').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u5');
-      diff[] = 207;
-      param[] = $('#form_a5');
-      equiva[] = $('#form_e5');
+      result.push(data.dpm);
+      upper.push($('#form_u5'));
+      diff.push(207);
+      param.push($('#form_a5'));
+      equiva.push($('#form_e5'));
     });
     $.ajax({
       type: 'GET',
@@ -229,11 +229,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d6').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u6');
-      diff[] = 255;
-      param[] = $('#form_a6');
-      equiva[] = $('#form_e6');
+      result.push(data.dpm);
+      upper.push($('#form_u6'));
+      diff.push(255);
+      param.push($('#form_a6'));
+      equiva.push($('#form_e6'));
     });
     $.ajax({
       type: 'GET',
@@ -261,11 +261,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d7').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u7');
-      diff[] = 100;
-      param[] = $('#form_a7');
-      equiva[] = $('#form_e7');
+      result.push(data.dpm);
+      upper.push($('#form_u7'));
+      diff.push(100);
+      param.push($('#form_a7'));
+      equiva.push($('#form_e7'));
     });
     $.ajax({
       type: 'GET',
@@ -293,11 +293,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d8').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u8');
-      diff[] = 200;
-      param[] = $('#form_a8');
-      equiva[] = $('#form_e8');
+      result.push(data.dpm);
+      upper.push($('#form_u8'));
+      diff.push(200);
+      param.push($('#form_a8'));
+      equiva.push($('#form_e8'));
     });
     $.ajax({
       type: 'GET',
@@ -325,11 +325,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d9').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_u9');
-      diff[] = 100;
-      param[] = $('#form_a9');
-      equiva[] = $('#form_e9');
+      result.push(data.dpm);
+      upper.push($('#form_u9'));
+      diff.push(100);
+      param.push($('#form_a9'));
+      equiva.push($('#form_e9'));
     });
     $.ajax({
       type: 'GET',
@@ -357,11 +357,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_d0').val(data.dpm);
-      var result[] = data.dpm;
-      upper[] = $('#form_u0');
-      diff[] = 100;
-      param[] = $('#form_a0');
-      equiva[] = $('#form_e0');
+      var result.push(data.dpm);
+      upper.push($('#form_u0'));
+      diff.push(100);
+      param.push($('#form_a0'));
+      equiva.push($('#form_e0'));
     });
     $.ajax({
       type: 'GET',
@@ -389,11 +389,11 @@ $(document).ready(function(){
       },
     }).done(function(data, status, xhr){
       $('#form_da').val(data.dpm);
-      result[] = data.dpm;
-      upper[] = $('#form_ua');
-      diff[] = 5;
-      param[] = $('#form_aa');
-      equiva[] = $('#form_ea');
+      result.push(data.dpm);
+      upper.push($('#form_ua'));
+      diff.push(5);
+      param.push($('#form_aa'));
+      equiva.push($('#form_ea'));
     });
 
     l = result.length;

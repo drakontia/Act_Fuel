@@ -154,6 +154,15 @@
 <?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal')); ?>
 
 <div class="form-group">
+    <?php echo Form::label('項目', 'header', array('class' => 'col-sm-2 control-label')); ?>
+    <?php echo Form::label('スキル威力', 'sh', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('一発当たり', 'wh', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('ダメージ', 'dh', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('増分', 'uh', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('@1', 'ah', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('換算値', 'eh', array('class' => 'col-sm-1 control-label')); ?>
+</div>
+<div class="form-group">
     <?php echo Form::label('基準点', 'basepoint', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-1">
         <?php echo Form::input('s1', 0, array('class' => 'form-control')); ?>
