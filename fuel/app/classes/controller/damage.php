@@ -5,6 +5,7 @@ class Controller_Damage extends Controller_Hybrid
   public function action_index()
   {
     $data['joblist'] = array(
+        '1.000000' => '1.00：ナ/斧/格/双｜甲/採/漁',
         '0.812500' => '0.40：呪',
         '0.828125' => '0.45：黒',
         '0.843750' => '0.50：幻',
@@ -12,7 +13,6 @@ class Controller_Damage extends Controller_Hybrid
         '0.953125' => '0.85：巴',
         '0.968750' => '0.90：学/召｜他ギャザクラ',
         '0.984375' => '0.95：剣',
-        '1.000000' => '1.00：ナ/斧/格/双｜甲/採/漁',
         '1.015625' => '1.05：戦/槍/弓｜鍛',
         '1.031250' => '1.10：モ/忍',
         '1.046875' => '1.15：竜/詩');
@@ -23,9 +23,9 @@ class Controller_Damage extends Controller_Hybrid
         '1.30' => '1.30倍：幻/呪/巴/白/黒/学/召',
         '1.43' => '1.43倍：クルセードスタンス');
     $data['attackmode'] = array(
+        '1.00' => '1.00倍：無し',
         '0.75' => '0.75倍：ディフェンダー',
         '0.80' => '0.80倍：忠義の盾',
-        '1.00' => '1.00倍：無し',
         '1.05' => '1.05倍：紅蓮の構え',
         '1.20' => '1.20倍：蜂毒・蛇毒');
     $data['ws_or_magic'] = array(
@@ -39,7 +39,7 @@ class Controller_Damage extends Controller_Hybrid
     $data['powerup'] = array(
         '1.00' => 'なし',
         '1.033333' => 'ホークアイ(20/90sec)',
-        '1.111111' => 'バーサク(15/90sec)',
+        '1.111111' => 'バーサク(20/90sec)',
         '1.15' => '1.15倍：ホークアイ(単発測定用)',
         '1.50' => '1.50倍：バーサク(単発測定用)');
     $data['booster'] = array(
@@ -82,9 +82,9 @@ class Controller_Damage extends Controller_Hybrid
   {
     bcscale(6);
 
-    $wd = Input::param('basespec');
-    $aa = Input::param('interval');
-    $st = Input::param('power');
+    $wd  = Input::param('basespec');
+    $aa  = Input::param('interval');
+    $st  = Input::param('power');
     $dtr = Input::param('determination');
     $ctr = Input::param('critical');
     $job = Input::param('job');
@@ -100,15 +100,17 @@ class Controller_Damage extends Controller_Hybrid
     $dup = Input::param('booster');
     $dup2 = Input::param('damageup');
 
-    $aad = abs(floor((bcmul($wd, 0.26) + bcmul($st, $stb) * bcadd(bcmul($wd, 0.00366), 0.0745) + 4.95) * (bcmul(bcsub($dtr, 202), 0.0010) + 1.00) * $job * $per * $dup * $dup2 * ($aa / 3.00)));
+    $a1  = (($wd * 8 / 30) + bcmul(bcmul($st, $stb), bcadd(bcmul($wd, 0.00366), 0.0745)) + 4.95) * (bcmul(($dtr - 202), 0.0010) + 1.00);
+    $aad = abs(floor(bcmul($a1, $job) * $per * $dup * $dup2 * ($aa / 3.00)));
 
-    $wdd = abs(floor(($wd * 0.26 + ($st * $stb) * ($wd * 0.00366 + 0.0745) + 4.95) * (($dtr - 202) * 0.0005 + 1.00) * ($job * $mag) * $acd * $per * $dup * $dup2 * ($skl / 100)));
+    $w1  = (($wd * 8 / 30) + bcmul(bcmul($st, $stb), bcadd(bcmul($wd, 0.00366), 0.0745)) + 4.95) * (bcmul(($dtr - 202), 0.0005) + 1.00);
+    $wdd = abs(floor(bcmul($w1, $job) * $mag * $acd * $per * $dup * $dup2 * ($skl / 100)));
 
-    $ctp = abs((($ctr - 341) / ( 341 / 25.6)) + 5.0 + $ctb);
+    $ctp = abs(bcadd((bcdiv(($ctr - 341), bcdiv(341, 25.6)) + 5), $ctb));
 
-    $gcd = abs(round(floor(250.256*(1-0.000381*($spd * $ssb - 341))) / $spb) / 100);
+    $gcd = abs(bcdiv(round(bcdiv(floor(bcmul(250.256, bcsub(1, bcmul(0.000381, (abs(bcmul($spd, $ssb)) - 341))))), $spb)), 100));
 
-    $dpm  = round(($aad*(60/$aa)*(1+0.5*$ctp/100)) + ($wdd*(60/$gcd)*(1+0.5*$ctp/100)));
+    $dpm  = round( bcmul(bcmul($aad, bcdiv(60, $aa)), (1 + (5 * $ctp / 1000)))) + round(bcmul(bcmul($wdd, bcdiv(60, $gcd)), (1 + 5 * $ctp / 1000)));
     $dps = $dpm / 60;
 
     return $this->response(array('aadmg' => $aad, 'wsdmg' => $wdd, 'critper'=> $ctp, 'gcd' => $gcd, 'dpm' => $dpm, 'dps' => $dps));
