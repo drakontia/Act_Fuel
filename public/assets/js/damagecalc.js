@@ -33,7 +33,6 @@ $(document).ready(function(){
         $('#form_dpm').val = item.dpm;
         $('#form_dps').val = item.dps;
       });
-      gChart.drawChart();
     }).fail(function(xhr, status, error){
       alert(error);
     }).always(function(arg1, status, arg2){
