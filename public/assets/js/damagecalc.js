@@ -84,10 +84,13 @@ $(document).ready(function(){
 
     var param = getParam();
     var l = changer.length;
+    var orginalv = 0;
+    var t1, t2, t3;
+
     for(i = 0; i < l; i++){
       param['skl'] = $('#form_s' + i).val();
-      var org = param[changer[i][0]];
-      param[changer[i][0]] = parseInt(param[changer[i][0]]) + changer[i][1];
+      orginalv = param[changer[i][0]];
+      param[changer[i][0]] = parseInt(param[changer[i][0]]) + parseInt(changer[i][1]);
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
@@ -117,19 +120,27 @@ $(document).ready(function(){
       }).fail(function(xhr, status, error){
         alert(error);
       });
-      param[changer[i][0]] = org;
+      param[changer[i][0]] = orginalv;
     }
 
     for(j = 0; j < l; j++) {
       $('#form_d' + j).val(result[j]);
-      $('#form_u' + j).val(result[j] / result[0] - 1);
-      upper.push(result[j] / result[0] - 1);
-      $('#form_a' + j).val(upper[j] / changer[j][1]);
-      diff.push(upper[j] / changer[j][1]);
+
+      t1 = 0;
+      t1 = (result[j] / result[0]) - 1;
+      $('#form_u' + j).val(t1);
+      upper.push(t1);
+
+      t2 = 0;
+      t2 = upper[j] / changer[j][1];
+      $('#form_a' + j).val(t2);
+      diff.push(t2);
     }
 
     for(k = 0; k < l; k++) {
-      $('#form_e' + k).val(diff[k] / diff[9]);
+      t3 = 0;
+      t3 = diff[k] / diff[9];
+      $('#form_e' + k).val(t3);
     }
   });
 

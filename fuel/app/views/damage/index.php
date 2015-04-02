@@ -151,7 +151,7 @@
 
 <h2><span class='muted'>換算値計算用</span></h2>
 <br>
-<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal')); ?>
+<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal', 'id' => 'equivalant')); ?>
 
 <div class="form-group">
     <?php echo Form::label('項目', 'hh', array('class' => 'col-sm-2 control-label')); ?>
@@ -165,7 +165,7 @@
 <div class="form-group">
     <?php echo Form::label('基準点', 'basepoint', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s0', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s0', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w0', 0, array('class' => 'form-control')); ?>
@@ -186,7 +186,7 @@
 <div class="form-group">
     <?php echo Form::label('スキルスピード+50', 'ss50', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s1', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s1', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w1', 0, array('class' => 'form-control')); ?>
@@ -207,7 +207,7 @@
 <div class="form-group">
     <?php echo Form::label('スキルスピード+100', 'ss100', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s2', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s2', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w2', 0, array('class' => 'form-control')); ?>
@@ -228,7 +228,7 @@
 <div class="form-group">
     <?php echo Form::label('スキルスピード+150', 'ss150', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s3', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s3', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w3', 0, array('class' => 'form-control')); ?>
@@ -249,7 +249,7 @@
 <div class="form-group">
     <?php echo Form::label('スキルスピード+200', 'ss200', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s4', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s4', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w4', 0, array('class' => 'form-control')); ?>
@@ -270,7 +270,7 @@
 <div class="form-group">
     <?php echo Form::label('スキルスピード+255', 'ss255', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s5', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s5', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w5', 0, array('class' => 'form-control')); ?>
@@ -291,7 +291,7 @@
 <div class="form-group">
     <?php echo Form::label('クリティカル+100', 'crt100', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s6', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s6', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w6', 0, array('class' => 'form-control')); ?>
@@ -312,7 +312,7 @@
 <div class="form-group">
     <?php echo Form::label('クリティカル+200', 'crt200', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s7', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s7', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w7', 0, array('class' => 'form-control')); ?>
@@ -333,7 +333,7 @@
 <div class="form-group">
     <?php echo Form::label('意思力+100', 'det100', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s8', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s8', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w8', 0, array('class' => 'form-control')); ?>
@@ -354,7 +354,7 @@
 <div class="form-group">
     <?php echo Form::label('攻撃力+100', 'pow100', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s9', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s9', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w9', 0, array('class' => 'form-control')); ?>
@@ -375,7 +375,7 @@
 <div class="form-group">
     <?php echo Form::label('武器性能+5', 'wea5', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s10', 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s10', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
         <?php echo Form::input('w10', 0, array('class' => 'form-control')); ?>
