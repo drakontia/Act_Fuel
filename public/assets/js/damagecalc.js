@@ -92,14 +92,15 @@ $(document).ready(function(){
       param['skl'] = $('#form_s' + i).val();
       var org = param[changer[i][0]];
       param[changer[i][0]] = parseInt(param[changer[i][0]]) + changer[i][1];
-      result.push(calcOnepam(param));
+      var tmp = calcOnepam(param);
+      result.push(tmp.dpm);
       param[changer[i][0]] = org;
     }
 
     for(j = 0; j < l; j++) {
-      $('#form_d' + j).val(result[j].dpm);
-      $('#form_u' + j).val(result[j].dpm / result[0].dpm - 1);
-      upper.push(result[j].dpm / result[0].dpm - 1);
+      $('#form_d' + j).val(result[j]);
+      $('#form_u' + j).val(result[j] / result[0] - 1);
+      upper.push(result[j] / result[0] - 1);
       $('#form_a' + j).val(upper[j] / param[j][1]);
       diff.push(upper[j] / param[j][1]);
     }
