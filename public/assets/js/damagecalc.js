@@ -117,9 +117,9 @@ $(document).ready(function(){
         },
       }).done(function(data, status, xhr){
         result.push(data.dpm);
+        $('#form_d' + i).val(data.dpm);
         param[changer[i][0]] = orginalv;
 
-        $('#form_d' + i).val(result[i]);
 
         t1 = 0;
         t1 = (result[i] / result[0]) - 1;
