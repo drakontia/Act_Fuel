@@ -124,8 +124,8 @@ $(document).ready(function(){
       $('#form_d' + j).val(result[j]);
       $('#form_u' + j).val(result[j] / result[0] - 1);
       upper.push(result[j] / result[0] - 1);
-      $('#form_a' + j).val(upper[j] / param[j][1]);
-      diff.push(upper[j] / param[j][1]);
+      $('#form_a' + j).val(upper[j] / changer[j][1]);
+      diff.push(upper[j] / changer[j][1]);
     }
 
     for(k = 0; k < l; k++) {
