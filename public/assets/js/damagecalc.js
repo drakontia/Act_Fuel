@@ -83,41 +83,49 @@ $(document).ready(function(){
     ];
 
     var param = getParam();
+    var para2;
     var l = changer.length;
     var orginalv = 0;
     var t1, t2, t3;
 
     for(i = 0; i < l; i++){
-      param['skl'] = $('#form_s' + i).val();
-      orginalv = param[changer[i][0]];
-      param[changer[i][0]] = parseInt(param[changer[i][0]]) + parseInt(changer[i][1]);
+      para2 = param;
+      para2['skl'] = $('#form_s' + i).val();
+      para2[changer[i][0]] = parseInt(para2[changer[i][0]]) + parseInt(changer[i][1]);
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
         cache: false,
         datatype: 'json',
         data: {
-          job: param['job'],
-          actiondamage: param['acd'],
-          attackmode: param['atk'],
-          ws_or_magic: param['wmg'],
-          basespec: param['spc'],
-          interval: param['itv'],
-          power: param['pwr'],
-          powerup: param['pwu'],
-          determination: param['det'],
-          booster: param['bst'],
-          damageup: param['dmu'],
-          critical: param['crt'],
-          criticalup: param['cru'],
-          speed: param['spd'],
-          speedboost: param['spb'],
-          speedup: param['spu'],
-          skill: param['skl'],
+          job: para2['job'],
+          actiondamage: para2['acd'],
+          attackmode: para2['atk'],
+          ws_or_magic: para2['wmg'],
+          basespec: para2['spc'],
+          interval: para2['itv'],
+          power: para2['pwr'],
+          powerup: para2['pwu'],
+          determination: para2['det'],
+          booster: para2['bst'],
+          damageup: para2['dmu'],
+          critical: para2['crt'],
+          criticalup: para2['cru'],
+          speed: para2['spd'],
+          speedboost: para2['spb'],
+          speedup: para2['spu'],
+          skill: para2['skl'],
         },
       }).done(function(data, status, xhr){
-        result.push(data.dpm);
         $('#form_d' + i).val(data.dpm);
+      }).fail(function(xhr, status, error){
+        alert(error);
+      });
+    }
+  });
+
+  $('#calc').click(function(){
+    for(i = 0; i < l; i++) {
         param[changer[i][0]] = orginalv;
 
 
@@ -130,15 +138,9 @@ $(document).ready(function(){
         t2 = upper[i] / changer[i][1];
         $('#form_a' + i).val(t2);
         diff.push(t2);
-      }).fail(function(xhr, status, error){
-        alert(error);
-      });
-    }
-
-    for(j = 0; j < l; j++) {
       t3 = 0;
-      t3 = ( $('#form_a' + j).val() / $('#form_a9').val() );
-      $('#form_e' + j).val(t3);
+      t3 = ( $('#form_a' + i).val() / $('#form_a9').val() );
+      $('#form_e' + i).val(t3);
     }
   });
 
