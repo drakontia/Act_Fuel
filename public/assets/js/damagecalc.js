@@ -1,36 +1,4 @@
 $(document).ready(function(){
-  var calcOnepam = function(param){
-    $.ajax({
-      type: 'GET',
-      url: 'http://drakontia.com/actdb/damage/calc',
-      cache: false,
-      datatype: 'json',
-      data: {
-        job: param['job'],
-        actiondamage: param['acd'],
-        attackmode: param['atk'],
-        ws_or_magic: param['wmg'],
-        basespec: param['spc'],
-        interval: param['itv'],
-        power: param['pwr'],
-        powerup: param['pwu'],
-        determination: param['det'],
-        booster: param['bst'],
-        damageup: param['dmu'],
-        critical: param['crt'],
-        criticalup: param['cru'],
-        speed: param['spd'],
-        speedboost: param['spb'],
-        speedup: param['spu'],
-        skill: param['skl'],
-      },
-    }).done(function(data, status, xhr){
-      return data;
-    }).fail(function(xhr, status, error){
-      return error;
-    });
-  };
-
   var getParam = function(){
     var param = [];
 
@@ -57,14 +25,42 @@ $(document).ready(function(){
 
   $('#fire').click(function(){
     var param = getParam();
-    var result = calcOnepam(param);
 
-    $('#form_aadmg').val(result.aadmg);
-    $('#form_wsdmg').val(result.wsdmg);
-    $('#form_critper').val(result.critper);
-    $('#form_gcd').val(result.gcd);
-    $('#form_dpm').val(result.dpm);
-    $('#form_dps').val(result.dps);
+    $.ajax({
+      type: 'GET',
+      url: 'http://drakontia.com/actdb/damage/calc',
+      cache: false,
+      datatype: 'json',
+      data: {
+        job: param['job'],
+        actiondamage: param['acd'],
+        attackmode: param['atk'],
+        ws_or_magic: param['wmg'],
+        basespec: param['spc'],
+        interval: param['itv'],
+        power: param['pwr'],
+        powerup: param['pwu'],
+        determination: param['det'],
+        booster: param['bst'],
+        damageup: param['dmu'],
+        critical: param['crt'],
+        criticalup: param['cru'],
+        speed: param['spd'],
+        speedboost: param['spb'],
+        speedup: param['spu'],
+        skill: param['skl'],
+      },
+    }).done(function(data, status, xhr){
+      $('#form_aadmg').val(data.aadmg);
+      $('#form_wsdmg').val(data.wsdmg);
+      $('#form_critper').val(data.critper);
+      $('#form_gcd').val(data.gcd);
+      $('#form_dpm').val(data.dpm);
+      $('#form_dps').val(data.dps);
+    }).fail(function(xhr, status, error){
+      alert(error);
+    });
+
   });
 
   $('#equiv').click(function(){
@@ -92,8 +88,35 @@ $(document).ready(function(){
       param['skl'] = $('#form_s' + i).val();
       var org = param[changer[i][0]];
       param[changer[i][0]] = parseInt(param[changer[i][0]]) + changer[i][1];
-      var tmp = calcOnepam(param);
-      result.push(tmp.dpm);
+      $.ajax({
+        type: 'GET',
+        url: 'http://drakontia.com/actdb/damage/calc',
+        cache: false,
+        datatype: 'json',
+        data: {
+          job: param['job'],
+          actiondamage: param['acd'],
+          attackmode: param['atk'],
+          ws_or_magic: param['wmg'],
+          basespec: param['spc'],
+          interval: param['itv'],
+          power: param['pwr'],
+          powerup: param['pwu'],
+          determination: param['det'],
+          booster: param['bst'],
+          damageup: param['dmu'],
+          critical: param['crt'],
+          criticalup: param['cru'],
+          speed: param['spd'],
+          speedboost: param['spb'],
+          speedup: param['spu'],
+          skill: param['skl'],
+        },
+      }).done(function(data, status, xhr){
+        result.push(data.dpm);
+      }).fail(function(xhr, status, error){
+        alert(error);
+      });
       param[changer[i][0]] = org;
     }
 
