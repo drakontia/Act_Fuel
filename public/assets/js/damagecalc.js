@@ -117,30 +117,28 @@ $(document).ready(function(){
         },
       }).done(function(data, status, xhr){
         result.push(data.dpm);
+        param[changer[i][0]] = orginalv;
+
+        $('#form_d' + i).val(result[i]);
+
+        t1 = 0;
+        t1 = (result[i] / result[0]) - 1;
+        $('#form_u' + i).val(t1);
+        upper.push(t1);
+
+        t2 = 0;
+        t2 = upper[i] / changer[i][1];
+        $('#form_a' + i).val(t2);
+        diff.push(t2);
       }).fail(function(xhr, status, error){
         alert(error);
       });
-      param[changer[i][0]] = orginalv;
     }
 
     for(j = 0; j < l; j++) {
-      $('#form_d' + j).val(result[j]);
-
-      t1 = 0;
-      t1 = (result[j] / result[0]) - 1;
-      $('#form_u' + j).val(t1);
-      upper.push(t1);
-
-      t2 = 0;
-      t2 = upper[j] / changer[j][1];
-      $('#form_a' + j).val(t2);
-      diff.push(t2);
-    }
-
-    for(k = 0; k < l; k++) {
       t3 = 0;
-      t3 = diff[k] / diff[9];
-      $('#form_e' + k).val(t3);
+      t3 = ( $('#form_a' + j).val() / $('#form_a9').val() );
+      $('#form_e' + j).val(t3);
     }
   });
 
