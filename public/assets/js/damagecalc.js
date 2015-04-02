@@ -89,12 +89,13 @@ $(document).ready(function(){
     var t1, t2, t3;
 
     for(i = 0; i < l; i++){
-      para2 = param;
+      para2 = [];
       para2['skl'] = $('#form_s' + i).val();
       para2[changer[i][0]] = parseInt(para2[changer[i][0]]) + parseInt(changer[i][1]);
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
+        async: false,
         cache: false,
         datatype: 'json',
         data: {
@@ -117,30 +118,29 @@ $(document).ready(function(){
           skill: para2['skl'],
         },
       }).done(function(data, status, xhr){
-        $('#form_d' + i).val(data.dpm);
+        result.push(data.dpm);
       }).fail(function(xhr, status, error){
         alert(error);
       });
     }
-  });
 
-  $('#calc').click(function(){
-    for(i = 0; i < l; i++) {
-        param[changer[i][0]] = orginalv;
+    for(j = 0; j < l; j++) {
+      $('#form_d' + j).val(data.dpm);
 
+      t1 = 0;
+      t1 = (result[j] / result[0]) - 1;
+      $('#form_u' + j).val(t1);
+      upper.push(t1);
 
-        t1 = 0;
-        t1 = (result[i] / result[0]) - 1;
-        $('#form_u' + i).val(t1);
-        upper.push(t1);
-
-        t2 = 0;
-        t2 = upper[i] / changer[i][1];
-        $('#form_a' + i).val(t2);
-        diff.push(t2);
+      t2 = 0;
+      t2 = upper[j] / changer[i][1];
+      $('#form_a' + j).val(t2);
+      diff.push(t2);
+    }
+    for(k = 0; k < l; k++) {
       t3 = 0;
-      t3 = ( $('#form_a' + i).val() / $('#form_a9').val() );
-      $('#form_e' + i).val(t3);
+      t3 = ( $('#form_a' + k).val() / $('#form_a9').val() );
+      $('#form_e' + k).val(t3);
     }
   });
 
