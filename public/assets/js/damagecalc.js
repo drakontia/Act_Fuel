@@ -32,6 +32,8 @@ $(document).ready(function(){
   };
 
   var getParam = function(){
+    var param = [];
+
     param['job'] = $('#form_job option:selected').val();
     param['acd'] = $('#form_actiondamage option:selected').val();
     param['atk'] = $('#form_attackmode option:selected').val();
