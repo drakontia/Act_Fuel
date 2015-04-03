@@ -38,7 +38,7 @@ $(document).ready(function(){
   };
 
   $('#enter').click(function(){
-    var all = [$('#form_sklall').val()];
+    var all = explode(",", $('#form_sklall').val());
     if(all.length != 11){
       alert("入力しているスキル威力の数値の個数が足りません");
     }
