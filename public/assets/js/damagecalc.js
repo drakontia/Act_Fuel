@@ -85,7 +85,7 @@ $(document).ready(function(){
       param[i] = getParam();
       param[i]['skl'] = $('#form_s' + i).val();
       param[i][changer[i][0]] = parseInt(param[i][changer[i][0]]) + parseInt(changer[i][1]);
-      var $id = '#form_s' + i;
+      var $id = '#form_d' + i;
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
