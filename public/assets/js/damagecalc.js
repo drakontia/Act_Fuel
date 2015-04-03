@@ -77,7 +77,7 @@ $(document).ready(function(){
 
   });
 
-  $('#damage').click(function(){
+  $('#equiv').click(function(){
     var param = [];
     var l = changer.length;
 
