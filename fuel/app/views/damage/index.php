@@ -183,19 +183,19 @@ $l = count($changer);
 <div class="form-group">
     <?php echo Form::label($changer[$i][0], $changer[$i][1], array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
-        <?php echo Form::input('s' + $i, 100, array('class' => 'form-control')); ?>
+        <?php echo Form::input('s' . $i, 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('d' + $i, 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('d' . $i, 0, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('u' + $i, 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('u' . $i, 0, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('a' + $i, 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('a' . $i, 0, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('e' + $i, 0, array('class' => 'form-control')); ?>
+        <?php echo Form::input('e' . $i, 0, array('class' => 'form-control')); ?>
     </div>
 </div>
 <?php endfor; ?>
