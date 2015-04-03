@@ -16,23 +16,23 @@ $(document).ready(function(){
   var getParam = function(){
 
     return [
-      $('#form_job option:selected').val(),
-      $('#form_actiondamage option:selected').val(),
-      $('#form_attackmode option:selected').val(),
-      $('#form_ws_or_magic option:selected').val(),
-      $('#form_basespec').val(),
-      $('#form_interval').val(),
-      $('#form_power').val(),
-      $('#form_powerup option:selected').val(),
-      $('#form_determination').val(),
-      $('#form_booster option:selected').val(),
-      $('#form_damageup option:selected').val(),
-      $('#form_critical').val(),
-      $('#form_criticalup option:selected').val(),
-      $('#form_speed').val(),
-      $('#form_speedboost option:selected').val(),
-      $('#form_speedup option:selected').val(),
-      $('#form_skill').val()
+      job: $('#form_job option:selected').val(),
+      acd: $('#form_actiondamage option:selected').val(),
+      atk: $('#form_attackmode option:selected').val(),
+      wmg: $('#form_ws_or_magic option:selected').val(),
+      spc: $('#form_basespec').val(),
+      itv: $('#form_interval').val(),
+      pwr: $('#form_power').val(),
+      pwu: $('#form_powerup option:selected').val(),
+      det: $('#form_determination').val(),
+      bst: $('#form_booster option:selected').val(),
+      dmu: $('#form_damageup option:selected').val(),
+      crt: $('#form_critical').val(),
+      cru: $('#form_criticalup option:selected').val(),
+      spd: $('#form_speed').val(),
+      spb: $('#form_speedboost option:selected').val(),
+      spu: $('#form_speedup option:selected').val(),
+      skl: $('#form_skill').val()
     ];
 
   };
