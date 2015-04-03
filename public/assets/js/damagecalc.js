@@ -39,11 +39,15 @@ $(document).ready(function(){
 
   $('#enter').click(function(){
     var all = [$('#form_sklall').val()];
+    if(all.length != 11){
+      alert("入力しているスキル威力の数値の個数が足りません");
+    }
+
     var p = changer.length;
     for(i = 0; i < p; i++){
       $('#form_s' + i).val(all[i]);
     }
-  }):
+  });
 
   $('#fire').click(function(){
     var param = getParam();
