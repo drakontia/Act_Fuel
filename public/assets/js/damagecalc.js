@@ -89,6 +89,7 @@ $(document).ready(function(){
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
+        async: false,
         cache: false,
         datatype: 'json',
         data: {
