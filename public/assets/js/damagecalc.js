@@ -14,27 +14,27 @@ $(document).ready(function(){
   ];
 
   var getParam = function(){
-    var param = [];
 
-    param['job'] = $('#form_job option:selected').val();
-    param['acd'] = $('#form_actiondamage option:selected').val();
-    param['atk'] = $('#form_attackmode option:selected').val();
-    param['wmg'] = $('#form_ws_or_magic option:selected').val();
-    param['spc'] = $('#form_basespec').val();
-    param['itv'] = $('#form_interval').val();
-    param['pwr'] = $('#form_power').val();
-    param['pwu'] = $('#form_powerup option:selected').val();
-    param['det'] = $('#form_determination').val();
-    param['bst'] = $('#form_booster option:selected').val();
-    param['dmu'] = $('#form_damageup option:selected').val();
-    param['crt'] = $('#form_critical').val();
-    param['cru'] = $('#form_criticalup option:selected').val();
-    param['spd'] = $('#form_speed').val();
-    param['spb'] = $('#form_speedboost option:selected').val();
-    param['spu'] = $('#form_speedup option:selected').val();
-    param['skl'] = $('#form_skill').val();
+    return [
+      $('#form_job option:selected').val(),
+      $('#form_actiondamage option:selected').val(),
+      $('#form_attackmode option:selected').val(),
+      $('#form_ws_or_magic option:selected').val(),
+      $('#form_basespec').val(),
+      $('#form_interval').val(),
+      $('#form_power').val(),
+      $('#form_powerup option:selected').val(),
+      $('#form_determination').val(),
+      $('#form_booster option:selected').val(),
+      $('#form_damageup option:selected').val(),
+      $('#form_critical').val(),
+      $('#form_criticalup option:selected').val(),
+      $('#form_speed').val(),
+      $('#form_speedboost option:selected').val(),
+      $('#form_speedup option:selected').val(),
+      $('#form_skill').val()
+    ];
 
-    return param;
   };
 
   $('#fire').click(function(){
@@ -78,38 +78,36 @@ $(document).ready(function(){
   });
 
   $('#damage').click(function(){
-    var param = getParam();
-    var para2 = [];
+    var param = [];
     var l = changer.length;
 
     for(i = 0; i < l; i++){
-      para2[i] = param;
-      para2[i]['skl'] = $('#form_s' + i).val();
-      para2[i][changer[i][0]] = parseInt(para2[i][changer[i][0]]) + parseInt(changer[i][1]);
+      param[i] = getParam();
+      param[i]['skl'] = $('#form_s' + i).val();
+      param[i][changer[i][0]] = parseInt(param[i][changer[i][0]]) + parseInt(changer[i][1]);
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
-        async: false,
         cache: false,
         datatype: 'json',
         data: {
-          job: para2[i]['job'],
-          actiondamage: para2[i]['acd'],
-          attackmode: para2[i]['atk'],
-          ws_or_magic: para2[i]['wmg'],
-          basespec: para2[i]['spc'],
-          interval: para2[i]['itv'],
-          power: para2[i]['pwr'],
-          powerup: para2[i]['pwu'],
-          determination: para2[i]['det'],
-          booster: para2[i]['bst'],
-          damageup: para2[i]['dmu'],
-          critical: para2[i]['crt'],
-          criticalup: para2[i]['cru'],
-          speed: para2[i]['spd'],
-          speedboost: para2[i]['spb'],
-          speedup: para2[i]['spu'],
-          skill: para2[i]['skl'],
+          job: param[i]['job'],
+          actiondamage: param[i]['acd'],
+          attackmode: param[i]['atk'],
+          ws_or_magic: param[i]['wmg'],
+          basespec: param[i]['spc'],
+          interval: param[i]['itv'],
+          power: param[i]['pwr'],
+          powerup: param[i]['pwu'],
+          determination: param[i]['det'],
+          booster: param[i]['bst'],
+          damageup: param[i]['dmu'],
+          critical: param[i]['crt'],
+          criticalup: param[i]['cru'],
+          speed: param[i]['spd'],
+          speedboost: param[i]['spb'],
+          speedup: param[i]['spu'],
+          skill: param[i]['skl'],
         },
       }).done(function(data, status, xhr){
         $('#form_d' + i).val(data.dpm);
