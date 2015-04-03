@@ -162,6 +162,7 @@
 <?php echo Form::button('enter', '入力', array('type' => 'button', 'class' => 'btn btn-primary', 'id' => 'enter')); ?>
 <?php echo Form::close(); ?>
 
+<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal', 'id' => 'equivalant')); ?>
 <div class="form-group">
     <?php echo Form::label('項目', 'hh', array('class' => 'col-sm-2 control-label')); ?>
     <?php echo Form::label('スキル威力@1', 'sh', array('class' => 'col-sm-2 control-label')); ?>
