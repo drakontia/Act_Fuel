@@ -81,6 +81,7 @@ $(document).ready(function(){
     var param = [];
     var l = changer.length;
 
+    // 威力計算
     for(i = 0; i < l; i++){
       param[i] = getParam();
       param[i]['skl'] = $('#form_s' + i).val();
@@ -117,12 +118,12 @@ $(document).ready(function(){
         alert(error);
       });
     }
-  });
 
-  $('#equiv').click(function(){
     var t1, t2, t3;
     var l = changer.length;
-    for(j = 0; j < l; j++) {
+
+    // 増分率およびパラメータ1あたりの増分率
+    for(j = 1; j < l; j++) {
       t1 = 0;
       t1 = ( $('#form_d' + j).val() / $('#form_d0').val()  - 1);
       $('#form_u' + j).val(t1);
@@ -131,7 +132,9 @@ $(document).ready(function(){
       t2 = t1 / changer[j][1];
       $('#form_a' + j).val(t2);
     }
-    for(k = 0; k < l; k++) {
+
+    // 換算値計算
+    for(k = 1; k < l; k++) {
       t3 = 0;
       t3 = ( $('#form_a' + k).val() / $('#form_a9').val() );
       $('#form_e' + k).val(t3);
