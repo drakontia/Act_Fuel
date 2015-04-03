@@ -162,6 +162,7 @@
     <?php echo Form::label('@1', 'ah', array('class' => 'col-sm-1 control-label')); ?>
     <?php echo Form::label('換算値', 'eh', array('class' => 'col-sm-1 control-label')); ?>
 </div>
+
 <div class="form-group">
     <?php echo Form::label('基準点', 'basepoint', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-2">
@@ -394,7 +395,10 @@
     </div>
 </div>
 <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
+    <div class="col-sm-offset-2 col-sm-2">
+        <?php echo Form::button('damage', '計算', array('type' => 'button', 'class' => 'btn btn-primary', 'id' => 'damage')); ?>
+    </div>
+    <div class="col-sm-2">
         <?php echo Form::button('equiv', '換算', array('type' => 'button', 'class' => 'btn btn-primary', 'id' => 'equiv')); ?>
     </div>
 </div>

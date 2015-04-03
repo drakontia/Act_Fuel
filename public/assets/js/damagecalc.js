@@ -63,7 +63,7 @@ $(document).ready(function(){
 
   });
 
-  $('#equiv').click(function(){
+  $('#damage').click(function(){
     var changer = [
       ['spd', 0],   // 00
       ['spd', 56],  // 01
@@ -81,7 +81,6 @@ $(document).ready(function(){
     var param = getParam();
     var para2 = [];
     var l = changer.length;
-    var t1, t2, t3;
 
     for(i = 0; i < l; i++){
       para2[i] = param;
@@ -113,17 +112,19 @@ $(document).ready(function(){
           skill: para2[i]['skl'],
         },
       }).done(function(data, status, xhr){
-        para2[i]['result'] = data.dpm;
+        $('#form_d' + i).val(data.dpm);
       }).fail(function(xhr, status, error){
         alert(error);
       });
     }
+  });
 
+  $('#equiv').click(function(){
+    var t1, t2, t3;
+    var l = changer.length;
     for(j = 0; j < l; j++) {
-      $('#form_d' + j).val(para2[i]['result']);
-
       t1 = 0;
-      t1 = (para2[i]['result'] / para2[0]['result']) - 1;
+      t1 = ( $('#form_d' + j).val() / $('#form_d0').val() );
       $('#form_u' + j).val(t1);
 
       t2 = 0;
