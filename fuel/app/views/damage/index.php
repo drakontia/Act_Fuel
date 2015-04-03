@@ -155,12 +155,11 @@
 
 <div class="form-group">
     <?php echo Form::label('項目', 'hh', array('class' => 'col-sm-2 control-label')); ?>
-    <?php echo Form::label('スキル威力', 'sh', array('class' => 'col-sm-2 control-label')); ?>
-    <?php echo Form::label('一発当たり', 'wh', array('class' => 'col-sm-2 control-label')); ?>
-    <?php echo Form::label('ダメージ', 'dh', array('class' => 'col-sm-1 control-label')); ?>
-    <?php echo Form::label('増分', 'uh', array('class' => 'col-sm-1 control-label')); ?>
-    <?php echo Form::label('@1', 'ah', array('class' => 'col-sm-1 control-label')); ?>
-    <?php echo Form::label('換算値', 'eh', array('class' => 'col-sm-1 control-label')); ?>
+    <?php echo Form::label('スキル威力@1', 'sh', array('class' => 'col-sm-2 control-label')); ?>
+    <?php echo Form::label('DPM', 'dh', array('class' => 'col-sm-2 control-label')); ?>
+    <?php echo Form::label('増分率', 'uh', array('class' => 'col-sm-2 control-label')); ?>
+    <?php echo Form::label('@1', 'ah', array('class' => 'col-sm-2 control-label')); ?>
+    <?php echo Form::label('換算値', 'eh', array('class' => 'col-sm-2 control-label')); ?>
 </div>
 
 <div class="form-group">
@@ -169,18 +168,15 @@
         <?php echo Form::input('s0', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w0', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d0', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u0', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a0', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e0', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -190,18 +186,15 @@
         <?php echo Form::input('s1', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w1', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d1', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u1', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a1', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e1', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -211,18 +204,15 @@
         <?php echo Form::input('s2', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w2', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d2', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u2', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a2', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e2', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -232,18 +222,15 @@
         <?php echo Form::input('s3', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w3', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d3', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u3', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a3', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e3', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -253,18 +240,15 @@
         <?php echo Form::input('s4', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w4', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d4', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u4', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a4', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e4', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -274,18 +258,15 @@
         <?php echo Form::input('s5', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w5', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d5', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u5', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a5', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e5', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -295,18 +276,15 @@
         <?php echo Form::input('s6', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w6', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d6', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u6', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a6', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e6', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -316,18 +294,15 @@
         <?php echo Form::input('s7', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w7', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d7', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u7', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a7', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e7', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -337,18 +312,15 @@
         <?php echo Form::input('s8', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w8', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d8', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u8', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a8', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e8', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -358,18 +330,15 @@
         <?php echo Form::input('s9', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w9', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d9', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u9', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a9', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e9', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
@@ -379,18 +348,15 @@
         <?php echo Form::input('s10', 100, array('class' => 'form-control')); ?>
     </div>
     <div class="col-sm-2">
-        <?php echo Form::input('w10', 0, array('class' => 'form-control')); ?>
-    </div>
-    <div class="col-sm-1">
         <?php echo Form::input('d10', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('u10', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('a10', 0, array('class' => 'form-control')); ?>
     </div>
-    <div class="col-sm-1">
+    <div class="col-sm-2">
         <?php echo Form::input('e10', 0, array('class' => 'form-control')); ?>
     </div>
 </div>
