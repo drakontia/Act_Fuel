@@ -128,7 +128,7 @@ $(document).ready(function(){
       $('#form_u' + j).val(t1);
 
       t2 = 0;
-      t2 = t1 / changer[i][1];
+      t2 = t1 / changer[j][1];
       $('#form_a' + j).val(t2);
     }
     for(k = 0; k < l; k++) {
