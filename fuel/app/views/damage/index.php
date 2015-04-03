@@ -176,7 +176,7 @@ $changer = array(
         array('攻撃力+100',     'pwr100'),
         array('武器性能+5',      'spc005'),
     );
-$l = $changer.count;
+$l = count($changer);
 ?>
 
 <?php for($i = 0; $i < $l; $i++): ?>
