@@ -15,7 +15,7 @@ $(document).ready(function(){
 
   var getParam = function(){
 
-    return [
+    return {
       job: $('#form_job option:selected').val(),
       acd: $('#form_actiondamage option:selected').val(),
       atk: $('#form_attackmode option:selected').val(),
@@ -33,7 +33,7 @@ $(document).ready(function(){
       spb: $('#form_speedboost option:selected').val(),
       spu: $('#form_speedup option:selected').val(),
       skl: $('#form_skill').val()
-    ];
+    };
 
   };
 
