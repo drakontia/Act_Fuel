@@ -154,8 +154,10 @@
 
 <?php echo Form::open(array('action' => '#', 'class' => 'form-inline', 'id' => 'enter')); ?>
 <div class="form-group">
-    <?php echo Form::label('スキル威力一括入力', 'entersklall', array('class' => 'sr-only', 'for' => 'form_sklall')); ?>
-    <?php echo Form::input('sklall', null, array('type' => 'text', 'class' => 'form-control', 'placeholder' => 'スキル威力一括入力')); ?>
+    <div class="col-sm-10">
+        <?php echo Form::label('スキル威力一括入力', 'entersklall', array('class' => 'sr-only', 'for' => 'form_sklall')); ?>
+        <?php echo Form::input('sklall', null, array('type' => 'text', 'class' => 'form-control', 'placeholder' => 'スキル威力一括入力')); ?>
+    </div>
 </div>
 <?php echo Form::button('enter', '入力', array('type' => 'button', 'class' => 'btn btn-primary', 'id' => 'enter')); ?>
 <?php echo Form::close(); ?>
