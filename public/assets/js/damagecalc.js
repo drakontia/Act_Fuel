@@ -37,6 +37,14 @@ $(document).ready(function(){
 
   };
 
+  $('#enter').click(function(){
+    var all = [$('#form_sklall').val()];
+    var p = changer.length;
+    for(i = 0; i < p; i++){
+      $('#form_s' + i).val(all[i]);
+    }
+  }):
+
   $('#fire').click(function(){
     var param = getParam();
 
