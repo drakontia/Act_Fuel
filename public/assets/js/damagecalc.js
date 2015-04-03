@@ -124,7 +124,7 @@ $(document).ready(function(){
     var l = changer.length;
     for(j = 0; j < l; j++) {
       t1 = 0;
-      t1 = ( $('#form_d' + j).val() / $('#form_d0').val() );
+      t1 = ( $('#form_d' + j).val() / $('#form_d0').val()  - 1);
       $('#form_u' + j).val(t1);
 
       t2 = 0;
