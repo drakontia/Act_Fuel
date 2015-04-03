@@ -1,4 +1,18 @@
 $(document).ready(function(){
+  var changer = [
+    ['spd', 0],   // 00
+    ['spd', 56],  // 01
+    ['spd', 100], // 02
+    ['spd', 150], // 03
+    ['spd', 207], // 04
+    ['spd', 255], // 05
+    ['crt', 100], // 06
+    ['crt', 200], // 07
+    ['det', 100], // 08
+    ['pwr', 100], // 09
+    ['spc', 5]    // 10
+  ];
+
   var getParam = function(){
     var param = [];
 
@@ -64,20 +78,6 @@ $(document).ready(function(){
   });
 
   $('#damage').click(function(){
-    var changer = [
-      ['spd', 0],   // 00
-      ['spd', 56],  // 01
-      ['spd', 100], // 02
-      ['spd', 150], // 03
-      ['spd', 207], // 04
-      ['spd', 255], // 05
-      ['crt', 100], // 06
-      ['crt', 200], // 07
-      ['det', 100], // 08
-      ['pwr', 100], // 09
-      ['spc', 5]    // 10
-    ];
-
     var param = getParam();
     var para2 = [];
     var l = changer.length;
