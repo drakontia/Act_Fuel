@@ -64,10 +64,6 @@ $(document).ready(function(){
   });
 
   $('#equiv').click(function(){
-    var result = []; // DPM
-    var upper = [];  // 上昇値
-    var diff = [];   // 増分率
-
     var changer = [
       ['spd', 0],   // 00
       ['spd', 56],  // 01
@@ -83,15 +79,14 @@ $(document).ready(function(){
     ];
 
     var param = getParam();
-    var para2;
+    var para2 = [];
     var l = changer.length;
-    var orginalv = 0;
     var t1, t2, t3;
 
     for(i = 0; i < l; i++){
-      para2 = [];
-      para2['skl'] = $('#form_s' + i).val();
-      para2[changer[i][0]] = parseInt(para2[changer[i][0]]) + parseInt(changer[i][1]);
+      para2[i] = param;
+      para2[i]['skl'] = $('#form_s' + i).val();
+      para2[i][changer[i][0]] = parseInt(para2[i][changer[i][0]]) + parseInt(changer[i][1]);
       $.ajax({
         type: 'GET',
         url: 'http://drakontia.com/actdb/damage/calc',
@@ -99,43 +94,41 @@ $(document).ready(function(){
         cache: false,
         datatype: 'json',
         data: {
-          job: para2['job'],
-          actiondamage: para2['acd'],
-          attackmode: para2['atk'],
-          ws_or_magic: para2['wmg'],
-          basespec: para2['spc'],
-          interval: para2['itv'],
-          power: para2['pwr'],
-          powerup: para2['pwu'],
-          determination: para2['det'],
-          booster: para2['bst'],
-          damageup: para2['dmu'],
-          critical: para2['crt'],
-          criticalup: para2['cru'],
-          speed: para2['spd'],
-          speedboost: para2['spb'],
-          speedup: para2['spu'],
-          skill: para2['skl'],
+          job: para2[i]['job'],
+          actiondamage: para2[i]['acd'],
+          attackmode: para2[i]['atk'],
+          ws_or_magic: para2[i]['wmg'],
+          basespec: para2[i]['spc'],
+          interval: para2[i]['itv'],
+          power: para2[i]['pwr'],
+          powerup: para2[i]['pwu'],
+          determination: para2[i]['det'],
+          booster: para2[i]['bst'],
+          damageup: para2[i]['dmu'],
+          critical: para2[i]['crt'],
+          criticalup: para2[i]['cru'],
+          speed: para2[i]['spd'],
+          speedboost: para2[i]['spb'],
+          speedup: para2[i]['spu'],
+          skill: para2[i]['skl'],
         },
       }).done(function(data, status, xhr){
-        result.push(data.dpm);
+        para2[i]['result'] = data.dpm;
       }).fail(function(xhr, status, error){
         alert(error);
       });
     }
 
     for(j = 0; j < l; j++) {
-      $('#form_d' + j).val(data.dpm);
+      $('#form_d' + j).val(para2[i]['result']);
 
       t1 = 0;
-      t1 = (result[j] / result[0]) - 1;
+      t1 = (para2[i]['result'] / para2[0]['result']) - 1;
       $('#form_u' + j).val(t1);
-      upper.push(t1);
 
       t2 = 0;
-      t2 = upper[j] / changer[i][1];
+      t2 = t1 / changer[i][1];
       $('#form_a' + j).val(t2);
-      diff.push(t2);
     }
     for(k = 0; k < l; k++) {
       t3 = 0;
