@@ -154,7 +154,7 @@ $(document).ready(function(){
       $('#form_e' + k).val(t3);
     }
 
-    alert.("計算完了");
+    alert("計算完了");
   });
 
 });
