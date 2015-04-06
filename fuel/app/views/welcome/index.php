@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>深夜のバハ</title>
+	<title>ACT Analyzer</title>
 	<?php echo Asset::css('bootstrap.css'); ?>
 	<style>
 		a{
@@ -55,22 +55,23 @@
 		<div class="row">
 			<div class="col-md-4">
 				<h2>About this</h2>
-                <p>We are a raid group of Ramuh server.</p>
+                <p>This will analyze ACT data of a raid group of Ramuh server into infomation that we process battles more efffectively.</p>
 			</div>
 			<div class="col-md-4">
 				<h2>ACT Data</h2>
-                <p><?php echo Html::anchor('encounter', 'Encounter List'); ?></p>
-                <p><?php echo Html::anchor('combatant/index', 'Compare combatants'); ?></p>
+                <p><?php echo Html::anchor('encounter', '戦闘リスト'); ?></p>
+                <p><?php echo Html::anchor('combatant/index', 'スキル回し比較'); ?></p>
+                <p><?php echo Html::anchor('damage', 'ダメージ計算 & 換算値計算'); ?></p>
 			</div>
 			<div class="col-md-4">
 				<h2>Links</h2>
 				<p>FFXIV</p>
 				<ul>
-					<li></li>
+					<li>http://jp.finalfantasyxiv.com/lodestone/</li>
 				</ul>
-				<p>ACT</p>
+				<p>ACTまとめWiki</p>
 				<ul>
-					<li></li>
+					<li>http://ff14act.phpapps.jp/index.php?FF14%CD%D1ACT%A4%CE%A4%DE%A4%C8%A4%E1Wiki</li>
 				</ul>
 			</div>
 		</div>
