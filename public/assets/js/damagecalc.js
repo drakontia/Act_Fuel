@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var changer = [
     ['spd', 0],   // 00
-    ['spd', 56],  // 01
+    ['spd', 50],  // 01
     ['spd', 100], // 02
     ['spd', 150], // 03
     ['spd', 207], // 04
@@ -47,6 +47,8 @@ $(document).ready(function(){
     for(i = 0; i < p; i++){
       $('#form_s' + i).val(all[i]);
     }
+
+    alert("反映完了");
   });
 
   $('#fire').click(function(){
@@ -151,6 +153,8 @@ $(document).ready(function(){
       t3 = ( $('#form_a' + k).val() / $('#form_a9').val() );
       $('#form_e' + k).val(t3);
     }
+
+    alert.("計算完了");
   });
 
 });

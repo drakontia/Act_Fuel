@@ -175,7 +175,7 @@
 <?php
 $changer = array(
         array('基準値',         'basicp'),
-        array('スキルスピード+56',  'spd056'),
+        array('スキルスピード+50',  'spd050'),
         array('スキルスピード+100', 'spd100'),
         array('スキルスピード+150', 'spd150'),
         array('スキルスピード+207', 'spd207'),
