@@ -9,7 +9,8 @@ $(document).ready(function(){
     timeline: { rowLabelStyle: { fontName: 'Meiryo', fontSize: 12 },
                 barLabelStyle: { fontName: 'Georgia', fontSize: 8 }
               },
-    avoidOverlappingGridLines: false
+    avoidOverlappingGridLines: false,
+    height: 100
   };
 
   gChart = {
@@ -20,7 +21,8 @@ $(document).ready(function(){
       dataTable.addColumn({ type: 'date', id: 'End' });
     },
 
-    'drawChart': function() {
+    'drawChart': function(height) {
+      optiions['height'] = height;
       chart.draw(dataTable, options);
     },
 
@@ -76,9 +78,9 @@ $(document).ready(function(){
       $.each(data, function(i, item){
         gChart.addRow([item[0], item[1], new Date(item[2] * 1000),  new Date(item[3] * 1000)]);
       });
-      gChart.drawChart();
-      nowheight = $('#timeline').height();
-      $('#timeline').height(parseInt(nowheight) + 100);
+      newheight = $('#timeline').height() + 50;
+      $('#timeline').height(newheight);
+      gChart.drawChart(newheight);
     }).fail(function(xhr, status, error){
       alert(error);
     }).always(function(arg1, status, arg2){
@@ -87,6 +89,6 @@ $(document).ready(function(){
   })
   $('#buttons [name=resetbtn]').click(function(){
     gChart.clearChart();
-    $('#timeline').height(200);
+    $('#timeline').height(100);
   });
 });
