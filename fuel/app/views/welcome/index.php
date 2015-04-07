@@ -47,7 +47,7 @@
 </nav>
   <div class="container">
     <div class="jumbotron">
-      <h1>ACT Analyzerのバハ</h1>
+      <h1>ACT Analyzer</h1>
             <p>We will defeat Bahamut!</br>
               <small>Even though it will have happened at dead of one night.</small>
             </p>
