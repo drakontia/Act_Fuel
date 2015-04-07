@@ -22,7 +22,7 @@ $(document).ready(function(){
     },
 
     'drawChart': function(height) {
-      optiions['height'] = height;
+      options['height'] = height;
       chart.draw(dataTable, options);
     },
 
