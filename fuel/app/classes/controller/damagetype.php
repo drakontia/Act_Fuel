@@ -21,16 +21,8 @@ class Controller_Damagetype extends Controller_Template
 			Response::redirect_back('encounter/index');
 		}
 
-        if (\Fuel\Core\Fuel::$env != 'test')
-        {
-            $name = Input::param('name');
-        }
-        else {
-            $name = $name2;
-        }
+        $name = Input::param('name');
         $data['name'] = html_entity_decode($name);
-        var_dump($encid);
-        var_dump($name);
 
         if ( ! $data['damagetype'] = Model_Damagetype::find('all', array(
                 'where' => array(
