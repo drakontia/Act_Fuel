@@ -29,7 +29,7 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php $attackerlist = array('none',); ?>
+<?php $attackerlist = array(); ?>
 <?php foreach ($combatant as $item): ?>
 <?php $attackerlist[] = $item->name; ?>
         <tr>
@@ -68,7 +68,7 @@
     </div>
 </div>
 <?php echo Form::close(); ?>
-<div id="timeline"></div>
+<div id="timeline" style="height: 150px;"></div>
 <?php else: ?>
 <p>No Combatants.</p>
 
