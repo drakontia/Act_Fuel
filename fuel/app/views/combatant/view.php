@@ -68,7 +68,7 @@
     </div>
 </div>
 <?php echo Form::close(); ?>
-<div id="timeline" style="height: 150px;"></div>
+<div id="timeline" style="height: 100px;"></div>
 <?php else: ?>
 <p>No Combatants.</p>
 
