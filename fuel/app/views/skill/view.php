@@ -7,9 +7,6 @@
 	<strong>Swingtype:</strong>
 	<?php echo $skill->swingtype; ?></p>
 <p>
-	<strong>Damagetype:</strong>
-	<?php echo $skill->damagetype; ?></p>
-<p>
 	<strong>Duration:</strong>
 	<?php echo $skill->duration; ?></p>
 <p>

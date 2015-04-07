@@ -14,12 +14,6 @@
 
     </div>
     <div class="form-group">
-      <?php echo Form::label('Damagetype', 'damagetype', array('class'=>'control-label')); ?>
-
-        <?php echo Form::input('damagetype', Input::post('damagetype', isset($skill) ? $skill->damagetype: ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Damagetype')); ?>
-
-    </div>
-    <div class="form-group">
       <?php echo Form::label('Duration', 'duration', array('class'=>'control-label')); ?>
 
         <?php echo Form::input('duration', Input::post('duration', isset($skill) ? $skill->duration : ''), array('class' => 'col-md-4 form-control', 'placeholder'=>'Duration')); ?>

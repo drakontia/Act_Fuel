@@ -36,7 +36,6 @@ class Controller_Skill extends Controller_Template
         $skill = Model_Skill::forge(array(
           'name' => Input::post('name'),
           'swingtype' => Input::post('swingtype'),
-          'damagetype' => Input::post('damagetype'),
           'duration' => Input::post('duration'),
           'recast' => Input::post('recast')
         ));
@@ -80,7 +79,6 @@ class Controller_Skill extends Controller_Template
     {
       $skill->name = Input::post('name');
       $skill->swingtype = Input::post('swingtype');
-      $skill->damagetype = Input::post('damagetype');
       $skill->duration = Input::post('duration');
       $skill->recast = Input::post('recast');
 
@@ -103,7 +101,6 @@ class Controller_Skill extends Controller_Template
       {
         $skill->name = $val->validated('name');
         $skill->swingtype = $val->validated('swingtype');
-        $skill->damagetype = $val->validated('damagetype');
         $skill->duration = $val->validated('duration');
         $skill->recast = $val->validated('recast');
 

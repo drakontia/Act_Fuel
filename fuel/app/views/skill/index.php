@@ -6,7 +6,6 @@
     <tr>
       <th>Name</th>
       <th>Swingtype</th>
-      <th>Damagetype</th>
       <th>Duration</th>
       <th>Recast</th>
       <th>&nbsp;</th>
@@ -18,7 +17,6 @@
 
       <td><?php echo $item->name; ?></td>
       <td><?php echo $item->swingtype; ?></td>
-      <td><?php echo $item->damagetype; ?></td>
       <td><?php echo $item->duration; ?></td>
       <td><?php echo $item->recast; ?></td>
       <td>
