@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>ACT Analyzer</title>
-	<?php echo Asset::css('bootstrap.css'); ?>
-	<style>
-		a{
-			color: #883ced;
-		}
-		a:hover{
-			color: #af4cf0;
-		}
+  <meta charset="utf-8">
+  <title>ACT Analyzer</title>
+  <?php echo Asset::css('bootstrap.css'); ?>
+  <style>
+    a{
+      color: #883ced;
+    }
+    a:hover{
+      color: #af4cf0;
+    }
         body,h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
             font-family: Georgia, Meiryo;
         }
-	</style>
+  </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -45,44 +45,41 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-	<div class="container">
-		<div class="jumbotron">
-			<h1>深夜のバハ</h1>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>ACT Analyzerのバハ</h1>
             <p>We will defeat Bahamut!</br>
               <small>Even though it will have happened at dead of one night.</small>
             </p>
-		</div>
-		<div class="row">
-			<div class="col-md-4">
-				<h2>About this</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <h2>About this</h2>
                 <p>This will analyze ACT data of a raid group of Ramuh server into infomation that we process battles more efffectively.</p>
-			</div>
-			<div class="col-md-4">
-				<h2>ACT Data</h2>
-                <p><?php echo Html::anchor('encounter', '戦闘リスト'); ?></p>
-                <p><?php echo Html::anchor('combatant/index', 'スキル回し比較'); ?></p>
-                <p><?php echo Html::anchor('damage', 'ダメージ計算 & 換算値計算'); ?></p>
-			</div>
-			<div class="col-md-4">
-				<h2>Links</h2>
-				<p>FFXIV</p>
-				<ul>
-					<li>http://jp.finalfantasyxiv.com/lodestone/</li>
-				</ul>
-				<p>ACTまとめWiki</p>
-				<ul>
-					<li>http://ff14act.phpapps.jp/index.php?FF14%CD%D1ACT%A4%CE%A4%DE%A4%C8%A4%E1Wiki</li>
-				</ul>
-			</div>
-		</div>
-		<hr/>
-		<footer>
-			<p class="pull-right"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">深夜のバハ</span> は <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンスの下で提供されています。</a></p>
-			<p>
-				<a href="http://fuelphp.com">FuelPHP</a> is released under the MIT license.<br>
-				<small>Version: <?php echo Fuel::VERSION; ?></small>
-			</p>
-		</footer>
-	</div>
+      </div>
+      <div class="col-md-4">
+        <h2>ACT Data</h2>
+          <p><?php echo Html::anchor('encounter', '戦闘リスト'); ?></p>
+          <p><?php echo Html::anchor('combatant', 'スキル回し比較'); ?></p>
+          <p><?php echo Html::anchor('damage', 'ダメージ計算 & 換算値計算'); ?></p>
+          <p><?php echo Html::anchor('skill', 'スキル/アビリティ一覧'); ?></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Links</h2>
+        <ul>
+          <li><?php echo Html::anchor('http://jp.finalfantasyxiv.com/lodestone/', 'FFXIV'); ?></li>
+          <li><?php echo Html::anchor('http://ff14act.phpapps.jp/index.php?FF14%CD%D1ACT%A4%CE%A4%DE%A4%C8%A4%E1Wiki', 'ACTまとめWiki'); ?></li>
+        </ul>
+      </div>
+    </div>
+    <hr/>
+    <footer>
+      <p class="pull-right"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">深夜のバハ</span> は <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンスの下で提供されています。</a></p>
+      <p>
+        <a href="http://fuelphp.com">FuelPHP</a> is released under the MIT license.<br>
+        <small>Version: <?php echo Fuel::VERSION; ?></small>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
