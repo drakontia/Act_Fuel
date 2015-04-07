@@ -3,10 +3,8 @@ var xmlHttp;
 function setCombatantA(){
   var obja = document.getElementById("form_encountera");
   index = obja.selectedIndex;
-  if (index != 0){
-    encid = obja.options[index].value;
-    var combatants = "http://drakontia.com/actdb/combatant/lists/" + encid;
-  }
+  encid = obja.options[index].value;
+  var combatants = "http://drakontia.com/actdb/combatant/lists/" + encid;
 
   if (window.XMLHttpRequest){
     xmlHttp = new XMLHttpRequest();
@@ -46,10 +44,8 @@ function checkStatusA(){
 function setCombatantB(){
   var objb = document.getElementById("form_encounterb");
   index = objb.selectedIndex;
-  if (index != 0){
-    encid = objb.options[index].value;
-    var combatants = "http://drakontia.com/actdb/combatant/lists/" + encid;
-  }
+  encid = objb.options[index].value;
+  var combatants = "http://drakontia.com/actdb/combatant/lists/" + encid;
 
   if (window.XMLHttpRequest){
     xmlHttp = new XMLHttpRequest();
