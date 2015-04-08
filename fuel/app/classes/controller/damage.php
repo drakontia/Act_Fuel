@@ -105,7 +105,7 @@ class Controller_Damage extends Controller_Hybrid
 
     $w1  = ($wd * 2600 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 47000) * (bcmul(($dtr - 202), 0.0005) + 1.00);
     $w2  = bcmul($w1, $job) * $mag * $acd * $per * $dup * $dup2 * ($skl / 100);
-    $wwd = floor($w2 / 100000);
+    $wdd = floor($w2 / 100000);
 
     $ctp = abs(bcadd((bcdiv(($ctr - 341), bcdiv(341, 25.6)) + 5), $ctb));
 
