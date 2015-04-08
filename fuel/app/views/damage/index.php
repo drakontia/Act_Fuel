@@ -154,12 +154,12 @@
 
 <?php echo Form::open(array('action' => '#', 'class' => 'form-inline', 'id' => 'enter')); ?>
 <div class="form-group">
-    <div class="col-sm-10">
-        <?php echo Form::label('スキル威力一括入力', 'entersklall', array('class' => 'sr-only', 'for' => 'form_sklall')); ?>
-        <?php echo Form::input('sklall', null, array('type' => 'text', 'class' => 'form-control', 'placeholder' => 'スキル威力一括入力')); ?>
+    <?php echo Form::label('スキル威力一括入力', 'entersklall', array('class' => 'col-sm-2 control-label')); ?>
+    <div class="col-sm-8">
+        <?php echo Form::textarea('sklall', null, array('type' => 'text', 'class' => 'form-control', 'placeholder' => 'カンマ区切りで入力してください')); ?>
     </div>
 </div>
-<?php echo Form::button('enter', '入力', array('type' => 'button', 'class' => 'btn btn-primary', 'id' => 'enter')); ?>
+<?php echo Form::button('enter', '入力', array('type' => 'button', 'class' => 'btn btn-primary col-sm-2', 'id' => 'enter')); ?>
 <?php echo Form::close(); ?>
 
 <?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal', 'id' => 'equivalant')); ?>
@@ -215,4 +215,13 @@ $l = count($changer);
     </div>
 </div>
 
+<?php echo Form::close(); ?>
+
+<?php echo Form::open(array('action' => '#', 'class' => 'form-inline', 'id' => 'copy')); ?>
+<div class="form-group">
+    <?php echo Form::label('コピー用', 'copyequivalent', array('class' => 'col-sm-2 control-label')); ?>
+    <div class="col-sm-10">
+        <?php echo Form::textarea('equivalent', null, array('type' => 'text', 'class' => 'form-control')); ?>
+    </div>
+</div>
 <?php echo Form::close(); ?>
