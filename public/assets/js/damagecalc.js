@@ -152,7 +152,7 @@ $(document).ready(function(){
       $('#form_e' + k).val(t3);
     }
 
-    $('#form_equivalent').val("基本性能:" + rounddown($('#form_e10').val(), 3) + "=攻撃力:" + rounddown($('#form_e9').val(), 3) + "=意思力:" + rounddown($('#form_e8').val()), 3) + "=クリティカル発動力:" + rounddown($('#form_e7').val(), 3) + "=スピード:" + rounddown($('#form_e1').val(), 3));
+    $('#form_equivalent').val("基本性能:" + rounddown($('#form_e10').val(), 3) + "=攻撃力:" + rounddown($('#form_e9').val(), 3) + "=意思力:" + rounddown($('#form_e8').val(), 3) + "=クリティカル発動力:" + rounddown($('#form_e7').val(), 3) + "=スピード:" + rounddown($('#form_e1').val(), 3));
   });
 
 });

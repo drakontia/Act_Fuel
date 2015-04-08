@@ -152,14 +152,14 @@
 <h2><span class='muted'>換算値計算用</span></h2>
 <br>
 
-<?php echo Form::open(array('action' => '#', 'class' => 'form-inline', 'id' => 'enter')); ?>
+<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal', 'id' => 'enter')); ?>
 <div class="form-group">
     <?php echo Form::label('スキル威力一括入力', 'entersklall', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-8">
-        <?php echo Form::textarea('sklall', null, array('type' => 'text', 'class' => 'form-control', 'placeholder' => 'カンマ区切りで入力してください')); ?>
+        <?php echo Form::textarea('sklall', null, array('type' => 'text', 'class' => 'form-control', 'placeholder' => 'カンマ区切りで入力してください', 'rows' => 1)); ?>
+        <?php echo Form::button('enter', '入力', array('type' => 'button', 'class' => 'btn btn-primary col-sm-2', 'id' => 'enter')); ?>
     </div>
 </div>
-<?php echo Form::button('enter', '入力', array('type' => 'button', 'class' => 'btn btn-primary col-sm-2', 'id' => 'enter')); ?>
 <?php echo Form::close(); ?>
 
 <?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal', 'id' => 'equivalant')); ?>
@@ -217,11 +217,11 @@ $l = count($changer);
 
 <?php echo Form::close(); ?>
 
-<?php echo Form::open(array('action' => '#', 'class' => 'form-inline', 'id' => 'copy')); ?>
+<?php echo Form::open(array('action' => '#', 'class' => 'form-horizontal', 'id' => 'copy')); ?>
 <div class="form-group">
     <?php echo Form::label('コピー用', 'copyequivalent', array('class' => 'col-sm-2 control-label')); ?>
     <div class="col-sm-10">
-        <?php echo Form::textarea('equivalent', null, array('type' => 'text', 'class' => 'form-control')); ?>
+        <?php echo Form::textarea('equivalent', null, array('type' => 'text', 'class' => 'form-control', 'rows' => 1)); ?>
     </div>
 </div>
 <?php echo Form::close(); ?>
