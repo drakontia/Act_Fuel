@@ -53,8 +53,7 @@ class Controller_Damage extends Controller_Hybrid
         '1.075' => '捨身30%(20/80sec)',
         '1.0333333' => '猛者の撃(20/120sec)',
         '1.059' => '捨身10%(20/80sec)+猛者の撃(20/120sec)',
-        '1.10' => 'ファイト・オア・フライト(30/90sec)',
-        '1.10' => '1.10倍：捨身10%(単発測定用)',
+        '1.10' => 'ファイト・オア・フライト(30/90sec)/1.10倍：捨身10%(単発測定用)',
         '1.20' => '1.20倍：猛者の撃(単発測定用)',
         '1.32' => '1.32倍：捨身10%+猛者の撃(単発測定用)',
         '1.30' => '1.30倍：捨身30%/ﾌｧｲﾄ･ｵｱ･ﾌﾗｲﾄ(単発測定用)');
@@ -100,11 +99,14 @@ class Controller_Damage extends Controller_Hybrid
     $dup = Input::param('booster');
     $dup2 = Input::param('damageup');
 
-    $a1  = (bcmul($wd, 0.26) + bcmul(bcmul($st, $stb), bcadd(bcmul($wd, 0.0037), 0.075)) + 4.5) * (bcmul(($dtr - 202), 0.0010) + 1.00);
-    $aad = abs(floor(bcmul($a1, $job) * $per * $dup * $dup2 * ($aa / 3.00)));
+    $tmp = $basespec * $factorA  * 1000 + $pwr40 * ($basespec * $factorB * 10 + $factorC * 10) + $factorD * 10000;
+    $a1  = ($wd * 2600 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 47000) * (bcmul(($dtr - 202), 0.0010) + 1.00);
+    $a2  = bcmul($a1, $job) * $per * $dup * $dup2 * ($aa / 3.00);
+    $aad = floor($a2 / 100000);
 
-    $w1  = (bcmul($wd, 0.26) + bcmul(bcmul($st, $stb), bcadd(bcmul($wd, 0.0037), 0.075)) + 4.5) * (bcmul(($dtr - 202), 0.0005) + 1.00);
-    $wdd = abs(floor(bcmul($w1, $job) * $mag * $acd * $per * $dup * $dup2 * ($skl / 100)));
+    $w1  = ($wd * 2600 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 47000) * (bcmul(($dtr - 202), 0.0005) + 1.00);
+    $w2  = bcmul($w1, $job) * $mag * $acd * $per * $dup * $dup2 * ($skl / 100);
+    $wwd = floor($w2 / 100000);
 
     $ctp = abs(bcadd((bcdiv(($ctr - 341), bcdiv(341, 25.6)) + 5), $ctb));
 
