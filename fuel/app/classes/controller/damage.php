@@ -99,11 +99,11 @@ class Controller_Damage extends Controller_Hybrid
     $dup = Input::param('booster');
     $dup2 = Input::param('damageup');
 
-    $a1  = ($wd * 2600 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 47000) * (bcmul(($dtr - 202), 0.0010) + 1.00);
+    $a1  = ($wd * 26000 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 470000) * (bcmul(($dtr - 202), 0.0010) + 1.00);
     $a2  = bcmul($a1, $job) * $per * $dup * $dup2 * ($aa / 3.00);
     $aad = floor($a2 / 100000);
 
-    $w1  = ($wd * 2600 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 47000) * (bcmul(($dtr - 202), 0.0005) + 1.00);
+    $w1  = ($wd * 26000 + bcmul(bcmul($st, $stb), (($wd * 370) + 7500)) + 470000) * (bcmul(($dtr - 202), 0.0005) + 1.00);
     $w2  = bcmul($w1, $job) * $mag * $acd * $per * $dup * $dup2 * ($skl / 100);
     $wdd = floor($w2 / 100000);
 
