@@ -2,14 +2,13 @@
 // Bootstrap the framework DO NOT edit this
 require COREPATH.'bootstrap.php';
 
-
-Autoloader::add_classes(array(
+\Autoloader::add_classes(array(
 	// Add classes you want to override here
 	// Example: 'View' => APPPATH.'classes/view.php',
 ));
 
 // Register the autoloader
-Autoloader::register();
+\Autoloader::register();
 
 /**
  * Your environment.  Can be set to any of the following:
@@ -19,53 +18,7 @@ Autoloader::register();
  * Fuel::STAGING
  * Fuel::PRODUCTION
  */
-Fuel::$env = (isset($_SERVER['FUEL_ENV']) ? $_SERVER['FUEL_ENV'] : Fuel::DEVELOPMENT);
+\Fuel::$env = \Arr::get($_SERVER, 'FUEL_ENV', \Arr::get($_ENV, 'FUEL_ENV', \Fuel::DEVELOPMENT));
 
 // Initialize the framework with the config file.
-Fuel::init('config.php');
-
-//Internationalization of Web Application
-$languages = explode(',', Input::server('HTTP_ACCEPT_LANGUAGE'));
-if (isset($languages[0]))
-{
-    try
-    {
-        $langfile = File::read_dir(APPPATH.'lang/'.$languages[0], 0, array(
-            '!^\.',
-            '\.php$' => 'file',
-            '\.yaml$' => 'file',
-            '!^_',
-        ));
-    }
-    catch (Exception $e)
-    {
-        $langfile = null;
-    }
-
-    if (isset($langfile))
-    {
-        Config::set('language', $languages[0]);
-    }
-    else
-    {
-        $lang2 = Str::sub($languages[0], 0, 2);
-        try
-        {
-            $langfile2 = File::read_dir(APPPATH.'lang/'.$lang2, 0, array(
-                '!^\.',
-                '\.php$' => 'file',
-                '\.yaml$' => 'file',
-                '!^_',
-            ));
-        }
-        catch (Exception $e)
-        {
-            $langfile2 = null;
-        }
-        if (isset($langfile2))
-        {
-            Config::set('language', $lang2);
-        }
-        // else { use default language }
-    }
-}
+\Fuel::init('config.php');

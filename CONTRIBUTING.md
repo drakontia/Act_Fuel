@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Contributing to FuelPHP
 =======================
 
@@ -183,3 +184,8 @@ Once we are satisfied, we will merge and close your Pull Request.
 
 If you have any questions, you can usually find at least one of the core
 developers in our IRC channel: #fuelphp on FreeNode
+=======
+Please read the project contibuting guidelines before creating an issue of sending in a pull request:
+
+https://github.com/fuel/fuel/wiki/Contributing
+>>>>>>> 7bc5d18e86aef7adcbbfea120f79e5d5aeee15ee
