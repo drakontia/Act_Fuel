@@ -1,0 +1,33 @@
+server {
+  listen 80 default_server;
+  server_name _;
+  root /opt/actdb/public;
+
+  location / {
+    index index.php;
+
+    try_files $uri $uri/ /index.php?$query_string;
+  }
+
+  location ~ ^(.+\.)(jpg|jpeg|gif|css|png|js|ico|xml)(.+)$ {
+    access_log off;
+    log_not_found off;
+    expires max;
+  }
+
+  location ~ ^(.+\.php)(.*)$ {
+    fastcgi_param FUEL_ENV "production";
+    fastcgi_index index.php;
+    fastcgi_pass 127.0.0.1:9000;
+    fastcgi_split_path_info ^(.+\.php)(.*)$;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_param PATH_INFO $fastcgi_path_info;
+    include fastcgi_params;
+  }
+
+  location ~ /.htaccess { deny all; log_not_found off; access_log off; }
+  location ~ /.htpasswd { deny all; log_not_found off; access_log off; }
+  location ~ /favicon.ico { allow all; log_not_found off; access_log off; }
+  location ~ /robots.txt { allow all; log_not_found off; access_log off; }
+
+}

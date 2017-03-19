@@ -1,0 +1,74 @@
+---
+# tasks file for php
+- name: Install PHP
+  yum: name={{ item }} state=present enablerepo=epel
+  with_items:
+    - php
+    - php-mysqli
+    - php-devel
+    - php-mbstring
+    - php-gd
+    - php-fpm
+    - php-pecl-apc
+
+- name: php timezone setting
+  lineinfile:
+    dest: /etc/php.ini
+    regexp: ';date.timezone ='
+    line: 'date.timezone = Asia/Tokyo'
+
+- name: php maxlifetime setting
+  lineinfile:
+    dest: /etc/php.ini
+    regexp: 'session.gc_maxlifetime ='
+    line: 'session.gc_maxlifetime = 1800'
+
+- name: php memory limits setting
+  lineinfile:
+    dest: /etc/php.ini
+    regexp: 'memory_limit ='
+    line: 'memory_limit = 256M'
+
+- name: php fix_pathinfo setting
+  lineinfile:
+    dest: /etc/php.ini
+    regexp: 'cgi.fix_pathinfo ='
+    line: 'cgi.fix_pathinfo = 0;'
+
+- name: php-fpm user setting
+  lineinfile:
+    dest: /etc/php-fpm.d/www.conf
+    state: present
+    regexp: '^user = apache'
+    line: 'user = nginx'
+
+- name: php-fpm group setting
+  lineinfile:
+    dest: /etc/php-fpm.d/www.conf
+    state: present
+    regexp: '^group = apache'
+    line: 'group = nginx'
+
+- name: php-fpm is running
+  service:
+    name: php-fpm
+    state: running
+    enabled: yes
+
+- name: php session rename
+  file:
+    dest: /var/lib/php/session
+    owner: nginx
+    group: nginx
+
+- name: apc nmap file mask setting
+  lineinfile:
+    dest: /etc/php.d/apc.ini
+    regexp: 'apc.mmap_file_mask='
+    line: 'apc.mmap_file_mask=/dev/zero'
+
+- name: apc shm sizes setting
+  lineinfile:
+    dest: /etc/php.d/apc.ini
+    regexp: 'apc.shm_size='
+    line: 'apc.shm_size=128M'

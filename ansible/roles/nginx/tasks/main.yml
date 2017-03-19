@@ -1,0 +1,22 @@
+---
+# tasks file for nginx
+  - name: Install Nginx
+    yum:
+      name: nginx
+      state: present
+
+  - name: nginx.conf is setting
+    copy:
+      src: roles/nginx/files/nginx.conf
+      dest: /etc/nginx/nginx.conf
+
+  - name: Set webserver.conf
+    template:
+      src: roles/nginx/templates/webserver.conf.j2
+      dest: /etc/nginx/conf.d/webserver.conf
+
+  - name: Nginx is running
+    service:
+      name: nginx
+      state: running
+      enabled: yes

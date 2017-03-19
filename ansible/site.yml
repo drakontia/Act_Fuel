@@ -1,0 +1,44 @@
+---
+- name: Install and configure the web
+  hosts: all
+  remote_user: ec2-user
+  become: yes
+
+  roles:
+    - nginx
+    - php
+    - mysql
+  vars_prompt:
+    - name: "dbpassword"
+      prompt: "Please enter MySQL user password"
+      default: "yourpassword"
+
+  tasks:
+    - name: swap space is existing
+      become: true
+      shell: |
+        /bin/dd if=/dev/zero of=/var/swap.1 bs=1M count=1024
+        /sbin/mkswap /var/swap.1
+        /sbin/swapon /var/swap.1
+      args:
+        creates: /var/swap.1
+
+    - name: oil is installed
+      shell: curl get.fuelphp.com/oil | sh
+      args:
+        creates: /usr/local/bin/oil
+
+    - name: FuelPHP is installed
+      shell: |
+        cd /opt
+        /usr/local/bin/oil create actdb
+
+    - name: ActDB fuel is existing
+      copy:
+        src: ../fuel/
+        dest: /opt/actdb/fuel/
+
+    - name: ActDB public is existing
+      copy:
+        src: ../public/
+        dest: /opt/actdb/public/
