@@ -4,7 +4,7 @@ function setCombatantA(){
   var obja = document.getElementById("form_encountera");
   index = obja.selectedIndex;
   encid = obja.options[index].value;
-  var combatants = "http://drakontia.com/actdb/combatant/lists/" + encid;
+  var combatants = "http://actdb.drakontia.com/combatant/lists/" + encid;
 
   if (window.XMLHttpRequest){
     xmlHttp = new XMLHttpRequest();
@@ -45,7 +45,7 @@ function setCombatantB(){
   var objb = document.getElementById("form_encounterb");
   index = objb.selectedIndex;
   encid = objb.options[index].value;
-  var combatants = "http://drakontia.com/actdb/combatant/lists/" + encid;
+  var combatants = "http://actdb.drakontia.com/combatant/lists/" + encid;
 
   if (window.XMLHttpRequest){
     xmlHttp = new XMLHttpRequest();
