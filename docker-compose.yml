@@ -1,0 +1,38 @@
+version: '3.3'
+services:
+# data
+  data:
+    container_name: fuel-data
+    image: busybox
+    stdin_open: true
+    tty: false
+    volumes:
+      - /share
+    command: /bin/sh
+
+  # mysql
+  mysql:
+    container_name: fuel-db
+    image: mysql
+    volumes:
+      - ./docker/mysql:/etc/mysql/conf.d:ro
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: act_dev
+
+  # FuelPHP application (PHP7, Apache)
+  application:
+    container_name: fuel-app
+    build: .
+    tty: false
+    volumes:
+      - .:/app
+      - ./docker/apache:/etc/apache2/sites-enabled:ro
+    ports:
+      - "80:80"
+    environment:
+      CODEIGNITER_ENV: development
+    links:
+      - mysql:fuel-db
