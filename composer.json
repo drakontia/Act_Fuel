@@ -20,9 +20,10 @@
     },
     "require-dev": {
         "fuel/docs": "1.8.*",
-        "phpunit/phpunit": "4.5.*",
-        "phpunit/dbunit": ">=1.2",
-        "phpunit/phpunit-selenium": ">=1.2",
+        "phpunit/phpunit": "6.2.*",
+        "phpunit/php-invoker": "1.1.*",
+        "phpunit/dbunit": "1.4.*",
+        "phpunit/phpunit-selenium": "3.0.*",
         "piece/stagehand-testrunner": ">=3.5.0"
     },
     "suggest": {
