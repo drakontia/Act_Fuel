@@ -62,6 +62,7 @@
           <p><?php echo Html::anchor('encounter', '戦闘リスト'); ?></p>
           <p><?php echo Html::anchor('combatant', 'スキル回し比較'); ?></p>
           <p><?php echo Html::anchor('damage', 'ダメージ計算 & 換算値計算'); ?></p>
+          <p><?php echo Html::anchor('damage405', 'ダメージ計算 & 換算値計算 ver4.05'); ?></p>
           <p><?php echo Html::anchor('skill', 'スキル/アビリティ一覧'); ?></p>
       </div>
       <div class="col-md-4">
