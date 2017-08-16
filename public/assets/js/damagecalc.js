@@ -54,7 +54,7 @@ $(document).ready(function(){
 
     $.ajax({
       type: 'GET',
-      url: 'http://actdb.drakontia.com/damage/calc',
+      url: '/damage/calc',
       cache: false,
       datatype: 'json',
       data: {
@@ -101,7 +101,7 @@ $(document).ready(function(){
       var $id = '#form_d' + i;
       $.ajax({
         type: 'GET',
-        url: 'http://actdb.drakontia.com/damage/calc',
+        url: '/damage/calc',
         async: false,
         cache: false,
         datatype: 'json',
